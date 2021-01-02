@@ -1103,8 +1103,6 @@ F 3 "" H 4600 7500 50  0001 C CNN
 	1    4600 7500
 	1    0    0    -1  
 $EndComp
-Text Label 6000 5550 0    50   ~ 0
-~CS1
 Wire Wire Line
 	8350 3400 8350 5450
 Wire Wire Line
@@ -1432,24 +1430,6 @@ Wire Wire Line
 Wire Wire Line
 	4600 7500 4950 7500
 Connection ~ 4950 6500
-Connection ~ 4600 6500
-Wire Wire Line
-	4200 6500 4600 6500
-Wire Wire Line
-	4600 6500 4950 6500
-$Comp
-L OpenAmiga2000CoproAdapter-rescue:+5V-power #PWR?
-U 1 1 6069C057
-P 4600 6500
-AR Path="/6069C057" Ref="#PWR?"  Part="1" 
-AR Path="/6068F728/6069C057" Ref="#PWR0110"  Part="1" 
-F 0 "#PWR0110" H 4600 6350 50  0001 C CNN
-F 1 "+5V" H 4615 6673 50  0000 C CNN
-F 2 "" H 4600 6500 50  0001 C CNN
-F 3 "" H 4600 6500 50  0001 C CNN
-	1    4600 6500
-	1    0    0    -1  
-$EndComp
 $Comp
 L 74:74LS32 U7
 U 5 1 6063BBA1
@@ -1497,23 +1477,23 @@ Wire Wire Line
 $Comp
 L 74:74HCT00 U?
 U 2 1 6192E8A1
-P 2200 4550
-F 0 "U?" H 2200 4875 50  0000 C CNN
-F 1 "74HCT00" H 2200 4784 50  0000 C CNN
-F 2 "" H 2200 4550 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 2200 4550 50  0001 C CNN
-	2    2200 4550
+P 2950 4700
+F 0 "U?" H 2950 5025 50  0000 C CNN
+F 1 "74HCT00" H 2950 4934 50  0000 C CNN
+F 2 "" H 2950 4700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 2950 4700 50  0001 C CNN
+	2    2950 4700
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74:74HCT00 U?
 U 3 1 61932778
-P 2900 4650
-F 0 "U?" H 2900 4975 50  0000 C CNN
-F 1 "74HCT00" H 2900 4884 50  0000 C CNN
-F 2 "" H 2900 4650 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 2900 4650 50  0001 C CNN
-	3    2900 4650
+P 3650 4800
+F 0 "U?" H 3650 5125 50  0000 C CNN
+F 1 "74HCT00" H 3650 5034 50  0000 C CNN
+F 2 "" H 3650 4800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 3650 4800 50  0001 C CNN
+	3    3650 4800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1557,7 +1537,7 @@ Wire Wire Line
 Wire Wire Line
 	1900 4450 1600 4450
 Wire Wire Line
-	1900 4650 1600 4650
+	1900 4850 1600 4850
 Entry Wire Line
 	1500 3900 1600 4000
 Entry Wire Line
@@ -1565,38 +1545,38 @@ Entry Wire Line
 Entry Wire Line
 	1500 4350 1600 4450
 Entry Wire Line
-	1500 4550 1600 4650
+	1500 4750 1600 4850
 Wire Wire Line
 	2500 4100 2600 4100
 Wire Wire Line
-	2500 4550 2500 4300
+	3250 4700 3250 4450
 Wire Wire Line
 	2500 4300 2600 4300
 Wire Wire Line
-	2500 4550 2600 4550
+	3250 4700 3350 4700
 $Comp
 L OpenAmiga2000CoproAdapter-rescue:+5V-power #PWR?
 U 1 1 61AA097C
-P 2500 4750
+P 3250 4900
 AR Path="/61AA097C" Ref="#PWR?"  Part="1" 
 AR Path="/6068F728/61AA097C" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2500 4600 50  0001 C CNN
-F 1 "+5V" H 2515 4923 50  0000 C CNN
-F 2 "" H 2500 4750 50  0001 C CNN
-F 3 "" H 2500 4750 50  0001 C CNN
-	1    2500 4750
+F 0 "#PWR?" H 3250 4750 50  0001 C CNN
+F 1 "+5V" H 3265 5073 50  0000 C CNN
+F 2 "" H 3250 4900 50  0001 C CNN
+F 3 "" H 3250 4900 50  0001 C CNN
+	1    3250 4900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2500 4750 2600 4750
-Connection ~ 2500 4550
+	3250 4900 3350 4900
+Connection ~ 3250 4700
 Text Label 1700 4000 0    50   ~ 0
 a21
 Text Label 1700 4200 0    50   ~ 0
 a20
 Text Label 1700 4450 0    50   ~ 0
 a19
-Text Label 1700 4650 0    50   ~ 0
+Text Label 1700 4850 0    50   ~ 0
 a18
 Wire Bus Line
 	1500 2700 6200 2700
@@ -1626,9 +1606,7 @@ Wire Wire Line
 Wire Wire Line
 	3200 3700 3350 3700
 Wire Wire Line
-	3200 4650 3300 4650
-Wire Wire Line
-	3300 4650 3300 4000
+	3950 4800 4050 4800
 Wire Wire Line
 	3300 4000 2450 4000
 Wire Wire Line
@@ -1683,8 +1661,105 @@ F 3 "" H 1050 7400 50  0001 C CNN
 	1    1050 7400
 	1    0    0    -1  
 $EndComp
+$Comp
+L device:R_US R?
+U 1 1 5FF3AC83
+P 5400 3850
+F 0 "R?" H 5468 3896 50  0000 L CNN
+F 1 "1kOhm" H 5468 3805 50  0000 L CNN
+F 2 "" V 5440 3840 50  0001 C CNN
+F 3 "~" H 5400 3850 50  0001 C CNN
+	1    5400 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L jumper:Jumper_3_Open JP?
+U 1 1 5FF3D9D8
+P 2150 4850
+F 0 "JP?" H 2150 5074 50  0000 C CNN
+F 1 "Jumper_3_Open" H 2150 4983 50  0000 C CNN
+F 2 "" H 2150 4850 50  0001 C CNN
+F 3 "~" H 2150 4850 50  0001 C CNN
+	1    2150 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L jumper:Jumper_3_Open JP?
+U 1 1 5FF407EB
+P 2150 4450
+F 0 "JP?" H 2150 4674 50  0000 C CNN
+F 1 "Jumper_3_Open" H 2150 4583 50  0000 C CNN
+F 2 "" H 2150 4450 50  0001 C CNN
+F 3 "~" H 2150 4450 50  0001 C CNN
+	1    2150 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 4600 2650 4600
+Wire Wire Line
+	2150 5000 2650 5000
+Wire Wire Line
+	2650 5000 2650 4800
+Wire Wire Line
+	3250 4450 2500 4450
+Wire Wire Line
+	2500 4450 2500 4300
+Wire Wire Line
+	4050 4800 4050 4350
+Wire Wire Line
+	4050 4350 3300 4350
+Wire Wire Line
+	3300 4350 3300 4000
+Wire Wire Line
+	2400 4850 2400 4450
+Wire Wire Line
+	4600 6500 4950 6500
+Wire Wire Line
+	4200 6500 4600 6500
+Connection ~ 4600 6500
+$Comp
+L OpenAmiga2000CoproAdapter-rescue:+5V-power #PWR?
+U 1 1 6069C057
+P 4600 6500
+AR Path="/6069C057" Ref="#PWR?"  Part="1" 
+AR Path="/6068F728/6069C057" Ref="#PWR0110"  Part="1" 
+F 0 "#PWR0110" H 4600 6350 50  0001 C CNN
+F 1 "+5V" H 4615 6673 50  0000 C CNN
+F 2 "" H 4600 6500 50  0001 C CNN
+F 3 "" H 4600 6500 50  0001 C CNN
+	1    4600 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L OpenAmiga2000CoproAdapter-rescue:+5V-power #PWR?
+U 1 1 600CE726
+P 2400 4450
+AR Path="/600CE726" Ref="#PWR?"  Part="1" 
+AR Path="/6068F728/600CE726" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2400 4300 50  0001 C CNN
+F 1 "+5V" H 2415 4623 50  0000 C CNN
+F 2 "" H 2400 4450 50  0001 C CNN
+F 3 "" H 2400 4450 50  0001 C CNN
+	1    2400 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L OpenAmiga2000CoproAdapter-rescue:+5V-power #PWR?
+U 1 1 60132D0D
+P 5250 4000
+AR Path="/60132D0D" Ref="#PWR?"  Part="1" 
+AR Path="/6068F728/60132D0D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5250 3850 50  0001 C CNN
+F 1 "+5V" H 5265 4173 50  0000 C CNN
+F 2 "" H 5250 4000 50  0001 C CNN
+F 3 "" H 5250 4000 50  0001 C CNN
+	1    5250 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 4000 5400 4000
 Wire Bus Line
-	1500 2700 1500 4550
+	1500 2700 1500 4750
 Wire Bus Line
 	10700 1050 10700 6350
 Wire Bus Line
