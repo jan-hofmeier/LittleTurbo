@@ -1,3 +1,6 @@
 (sym_lib_table
   (lib (name A2000_COPRO_SLOT)(type Legacy)(uri ${KIPRJMOD}/libs/A2000_COPRO_SLOT.lib)(options "")(descr "A2000 Copro Slot"))
+  (lib (name OpenAmiga2000CoproAdapter-rescue)(type Legacy)(uri ${KIPRJMOD}/OpenAmiga2000CoproAdapter-rescue.lib)(options "")(descr ""))
+  (lib (name 74)(type Legacy)(uri ${KIPRJMOD}/kicad-symbols-5.1.7/74xx.lib)(options "")(descr ""))
+  (lib (name RAM)(type Legacy)(uri ${KIPRJMOD}/kicad-symbols-5.1.7/Memory_RAM.lib)(options "")(descr ""))
 )
