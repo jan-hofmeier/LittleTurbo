@@ -785,12 +785,12 @@ $EndComp
 $Comp
 L 74:74HCT00 U6
 U 2 1 6060E41B
-P 1700 4350
-F 0 "U6" H 1700 4675 50  0000 C CNN
-F 1 "74HCT00" H 1700 4584 50  0000 C CNN
-F 2 "" H 1700 4350 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 1700 4350 50  0001 C CNN
-	2    1700 4350
+P 1400 4350
+F 0 "U6" H 1400 4675 50  0000 C CNN
+F 1 "74HCT00" H 1400 4584 50  0000 C CNN
+F 2 "" H 1400 4350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 1400 4350 50  0001 C CNN
+	2    1400 4350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -937,12 +937,12 @@ Wire Wire Line
 $Comp
 L 74:74HCT00 U6
 U 1 1 6045B2B3
-P 2200 3000
-F 0 "U6" H 2200 3325 50  0000 C CNN
-F 1 "74HCT00" H 2200 3234 50  0000 C CNN
-F 2 "" H 2200 3000 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 2200 3000 50  0001 C CNN
-	1    2200 3000
+P 1900 3000
+F 0 "U6" H 1900 3325 50  0000 C CNN
+F 1 "74HCT00" H 1900 3234 50  0000 C CNN
+F 2 "" H 1900 3000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 1900 3000 50  0001 C CNN
+	1    1900 3000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -967,16 +967,16 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3500 3200 50  0001 C CNN
 	2    3500 3200
 	1    0    0    -1  
 $EndComp
-Text Label 1100 2900 0    50   ~ 0
+Text Label 800  2900 0    50   ~ 0
 a23
-Text Label 1100 3100 0    50   ~ 0
+Text Label 800  3100 0    50   ~ 0
 a22
-Text Label 1100 3200 0    50   ~ 0
+Text Label 800  3200 0    50   ~ 0
 a21
 Entry Wire Line
-	900  2800 1000 2900
+	600  2800 700  2900
 Entry Wire Line
-	900  3000 1000 3100
+	600  3000 700  3100
 Wire Wire Line
 	8350 3400 8350 5450
 Wire Wire Line
@@ -1153,10 +1153,10 @@ Wire Wire Line
 Wire Wire Line
 	5400 3700 10800 3700
 Entry Wire Line
-	900  3100 1000 3200
+	600  3100 700  3200
 Entry Wire Line
-	900  3200 1000 3300
-Text Label 1100 3300 0    50   ~ 0
+	600  3200 700  3300
+Text Label 800  3300 0    50   ~ 0
 a20
 Text Label 3100 3200 0    50   ~ 0
 ~CRAM
@@ -1174,24 +1174,24 @@ F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 4400 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1300 3550 1000 3550
+	1000 3550 700  3550
 Wire Wire Line
-	1300 3950 1000 3950
+	1000 3950 700  3950
 Entry Wire Line
-	900  4150 1000 4250
+	600  4150 700  4250
 Entry Wire Line
-	900  4350 1000 4450
+	600  4350 700  4450
 Entry Wire Line
-	900  3450 1000 3550
+	600  3450 700  3550
 Entry Wire Line
-	900  3850 1000 3950
-Text Label 1100 4250 0    50   ~ 0
+	600  3850 700  3950
+Text Label 800  4250 0    50   ~ 0
 a21
-Text Label 1000 4450 0    50   ~ 0
+Text Label 700  4450 0    50   ~ 0
 a20
-Text Label 1100 3550 0    50   ~ 0
+Text Label 800  3550 0    50   ~ 0
 a19
-Text Label 1100 3950 0    50   ~ 0
+Text Label 800  3950 0    50   ~ 0
 a18
 Connection ~ 5400 3700
 Text Label 4400 3500 1    50   ~ 0
@@ -1223,27 +1223,27 @@ $EndComp
 $Comp
 L jumper:Jumper_3_Open JP2
 U 1 1 5FF3D9D8
-P 1550 3550
-F 0 "JP2" H 1550 3774 50  0000 C CNN
-F 1 "Jumper_3_Open" H 1550 3683 50  0000 C CNN
-F 2 "" H 1550 3550 50  0001 C CNN
-F 3 "~" H 1550 3550 50  0001 C CNN
-	1    1550 3550
+P 1250 3550
+F 0 "JP2" H 1250 3774 50  0000 C CNN
+F 1 "Jumper_3_Open" H 1250 3683 50  0000 C CNN
+F 2 "" H 1250 3550 50  0001 C CNN
+F 3 "~" H 1250 3550 50  0001 C CNN
+	1    1250 3550
 	1    0    0    -1  
 $EndComp
 $Comp
 L jumper:Jumper_3_Open JP1
 U 1 1 5FF407EB
-P 1550 3950
-F 0 "JP1" H 1550 4174 50  0000 C CNN
-F 1 "Jumper_3_Open" H 1550 4083 50  0000 C CNN
-F 2 "" H 1550 3950 50  0001 C CNN
-F 3 "~" H 1550 3950 50  0001 C CNN
-	1    1550 3950
+P 1250 3950
+F 0 "JP1" H 1250 4174 50  0000 C CNN
+F 1 "Jumper_3_Open" H 1250 4083 50  0000 C CNN
+F 2 "" H 1250 3950 50  0001 C CNN
+F 3 "~" H 1250 3950 50  0001 C CNN
+	1    1250 3950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1550 3700 1900 3700
+	1250 3700 1600 3700
 Text Notes 3750 3150 0    50   ~ 0
 ROM  | JP1 | JP2\n------------\n256K |   1  |  1\n512K |   2  |  1\n1M   |   2  |  2
 $Comp
@@ -1456,18 +1456,18 @@ Connection ~ 1750 1300
 Wire Wire Line
 	1750 1300 2600 1300
 Wire Wire Line
-	1550 4100 1900 4100
+	1250 4100 1600 4100
 Wire Wire Line
-	1900 4100 1900 3900
+	1600 4100 1600 3900
 $Comp
 L 74:74HCT00 U11
 U 2 1 6192E8A1
-P 2200 3800
-F 0 "U11" H 2200 4125 50  0000 C CNN
-F 1 "74HCT00" H 2200 4034 50  0000 C CNN
-F 2 "" H 2200 3800 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 2200 3800 50  0001 C CNN
-	2    2200 3800
+P 1900 3800
+F 0 "U11" H 1900 4125 50  0000 C CNN
+F 1 "74HCT00" H 1900 4034 50  0000 C CNN
+F 2 "" H 1900 3800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 1900 3800 50  0001 C CNN
+	2    1900 3800
 	1    0    0    -1  
 $EndComp
 Connection ~ 6200 2700
@@ -1486,33 +1486,22 @@ Wire Wire Line
 	3100 3100 3100 3500
 Connection ~ 3100 3100
 Wire Wire Line
-	1000 3300 2600 3300
-Wire Wire Line
-	2600 3600 2600 3300
-Connection ~ 2600 3300
-Wire Wire Line
-	2500 3800 2600 3800
-Wire Wire Line
-	2600 3300 3200 3300
-Wire Wire Line
 	3100 3500 3200 3500
 Wire Wire Line
-	1000 3200 2500 3200
+	700  2900 1600 2900
 Wire Wire Line
-	1000 2900 1900 2900
-Wire Wire Line
-	1000 3100 1900 3100
+	700  3100 1600 3100
 $Comp
 L OpenAmiga2000CoproAdapter-rescue:+5V-power #PWR?
 U 1 1 6111A1CA
-P 1800 3550
+P 1500 3550
 AR Path="/6111A1CA" Ref="#PWR?"  Part="1" 
 AR Path="/6068F728/6111A1CA" Ref="#PWR0112"  Part="1" 
-F 0 "#PWR0112" H 1800 3400 50  0001 C CNN
-F 1 "+5V" H 1815 3723 50  0000 C CNN
-F 2 "" H 1800 3550 50  0001 C CNN
-F 3 "" H 1800 3550 50  0001 C CNN
-	1    1800 3550
+F 0 "#PWR0112" H 1500 3400 50  0001 C CNN
+F 1 "+5V" H 1515 3723 50  0000 C CNN
+F 2 "" H 1500 3550 50  0001 C CNN
+F 3 "" H 1500 3550 50  0001 C CNN
+	1    1500 3550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1634,7 +1623,7 @@ Wire Wire Line
 	1300 7500 2050 7500
 Connection ~ 2050 7500
 Wire Wire Line
-	1000 4250 1400 4250
+	700  4250 1100 4250
 Wire Wire Line
 	4700 1050 4700 1450
 Wire Wire Line
@@ -1778,8 +1767,6 @@ F 3 "" H 3800 3400 50  0001 C CNN
 	1    3800 3400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3800 3900 4100 3900
 $Comp
 L 74:74LS32 U7
 U 3 1 61F2F925
@@ -1791,17 +1778,17 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3500 3600 50  0001 C CNN
 	3    3500 3600
 	1    0    0    -1  
 $EndComp
-Text Label 3800 3900 0    50   ~ 0
+Text Label 4100 3900 2    50   ~ 0
 CSROM
 $Comp
 L 74:74LS27 U12
 U 3 1 61CF43AC
-P 3500 4100
-F 0 "U12" H 3500 4425 50  0000 C CNN
-F 1 "74LS27" H 3500 4334 50  0000 C CNN
-F 2 "" H 3500 4100 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS27" H 3500 4100 50  0001 C CNN
-	3    3500 4100
+P 3800 4100
+F 0 "U12" H 3800 4425 50  0000 C CNN
+F 1 "74LS27" H 3800 4334 50  0000 C CNN
+F 2 "" H 3800 4100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS27" H 3800 4100 50  0001 C CNN
+	3    3800 4100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1822,12 +1809,12 @@ Wire Wire Line
 $Comp
 L 74:74LS32 U7
 U 4 1 6050398D
-P 2800 4100
-F 0 "U7" H 2800 4425 50  0000 C CNN
-F 1 "74LS32" H 2800 4334 50  0000 C CNN
-F 2 "" H 2800 4100 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 2800 4100 50  0001 C CNN
-	4    2800 4100
+P 3100 4100
+F 0 "U7" H 3100 4425 50  0000 C CNN
+F 1 "74LS32" H 3100 4334 50  0000 C CNN
+F 2 "" H 3100 4100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3100 4100 50  0001 C CNN
+	4    3100 4100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1899,32 +1886,25 @@ Wire Wire Line
 $Comp
 L OpenAmiga2000CoproAdapter-rescue:+5V-power #PWR?
 U 1 1 621BDE0A
-P 1800 3950
+P 1500 3950
 AR Path="/621BDE0A" Ref="#PWR?"  Part="1" 
 AR Path="/6068F728/621BDE0A" Ref="#PWR0122"  Part="1" 
-F 0 "#PWR0122" H 1800 3800 50  0001 C CNN
-F 1 "+5V" H 1815 4123 50  0000 C CNN
-F 2 "" H 1800 3950 50  0001 C CNN
-F 3 "" H 1800 3950 50  0001 C CNN
-	1    1800 3950
+F 0 "#PWR0122" H 1500 3800 50  0001 C CNN
+F 1 "+5V" H 1515 4123 50  0000 C CNN
+F 2 "" H 1500 3950 50  0001 C CNN
+F 3 "" H 1500 3950 50  0001 C CNN
+	1    1500 3950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	2600 3800 2600 3900
 Wire Wire Line
-	2600 3900 3200 3900
+	4100 4100 4100 3900
 Wire Wire Line
-	3200 3900 3200 4000
-Connection ~ 2600 3800
+	1700 4200 1700 4350
 Wire Wire Line
-	3800 4100 3800 3900
-Wire Wire Line
-	2000 4200 2000 4350
-Wire Wire Line
-	2500 4200 2000 4200
-Wire Wire Line
-	3100 4100 3200 4100
-Connection ~ 3100 4100
+	3400 4100 3500 4100
+Connection ~ 3400 4100
 Text HLabel 800  4600 0    50   Output ~ 0
 ~ROMEN
 Wire Wire Line
@@ -1944,9 +1924,7 @@ Connection ~ 5400 3500
 Wire Wire Line
 	5400 3500 5400 3700
 Wire Wire Line
-	3000 4850 3200 4850
-Wire Wire Line
-	1000 4450 1400 4450
+	700  4450 1100 4450
 $Comp
 L jumper:Jumper_2_Open JP7
 U 1 1 601E25A4
@@ -1995,20 +1973,13 @@ Wire Wire Line
 Wire Wire Line
 	700  2300 2700 2300
 Wire Wire Line
-	3200 4200 3200 4850
-Wire Wire Line
 	650  1300 1750 1300
 Text HLabel 700  4750 0    50   Input ~ 0
 R~W
 Wire Wire Line
 	700  4750 2400 4750
 Wire Wire Line
-	800  4600 3100 4600
-Wire Wire Line
-	3100 4100 3100 4600
-Connection ~ 2500 3000
-Wire Wire Line
-	2500 3000 2500 4000
+	3400 4100 3400 4600
 Wire Wire Line
 	5050 3200 5400 3200
 Wire Wire Line
@@ -2018,8 +1989,52 @@ Wire Wire Line
 	5400 3200 5400 3500
 Wire Wire Line
 	5400 2600 5400 3200
+Wire Wire Line
+	3500 4850 3500 4200
+Wire Wire Line
+	3000 4850 3500 4850
+Wire Wire Line
+	3500 3900 3500 4000
+Wire Wire Line
+	2600 3900 3500 3900
+Wire Wire Line
+	800  4600 3400 4600
+Wire Wire Line
+	2200 3000 2500 3000
+Connection ~ 2500 3000
+Wire Wire Line
+	700  3200 2500 3200
+Wire Wire Line
+	2500 3000 2500 4000
+Wire Wire Line
+	2500 4000 2800 4000
+Wire Wire Line
+	1700 4200 2350 4200
+Wire Wire Line
+	2200 3800 2600 3800
+Connection ~ 2600 3800
+$Comp
+L jumper:Jumper_3_Open JP?
+U 1 1 6010F0A9
+P 2600 3450
+F 0 "JP?" H 2600 3674 50  0000 C CNN
+F 1 "Jumper_3_Open" H 2600 3583 50  0000 C CNN
+F 2 "" H 2600 3450 50  0001 C CNN
+F 3 "~" H 2600 3450 50  0001 C CNN
+	1    2600 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	700  3300 2850 3300
+Wire Wire Line
+	2850 3450 2850 3300
+Connection ~ 2850 3300
+Wire Wire Line
+	2850 3300 3200 3300
+Wire Wire Line
+	2350 3450 2350 4200
 Wire Bus Line
-	900  2700 900  4350
+	600  2700 600  4350
 Wire Bus Line
 	10700 1050 10700 6350
 Wire Bus Line
@@ -2030,4 +2045,7 @@ Wire Bus Line
 	6200 600  6200 2700
 Wire Bus Line
 	8900 600  8900 5950
+Connection ~ 2350 4200
+Wire Wire Line
+	2350 4200 2800 4200
 $EndSCHEMATC
