@@ -6,7 +6,7 @@
     (tracks 369)
     (zones 0)
     (modules 22)
-    (nets 86)
+    (nets 87)
   )
 
   (page A4)
@@ -177,6 +177,7 @@
   (net 83 /Memory/~LWE)
   (net 84 /Memory/~LOE)
   (net 85 /Memory/~CS2)
+  (net 86 /Memory/VSRAM)
 
   (net_class Default "This is the default net class."
     (clearance 0.2)
@@ -185,6 +186,7 @@
     (via_drill 0.5)
     (uvia_dia 0.3)
     (uvia_drill 0.1)
+    (add_net /Memory/VSRAM)
     (add_net /Memory/~CS1)
     (add_net /Memory/~CS2)
     (add_net /Memory/~LOE)
@@ -320,7 +322,7 @@
     )
     (fp_arc (start 7.62 -1.33) (end 6.62 -1.33) (angle -180) (layer F.SilkS) (width 0.12))
     (pad 32 thru_hole oval (at 15.24 0 270) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask)
-      (net 2 +5V))
+      (net 86 /Memory/VSRAM))
     (pad 16 thru_hole oval (at 0 38.1 270) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask)
       (net 1 GND))
     (pad 31 thru_hole oval (at 15.24 2.54 270) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask)
@@ -420,7 +422,7 @@
     )
     (fp_arc (start 7.62 -1.33) (end 6.62 -1.33) (angle -180) (layer F.SilkS) (width 0.12))
     (pad 32 thru_hole oval (at 15.24 0 270) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask)
-      (net 2 +5V))
+      (net 86 /Memory/VSRAM))
     (pad 16 thru_hole oval (at 0 38.1 270) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask)
       (net 1 GND))
     (pad 31 thru_hole oval (at 15.24 2.54 270) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask)

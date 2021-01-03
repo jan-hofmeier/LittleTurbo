@@ -785,12 +785,12 @@ $EndComp
 $Comp
 L 74:74HCT00 U6
 U 2 1 6060E41B
-P 2600 3800
-F 0 "U6" H 2600 4125 50  0000 C CNN
-F 1 "74HCT00" H 2600 4034 50  0000 C CNN
-F 2 "" H 2600 3800 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 2600 3800 50  0001 C CNN
-	2    2600 3800
+P 2100 4350
+F 0 "U6" H 2100 4675 50  0000 C CNN
+F 1 "74HCT00" H 2100 4584 50  0000 C CNN
+F 2 "" H 2100 4350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 2100 4350 50  0001 C CNN
+	2    2100 4350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1091,12 +1091,12 @@ Connection ~ 4700 1450
 $Comp
 L 74:74HCT00 U11
 U 3 1 61157704
-P 2050 1700
-F 0 "U11" H 2050 2025 50  0000 C CNN
-F 1 "74HCT00" H 2050 1934 50  0000 C CNN
-F 2 "" H 2050 1700 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 2050 1700 50  0001 C CNN
-	3    2050 1700
+P 3300 3700
+F 0 "U11" H 3300 4025 50  0000 C CNN
+F 1 "74HCT00" H 3300 3934 50  0000 C CNN
+F 2 "" H 3300 3700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 3300 3700 50  0001 C CNN
+	3    3300 3700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1172,12 +1172,12 @@ Wire Wire Line
 $Comp
 L 74:74HCT00 U6
 U 4 1 61935EB2
-P 3300 3700
-F 0 "U6" H 3300 4025 50  0000 C CNN
-F 1 "74HCT00" H 3300 3934 50  0000 C CNN
-F 2 "" H 3300 3700 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 3300 3700 50  0001 C CNN
-	4    3300 3700
+P 4400 1450
+F 0 "U6" H 4400 1775 50  0000 C CNN
+F 1 "74HCT00" H 4400 1684 50  0000 C CNN
+F 2 "" H 4400 1450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 4400 1450 50  0001 C CNN
+	4    4400 1450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1251,8 +1251,6 @@ F 3 "~" H 1950 3950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1950 3700 2300 3700
-Wire Wire Line
-	2200 3950 2200 3550
 Text Notes 4450 3150 0    50   ~ 0
 ROM  | JP1 | JP2\n------------\n256K |   1  |  1\n512K |   2  |  1\n1M   |   2  |  2
 $Comp
@@ -1473,12 +1471,12 @@ Wire Wire Line
 $Comp
 L 74:74HCT00 U11
 U 2 1 6192E8A1
-P 4400 1450
-F 0 "U11" H 4400 1775 50  0000 C CNN
-F 1 "74HCT00" H 4400 1684 50  0000 C CNN
-F 2 "" H 4400 1450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 4400 1450 50  0001 C CNN
-	2    4400 1450
+P 2600 3800
+F 0 "U11" H 2600 4125 50  0000 C CNN
+F 1 "74HCT00" H 2600 4034 50  0000 C CNN
+F 2 "" H 2600 3800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 2600 3800 50  0001 C CNN
+	2    2600 3800
 	1    0    0    -1  
 $EndComp
 Wire Bus Line
@@ -1531,11 +1529,8 @@ F 3 "" H 2200 3550 50  0001 C CNN
 	1    2200 3550
 	1    0    0    -1  
 $EndComp
-Connection ~ 3000 3800
 Wire Wire Line
-	3000 3800 3000 4050
-Wire Wire Line
-	2900 3000 2900 4150
+	2900 3000 2900 3800
 Wire Wire Line
 	4300 5750 4300 5900
 $Comp
@@ -1784,17 +1779,15 @@ F 3 "http://www.ti.com/lit/gpn/sn74HC86" H 2700 4700 50  0001 C CNN
 	1    2700 4700
 	1    0    0    -1  
 $EndComp
-Text Label 3000 4600 1    50   ~ 0
-~ROMEN
 $Comp
 L 74:74HCT00 U6
 U 3 1 61932778
-P 2100 4350
-F 0 "U6" H 2100 4125 50  0000 C CNN
-F 1 "74HCT00" H 2100 4034 50  0000 C CNN
-F 2 "" H 2100 4350 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 2100 4350 50  0001 C CNN
-	3    2100 4350
+P 2050 1700
+F 0 "U6" H 2050 1475 50  0000 C CNN
+F 1 "74HCT00" H 2050 1384 50  0000 C CNN
+F 2 "" H 2050 1700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 2050 1700 50  0001 C CNN
+	3    2050 1700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1836,25 +1829,15 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3900 3600 50  0001 C CNN
 $EndComp
 Text Label 4200 3900 0    50   ~ 0
 CSROM
-Wire Wire Line
-	3000 4450 3000 4700
-Wire Wire Line
-	4200 4150 4200 3900
-Wire Wire Line
-	3000 4050 3600 4050
-Wire Wire Line
-	3600 4250 3600 4350
-Wire Wire Line
-	2900 4150 3600 4150
 $Comp
 L 74:74LS27 U12
 U 3 1 61CF43AC
-P 3900 4150
-F 0 "U12" H 3900 4475 50  0000 C CNN
-F 1 "74LS27" H 3900 4384 50  0000 C CNN
-F 2 "" H 3900 4150 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS27" H 3900 4150 50  0001 C CNN
-	3    3900 4150
+P 3900 4100
+F 0 "U12" H 3900 4425 50  0000 C CNN
+F 1 "74LS27" H 3900 4334 50  0000 C CNN
+F 2 "" H 3900 4100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS27" H 3900 4100 50  0001 C CNN
+	3    3900 4100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1875,12 +1858,12 @@ Wire Wire Line
 $Comp
 L 74:74LS32 U7
 U 4 1 6050398D
-P 3300 4350
-F 0 "U7" H 3300 4675 50  0000 C CNN
-F 1 "74LS32" H 3300 4584 50  0000 C CNN
-F 2 "" H 3300 4350 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3300 4350 50  0001 C CNN
-	4    3300 4350
+P 3200 4100
+F 0 "U7" H 3200 4425 50  0000 C CNN
+F 1 "74LS32" H 3200 4334 50  0000 C CNN
+F 2 "" H 3200 4100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3200 4100 50  0001 C CNN
+	4    3200 4100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1891,10 +1874,6 @@ Wire Wire Line
 	3500 7500 4200 7500
 Wire Wire Line
 	3500 6500 4200 6500
-Wire Wire Line
-	2400 4350 2400 4250
-Wire Wire Line
-	2400 4250 3000 4250
 $Comp
 L RAM:AS6C4008-55PCN U?
 U 1 1 6072AF92
@@ -1953,6 +1932,42 @@ F 3 "" H 1100 5100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1650 5100 1700 5100
+$Comp
+L OpenAmiga2000CoproAdapter-rescue:+5V-power #PWR?
+U 1 1 621BDE0A
+P 2200 3950
+AR Path="/621BDE0A" Ref="#PWR?"  Part="1" 
+AR Path="/6068F728/621BDE0A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2200 3800 50  0001 C CNN
+F 1 "+5V" H 2215 4123 50  0000 C CNN
+F 2 "" H 2200 3950 50  0001 C CNN
+F 3 "" H 2200 3950 50  0001 C CNN
+	1    2200 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 3800 3000 3900
+Wire Wire Line
+	3000 3900 3600 3900
+Wire Wire Line
+	3600 3900 3600 4000
+Connection ~ 3000 3800
+Wire Wire Line
+	4200 4100 4200 3900
+Wire Wire Line
+	2400 4200 2400 4350
+Wire Wire Line
+	3000 4700 3600 4700
+Wire Wire Line
+	3600 4200 3600 4700
+Wire Wire Line
+	2900 4200 2400 4200
+Wire Wire Line
+	3500 4100 3600 4100
+Wire Wire Line
+	3500 4100 3500 4450
+Wire Wire Line
+	3500 4450 3250 4450
 Wire Bus Line
 	1300 2700 1300 4350
 Wire Bus Line
@@ -1965,4 +1980,10 @@ Wire Bus Line
 	6200 600  6200 2700
 Wire Bus Line
 	8900 600  8900 5950
+Connection ~ 3500 4100
+Text HLabel 3250 4450 0    50   Output ~ 0
+~ROMEN
+Connection ~ 2900 3800
+Wire Wire Line
+	2900 3800 2900 4000
 $EndSCHEMATC
