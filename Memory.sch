@@ -1908,7 +1908,7 @@ Connection ~ 3400 4100
 Text HLabel 800  4600 0    50   Output ~ 0
 ~ROMEN
 Wire Wire Line
-	5500 2500 5500 3600
+	5500 2500 5500 3200
 $Comp
 L jumper:Jumper_2_Open JP6
 U 1 1 601397C6
@@ -1977,14 +1977,7 @@ Wire Wire Line
 Wire Wire Line
 	3400 4100 3400 4600
 Wire Wire Line
-	5050 3200 5400 3200
-Wire Wire Line
 	4800 3050 4800 3200
-Connection ~ 5400 3200
-Wire Wire Line
-	5400 3200 5400 3500
-Wire Wire Line
-	5400 2600 5400 3200
 Wire Wire Line
 	3500 4850 3500 4200
 Wire Wire Line
@@ -2050,4 +2043,11 @@ Wire Bus Line
 	6200 600  6200 2700
 Wire Bus Line
 	8900 600  8900 5950
+Connection ~ 5500 3200
+Wire Wire Line
+	5500 3200 5500 3600
+Wire Wire Line
+	5050 3200 5500 3200
+Wire Wire Line
+	5400 2600 5400 3500
 $EndSCHEMATC
