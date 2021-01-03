@@ -1929,8 +1929,6 @@ Text HLabel 800  4600 0    50   Output ~ 0
 ~ROMEN
 Wire Wire Line
 	5500 2500 5500 3600
-Wire Wire Line
-	5400 2600 5400 3050
 $Comp
 L jumper:Jumper_2_Open JP6
 U 1 1 601397C6
@@ -1969,34 +1967,29 @@ Wire Bus Line
 $Comp
 L jumper:Jumper_3_Open JP5
 U 1 1 602480DF
-P 5150 3050
-F 0 "JP5" H 5150 3274 50  0000 C CNN
-F 1 "Jumper_3_Open" H 5150 3183 50  0000 C CNN
-F 2 "" H 5150 3050 50  0001 C CNN
-F 3 "~" H 5150 3050 50  0001 C CNN
-	1    5150 3050
+P 5050 3050
+F 0 "JP5" H 5050 3274 50  0000 C CNN
+F 1 "Jumper_3_Open" H 5050 3183 50  0000 C CNN
+F 2 "" H 5050 3050 50  0001 C CNN
+F 3 "~" H 5050 3050 50  0001 C CNN
+	1    5050 3050
 	1    0    0    -1  
 $EndComp
-Connection ~ 5400 3050
 Wire Wire Line
-	5400 3050 5400 3500
-Wire Wire Line
-	3800 3200 5150 3200
+	3800 3200 4800 3200
 $Comp
 L OpenAmiga2000CoproAdapter-rescue:+5V-power #PWR?
 U 1 1 6026A4ED
-P 4750 3050
+P 5300 2900
 AR Path="/6026A4ED" Ref="#PWR?"  Part="1" 
 AR Path="/6068F728/6026A4ED" Ref="#PWR0123"  Part="1" 
-F 0 "#PWR0123" H 4750 2900 50  0001 C CNN
-F 1 "+5V" H 4765 3223 50  0000 C CNN
-F 2 "" H 4750 3050 50  0001 C CNN
-F 3 "" H 4750 3050 50  0001 C CNN
-	1    4750 3050
+F 0 "#PWR0123" H 5300 2750 50  0001 C CNN
+F 1 "+5V" H 5315 3073 50  0000 C CNN
+F 2 "" H 5300 2900 50  0001 C CNN
+F 3 "" H 5300 2900 50  0001 C CNN
+	1    5300 2900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4750 3050 4900 3050
 Wire Wire Line
 	700  1100 2700 1100
 Wire Wire Line
@@ -2013,6 +2006,18 @@ Wire Wire Line
 	800  4600 3100 4600
 Wire Wire Line
 	3100 4100 3100 4600
+Connection ~ 2500 3000
+Wire Wire Line
+	2500 3000 2500 4000
+Wire Wire Line
+	5050 3200 5400 3200
+Wire Wire Line
+	4800 3050 4800 3200
+Connection ~ 5400 3200
+Wire Wire Line
+	5400 3200 5400 3500
+Wire Wire Line
+	5400 2600 5400 3200
 Wire Bus Line
 	900  2700 900  4350
 Wire Bus Line
@@ -2025,7 +2030,4 @@ Wire Bus Line
 	6200 600  6200 2700
 Wire Bus Line
 	8900 600  8900 5950
-Connection ~ 2500 3000
-Wire Wire Line
-	2500 3000 2500 4000
 $EndSCHEMATC
