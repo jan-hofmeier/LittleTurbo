@@ -15,19 +15,6 @@ Comment4 ""
 $EndDescr
 $Comp
 L RAM:AS6C4008-55PCN U?
-U 1 1 6072AF92
-P 7100 5150
-AR Path="/6072AF92" Ref="U?"  Part="1" 
-AR Path="/6068F728/6072AF92" Ref="U3"  Part="1" 
-F 0 "U3" H 7100 6431 50  0000 C CNN
-F 1 "AS6C4008-55PCN" H 7100 6340 50  0000 C CNN
-F 2 "Package_DIP:DIP-32_W15.24mm" H 7100 5250 50  0001 C CNN
-F 3 "https://www.alliancememory.com/wp-content/uploads/pdf/AS6C4008.pdf" H 7100 5250 50  0001 C CNN
-	1    7100 5150
-	1    0    0    -1  
-$EndComp
-$Comp
-L RAM:AS6C4008-55PCN U?
 U 1 1 6072AF9E
 P 9800 5150
 AR Path="/6072AF9E" Ref="U?"  Part="1" 
@@ -1145,12 +1132,12 @@ Wire Wire Line
 $Comp
 L 74:74HCT00 U11
 U 4 1 6142508F
-P 4600 5300
-F 0 "U11" H 4600 5625 50  0000 C CNN
-F 1 "74HCT00" H 4600 5534 50  0000 C CNN
-F 2 "" H 4600 5300 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 4600 5300 50  0001 C CNN
-	4    4600 5300
+P 1400 5200
+F 0 "U11" H 1400 5525 50  0000 C CNN
+F 1 "74HCT00" H 1400 5434 50  0000 C CNN
+F 2 "" H 1400 5200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 1400 5200 50  0001 C CNN
+	4    1400 5200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1683,113 +1670,85 @@ Wire Wire Line
 Wire Wire Line
 	4700 1450 4700 1850
 Wire Wire Line
-	1650 5650 1850 5650
+	1800 5650 2000 5650
 Wire Wire Line
-	1850 5650 1850 5500
-Wire Wire Line
-	1850 4900 1650 4900
-$Comp
-L OpenAmiga2000CoproAdapter-rescue:+5V-power #PWR?
-U 1 1 61877266
-P 1650 4900
-AR Path="/61877266" Ref="#PWR?"  Part="1" 
-AR Path="/6068F728/61877266" Ref="#PWR0115"  Part="1" 
-F 0 "#PWR0115" H 1650 4750 50  0001 C CNN
-F 1 "+5V" H 1665 5073 50  0000 C CNN
-F 2 "" H 1650 4900 50  0001 C CNN
-F 3 "" H 1650 4900 50  0001 C CNN
-	1    1650 4900
-	1    0    0    -1  
-$EndComp
+	2000 5650 2000 5500
 $Comp
 L OpenAmiga2000CoproAdapter-rescue:+5V-power #PWR?
 U 1 1 61AA097C
-P 1650 5650
+P 1800 5650
 AR Path="/61AA097C" Ref="#PWR?"  Part="1" 
 AR Path="/6068F728/61AA097C" Ref="#PWR0113"  Part="1" 
-F 0 "#PWR0113" H 1650 5500 50  0001 C CNN
-F 1 "+5V" H 1665 5823 50  0000 C CNN
-F 2 "" H 1650 5650 50  0001 C CNN
-F 3 "" H 1650 5650 50  0001 C CNN
-	1    1650 5650
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74:74HC74 U13
-U 1 1 617D79E5
-P 1850 5200
-F 0 "U13" H 1850 5681 50  0000 C CNN
-F 1 "74HC74" H 1850 5590 50  0000 C CNN
-F 2 "" H 1850 5200 50  0001 C CNN
-F 3 "74xx/74hc_hct74.pdf" H 1850 5200 50  0001 C CNN
-	1    1850 5200
+F 0 "#PWR0113" H 1800 5500 50  0001 C CNN
+F 1 "+5V" H 1815 5823 50  0000 C CNN
+F 2 "" H 1800 5650 50  0001 C CNN
+F 3 "" H 1800 5650 50  0001 C CNN
+	1    1800 5650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2150 5300 2250 5300
+	2300 5300 2400 5300
 Wire Wire Line
-	2250 5300 2250 4800
-Text HLabel 900  5200 0    50   Input ~ 0
-RST
+	2400 5300 2400 4800
+Text HLabel 900  5300 0    50   Input ~ 0
+~RST
 $Comp
 L jumper:Jumper_2_Open JP4
 U 1 1 61B4D40B
-P 1700 6000
-F 0 "JP4" H 1700 6235 50  0000 C CNN
-F 1 "Jumper_2_Open" H 1700 6144 50  0000 C CNN
-F 2 "" H 1700 6000 50  0001 C CNN
-F 3 "~" H 1700 6000 50  0001 C CNN
-	1    1700 6000
+P 1850 6000
+F 0 "JP4" H 1850 6235 50  0000 C CNN
+F 1 "Jumper_2_Open" H 1850 6144 50  0000 C CNN
+F 2 "" H 1850 6000 50  0001 C CNN
+F 3 "~" H 1850 6000 50  0001 C CNN
+	1    1850 6000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1500 5100 1550 5100
-Text Label 1500 5450 3    50   ~ 0
+Text Label 1650 5450 3    50   ~ 0
 ROM~R~W
 $Comp
 L OpenAmiga2000CoproAdapter-rescue:GND-power #PWR?
 U 1 1 61B71497
-P 1950 6050
+P 2100 6050
 AR Path="/61B71497" Ref="#PWR?"  Part="1" 
 AR Path="/6068F728/61B71497" Ref="#PWR0117"  Part="1" 
-F 0 "#PWR0117" H 1950 5800 50  0001 C CNN
-F 1 "GND" H 1955 5877 50  0000 C CNN
-F 2 "" H 1950 6050 50  0001 C CNN
-F 3 "" H 1950 6050 50  0001 C CNN
-	1    1950 6050
+F 0 "#PWR0117" H 2100 5800 50  0001 C CNN
+F 1 "GND" H 2105 5877 50  0000 C CNN
+F 2 "" H 2100 6050 50  0001 C CNN
+F 3 "" H 2100 6050 50  0001 C CNN
+	1    2100 6050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1900 6000 1950 6000
+	2050 6000 2100 6000
 Wire Wire Line
-	1950 6000 1950 6050
+	2100 6000 2100 6050
 $Comp
 L device:R_US R2
 U 1 1 61BAED32
-P 1500 6150
-F 0 "R2" H 1568 6196 50  0000 L CNN
-F 1 "500Ohm" H 1568 6105 50  0000 L CNN
-F 2 "" V 1540 6140 50  0001 C CNN
-F 3 "~" H 1500 6150 50  0001 C CNN
-	1    1500 6150
+P 1650 6150
+F 0 "R2" H 1718 6196 50  0000 L CNN
+F 1 "500Ohm" H 1718 6105 50  0000 L CNN
+F 2 "" V 1690 6140 50  0001 C CNN
+F 3 "~" H 1650 6150 50  0001 C CNN
+	1    1650 6150
 	1    0    0    -1  
 $EndComp
-Connection ~ 1500 6000
+Connection ~ 1650 6000
 $Comp
 L OpenAmiga2000CoproAdapter-rescue:+5V-power #PWR?
 U 1 1 61BAFABA
-P 1350 6300
+P 1500 6300
 AR Path="/61BAFABA" Ref="#PWR?"  Part="1" 
 AR Path="/6068F728/61BAFABA" Ref="#PWR0118"  Part="1" 
-F 0 "#PWR0118" H 1350 6150 50  0001 C CNN
-F 1 "+5V" H 1365 6473 50  0000 C CNN
-F 2 "" H 1350 6300 50  0001 C CNN
-F 3 "" H 1350 6300 50  0001 C CNN
-	1    1350 6300
+F 0 "#PWR0118" H 1500 6150 50  0001 C CNN
+F 1 "+5V" H 1515 6473 50  0000 C CNN
+F 2 "" H 1500 6300 50  0001 C CNN
+F 3 "" H 1500 6300 50  0001 C CNN
+	1    1500 6300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1350 6300 1500 6300
+	1500 6300 1650 6300
 $Comp
 L OpenAmiga2000CoproAdapter-rescue:GND-power #PWR?
 U 1 1 61C35441
@@ -1814,9 +1773,6 @@ Wire Wire Line
 Connection ~ 3600 5850
 Wire Wire Line
 	3600 5850 3600 5650
-Connection ~ 4300 5400
-Wire Wire Line
-	4300 5400 4300 5200
 $Comp
 L 74:74HC86 U14
 U 1 1 6135DA68
@@ -1842,19 +1798,9 @@ F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 2100 4350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2400 4350 2400 4250
-Wire Wire Line
-	2400 4250 3000 4250
-Wire Wire Line
 	2400 4600 1200 4600
 Wire Wire Line
 	1200 4600 1200 1300
-Wire Wire Line
-	1500 5100 1500 6000
-Wire Wire Line
-	2250 4800 2400 4800
-Wire Wire Line
-	900  5200 1550 5200
 Connection ~ 5400 3500
 Wire Wire Line
 	5400 3500 5400 3700
@@ -1938,10 +1884,75 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3300 4350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4300 5400 4300 5750
-Connection ~ 4300 5750
-Wire Wire Line
 	5000 4000 5000 4700
+Connection ~ 3500 6500
+Connection ~ 3500 7500
+Wire Wire Line
+	3500 7500 4200 7500
+Wire Wire Line
+	3500 6500 4200 6500
+Wire Wire Line
+	2400 4350 2400 4250
+Wire Wire Line
+	2400 4250 3000 4250
+$Comp
+L RAM:AS6C4008-55PCN U?
+U 1 1 6072AF92
+P 7100 5150
+AR Path="/6072AF92" Ref="U?"  Part="1" 
+AR Path="/6068F728/6072AF92" Ref="U3"  Part="1" 
+F 0 "U3" H 7100 6431 50  0000 C CNN
+F 1 "AS6C4008-55PCN" H 7100 6340 50  0000 C CNN
+F 2 "Package_DIP:DIP-32_W15.24mm" H 7100 5250 50  0001 C CNN
+F 3 "https://www.alliancememory.com/wp-content/uploads/pdf/AS6C4008.pdf" H 7100 5250 50  0001 C CNN
+	1    7100 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 5100 1650 6000
+$Comp
+L 74:74HC74 U13
+U 1 1 617D79E5
+P 2000 5200
+F 0 "U13" H 2000 5681 50  0000 C CNN
+F 1 "74HC74" H 2000 5590 50  0000 C CNN
+F 2 "" H 2000 5200 50  0001 C CNN
+F 3 "74xx/74hc_hct74.pdf" H 2000 5200 50  0001 C CNN
+	1    2000 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L OpenAmiga2000CoproAdapter-rescue:+5V-power #PWR?
+U 1 1 61877266
+P 1650 4900
+AR Path="/61877266" Ref="#PWR?"  Part="1" 
+AR Path="/6068F728/61877266" Ref="#PWR0115"  Part="1" 
+F 0 "#PWR0115" H 1650 4750 50  0001 C CNN
+F 1 "+5V" H 1665 5073 50  0000 C CNN
+F 2 "" H 1650 4900 50  0001 C CNN
+F 3 "" H 1650 4900 50  0001 C CNN
+	1    1650 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 4900 2000 4900
+Wire Wire Line
+	900  5300 1100 5300
+$Comp
+L OpenAmiga2000CoproAdapter-rescue:+5V-power #PWR?
+U 1 1 6217CE2E
+P 1100 5100
+AR Path="/6217CE2E" Ref="#PWR?"  Part="1" 
+AR Path="/6068F728/6217CE2E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1100 4950 50  0001 C CNN
+F 1 "+5V" H 1115 5273 50  0000 C CNN
+F 2 "" H 1100 5100 50  0001 C CNN
+F 3 "" H 1100 5100 50  0001 C CNN
+	1    1100 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 5100 1700 5100
 Wire Bus Line
 	1300 2700 1300 4350
 Wire Bus Line
@@ -1954,10 +1965,4 @@ Wire Bus Line
 	6200 600  6200 2700
 Wire Bus Line
 	8900 600  8900 5950
-Connection ~ 3500 6500
-Connection ~ 3500 7500
-Wire Wire Line
-	3500 7500 4200 7500
-Wire Wire Line
-	3500 6500 4200 6500
 $EndSCHEMATC
