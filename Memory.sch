@@ -1053,12 +1053,12 @@ $EndComp
 $Comp
 L 74:74LS05 U10
 U 4 1 61113E16
-P 4400 3900
-F 0 "U10" H 4400 4217 50  0000 C CNN
-F 1 "74LS05" H 4400 4126 50  0000 C CNN
-F 2 "" H 4400 3900 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS05" H 4400 3900 50  0001 C CNN
-	4    4400 3900
+P 4700 3900
+F 0 "U10" H 4700 3675 50  0000 C CNN
+F 1 "74LS05" H 4700 3584 50  0000 C CNN
+F 2 "" H 4700 3900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS05" H 4700 3900 50  0001 C CNN
+	4    4700 3900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1778,7 +1778,7 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3500 3600 50  0001 C CNN
 	3    3500 3600
 	1    0    0    -1  
 $EndComp
-Text Label 4100 3900 2    50   ~ 0
+Text Label 4400 3900 2    50   ~ 0
 CSROM
 $Comp
 L 74:74LS27 U12
@@ -1938,10 +1938,6 @@ F 3 "~" H 5200 3700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5000 3700 5000 3900
-Wire Wire Line
-	5000 3900 4700 3900
-Wire Bus Line
-	900  2700 6200 2700
 $Comp
 L jumper:Jumper_3_Open JP5
 U 1 1 602480DF
@@ -1958,14 +1954,14 @@ Wire Wire Line
 $Comp
 L OpenAmiga2000CoproAdapter-rescue:+5V-power #PWR?
 U 1 1 6026A4ED
-P 5300 2900
+P 5300 3050
 AR Path="/6026A4ED" Ref="#PWR?"  Part="1" 
 AR Path="/6068F728/6026A4ED" Ref="#PWR0123"  Part="1" 
-F 0 "#PWR0123" H 5300 2750 50  0001 C CNN
-F 1 "+5V" H 5315 3073 50  0000 C CNN
-F 2 "" H 5300 2900 50  0001 C CNN
-F 3 "" H 5300 2900 50  0001 C CNN
-	1    5300 2900
+F 0 "#PWR0123" H 5300 2900 50  0001 C CNN
+F 1 "+5V" H 5315 3223 50  0000 C CNN
+F 2 "" H 5300 3050 50  0001 C CNN
+F 3 "" H 5300 3050 50  0001 C CNN
+	1    5300 3050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -2000,24 +1996,19 @@ Wire Wire Line
 Wire Wire Line
 	800  4600 3400 4600
 Wire Wire Line
-	2200 3000 2500 3000
-Connection ~ 2500 3000
+	2200 3000 2250 3000
 Wire Wire Line
 	700  3200 2500 3200
-Wire Wire Line
-	2500 3000 2500 4000
-Wire Wire Line
-	2500 4000 2800 4000
 Wire Wire Line
 	1700 4200 2350 4200
 Wire Wire Line
 	2200 3800 2600 3800
 Connection ~ 2600 3800
 $Comp
-L jumper:Jumper_3_Open JP?
+L jumper:Jumper_3_Open JP8
 U 1 1 6010F0A9
 P 2600 3450
-F 0 "JP?" H 2600 3674 50  0000 C CNN
+F 0 "JP8" H 2600 3674 50  0000 C CNN
 F 1 "Jumper_3_Open" H 2600 3583 50  0000 C CNN
 F 2 "" H 2600 3450 50  0001 C CNN
 F 3 "~" H 2600 3450 50  0001 C CNN
@@ -2033,6 +2024,20 @@ Wire Wire Line
 	2850 3300 3200 3300
 Wire Wire Line
 	2350 3450 2350 4200
+Connection ~ 2350 4200
+Wire Wire Line
+	2350 4200 2800 4200
+Wire Bus Line
+	600  2700 6200 2700
+Wire Wire Line
+	2250 4000 2250 3000
+Wire Wire Line
+	2250 4000 2800 4000
+Connection ~ 2250 3000
+Wire Wire Line
+	2250 3000 2500 3000
+Wire Wire Line
+	4100 3900 4400 3900
 Wire Bus Line
 	600  2700 600  4350
 Wire Bus Line
@@ -2045,7 +2050,4 @@ Wire Bus Line
 	6200 600  6200 2700
 Wire Bus Line
 	8900 600  8900 5950
-Connection ~ 2350 4200
-Wire Wire Line
-	2350 4200 2800 4200
 $EndSCHEMATC
