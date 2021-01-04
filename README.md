@@ -7,5 +7,7 @@ The unused Part of the 2MB of SRAM can be used to emulate a Kickstart ROM up to 
 
 The Layout of the Slot Connector was taken from SukkoPera OpenAmiga2000CoproAdapter
 
+It is still work in Progress, the schematics are mostly done, next up is creating the PCB out of it.
+
 ### Installation
 **Please be very careful when plugging this board** in the co-processor slot: there is an arrow on the board, **it must point to the back of the Amiga**. Plugging this adapter backwards will damage your CPU/accelerator card, as some pins of the CPU slot carry +12V!
