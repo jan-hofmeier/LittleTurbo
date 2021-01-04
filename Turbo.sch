@@ -1,0 +1,441 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 1050 4600 0    50   Input ~ 0
+7M
+Text HLabel 1050 4800 0    50   Input ~ 0
+CDAC
+Text HLabel 1100 2650 0    50   Input ~ 0
+DTACK_BUS
+Text HLabel 1000 1000 0    50   Input ~ 0
+~VPA_BUS
+Text HLabel 1050 2750 0    50   Input ~ 0
+~AS
+Text HLabel 5000 4700 2    50   Output ~ 0
+14M
+Text HLabel 4700 1750 2    50   Output ~ 0
+~VMA_BUS
+Text HLabel 4700 1600 2    50   Output ~ 0
+~VPA_CPU
+Text HLabel 4950 3500 2    50   Output ~ 0
+~DTACK_CPU
+Text HLabel 1150 3700 0    50   Input ~ 0
+~DTACK_FAST
+Text HLabel 4700 1900 2    50   Output ~ 0
+E_BUS
+Text HLabel 1000 2000 0    50   Input ~ 0
+E_CPU
+$Comp
+L 74:74HC86 U14
+U 3 1 606BF6DE
+P 1650 4700
+F 0 "U14" H 1650 5025 50  0000 C CNN
+F 1 "74HC86" H 1650 4934 50  0000 C CNN
+F 2 "" H 1650 4700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC86" H 1650 4700 50  0001 C CNN
+	3    1650 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 4600 1350 4600
+Wire Wire Line
+	1350 4800 1050 4800
+$Comp
+L 74:74HC74 U15
+U 1 1 606CEE81
+P 4250 3400
+F 0 "U15" H 4250 3881 50  0000 C CNN
+F 1 "74HC74" H 4250 3790 50  0000 C CNN
+F 2 "" H 4250 3400 50  0001 C CNN
+F 3 "74xx/74hc_hct74.pdf" H 4250 3400 50  0001 C CNN
+	1    4250 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74:74HC74 U15
+U 2 1 606CFA45
+P 2700 3400
+F 0 "U15" H 2700 3881 50  0000 C CNN
+F 1 "74HC74" H 2700 3790 50  0000 C CNN
+F 2 "" H 2700 3400 50  0001 C CNN
+F 3 "74xx/74hc_hct74.pdf" H 2700 3400 50  0001 C CNN
+	2    2700 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74:74HC74 U15
+U 3 1 606D0571
+P 5350 6700
+F 0 "U15" H 5580 6746 50  0000 L CNN
+F 1 "74HC74" H 5580 6655 50  0000 L CNN
+F 2 "" H 5350 6700 50  0001 C CNN
+F 3 "74xx/74hc_hct74.pdf" H 5350 6700 50  0001 C CNN
+	3    5350 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74:74HC74 U13
+U 2 1 606D70A2
+P 1250 5800
+F 0 "U13" H 1250 6281 50  0000 C CNN
+F 1 "74HC74" H 1250 6190 50  0000 C CNN
+F 2 "" H 1250 5800 50  0001 C CNN
+F 3 "74xx/74hc_hct74.pdf" H 1250 5800 50  0001 C CNN
+	2    1250 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74:74HCT04 U?
+U 1 1 606DB0C6
+P 1800 2000
+F 0 "U?" H 1800 2317 50  0000 C CNN
+F 1 "74HCT04" H 1800 2226 50  0000 C CNN
+F 2 "" H 1800 2000 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 1800 2000 50  0001 C CNN
+	1    1800 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74:74HCT04 U?
+U 2 1 606DBCC3
+P 8000 4100
+F 0 "U?" H 8000 4417 50  0000 C CNN
+F 1 "74HCT04" H 8000 4326 50  0000 C CNN
+F 2 "" H 8000 4100 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 8000 4100 50  0001 C CNN
+	2    8000 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74:74HCT04 U?
+U 3 1 606DDE8E
+P 1650 3100
+F 0 "U?" H 1650 3417 50  0000 C CNN
+F 1 "74HCT04" H 1650 3326 50  0000 C CNN
+F 2 "" H 1650 3100 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 1650 3100 50  0001 C CNN
+	3    1650 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74:74HCT04 U?
+U 4 1 606DE635
+P 8000 5200
+F 0 "U?" H 8000 5517 50  0000 C CNN
+F 1 "74HCT04" H 8000 5426 50  0000 C CNN
+F 2 "" H 8000 5200 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 8000 5200 50  0001 C CNN
+	4    8000 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74:74HCT04 U?
+U 5 1 606DF27D
+P 8000 5700
+F 0 "U?" H 8000 6017 50  0000 C CNN
+F 1 "74HCT04" H 8000 5926 50  0000 C CNN
+F 2 "" H 8000 5700 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 8000 5700 50  0001 C CNN
+	5    8000 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74:74HCT04 U?
+U 6 1 606DFD1C
+P 1650 4150
+F 0 "U?" H 1650 4467 50  0000 C CNN
+F 1 "74HCT04" H 1650 4376 50  0000 C CNN
+F 2 "" H 1650 4150 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 1650 4150 50  0001 C CNN
+	6    1650 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74:74HCT04 U?
+U 7 1 606E0AF9
+P 6350 6700
+F 0 "U?" H 6580 6746 50  0000 L CNN
+F 1 "74HCT04" H 6580 6655 50  0000 L CNN
+F 2 "" H 6350 6700 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 6350 6700 50  0001 C CNN
+	7    6350 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74:74LS27 U?
+U 1 1 606E87B7
+P 3450 3200
+F 0 "U?" H 3450 3525 50  0000 C CNN
+F 1 "74LS27" H 3450 3434 50  0000 C CNN
+F 2 "" H 3450 3200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS27" H 3450 3200 50  0001 C CNN
+	1    3450 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74:74LS27 U?
+U 2 1 606EBC4F
+P 2500 1100
+F 0 "U?" H 2500 1425 50  0000 C CNN
+F 1 "74LS27" H 2500 1334 50  0000 C CNN
+F 2 "" H 2500 1100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS27" H 2500 1100 50  0001 C CNN
+	2    2500 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 4600 1350 4150
+Connection ~ 1350 4600
+Wire Wire Line
+	3000 3300 3150 3300
+Wire Wire Line
+	3750 3200 3850 3200
+Wire Wire Line
+	3850 3200 3850 3300
+Wire Wire Line
+	3850 3300 3950 3300
+Wire Wire Line
+	4550 3500 4950 3500
+Wire Wire Line
+	3150 3200 3000 3200
+Wire Wire Line
+	3000 3200 3000 2750
+Wire Wire Line
+	3000 2750 2300 2750
+Wire Wire Line
+	3150 3100 3100 3100
+Wire Wire Line
+	3100 3100 3100 2650
+Wire Wire Line
+	1100 2650 3100 2650
+Wire Wire Line
+	2300 2750 2300 3300
+Wire Wire Line
+	2300 3300 2400 3300
+Connection ~ 2300 2750
+Wire Wire Line
+	2300 2750 1350 2750
+Wire Wire Line
+	1350 2750 1350 3100
+Connection ~ 1350 2750
+Wire Wire Line
+	1350 2750 1050 2750
+Wire Wire Line
+	1150 3700 2000 3700
+Wire Wire Line
+	1950 3100 2200 3100
+Wire Wire Line
+	2200 3100 2200 3800
+Wire Wire Line
+	2200 3800 4250 3800
+Connection ~ 2200 3100
+Wire Wire Line
+	2200 3100 2700 3100
+Wire Wire Line
+	4250 3800 4250 3700
+Wire Wire Line
+	3950 4150 3950 3400
+Wire Wire Line
+	1950 4150 2400 4150
+Wire Wire Line
+	2400 3400 2400 4150
+Connection ~ 2400 4150
+Wire Wire Line
+	2400 4150 3950 4150
+Wire Wire Line
+	1950 4700 5000 4700
+$Comp
+L OpenAmiga2000CoproAdapter-rescue:GND-power #PWR?
+U 1 1 60718391
+P 4900 7350
+AR Path="/60718391" Ref="#PWR?"  Part="1" 
+AR Path="/6068F728/60718391" Ref="#PWR?"  Part="1" 
+AR Path="/606B7AE6/60718391" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4900 7100 50  0001 C CNN
+F 1 "GND" H 4905 7177 50  0000 C CNN
+F 2 "" H 4900 7350 50  0001 C CNN
+F 3 "" H 4900 7350 50  0001 C CNN
+	1    4900 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R_US R?
+U 1 1 60718397
+P 2000 3550
+AR Path="/6068F728/60718397" Ref="R?"  Part="1" 
+AR Path="/606B7AE6/60718397" Ref="R?"  Part="1" 
+F 0 "R?" H 2068 3596 50  0000 L CNN
+F 1 "500Ohm" H 2068 3505 50  0000 L CNN
+F 2 "" V 2040 3540 50  0001 C CNN
+F 3 "~" H 2000 3550 50  0001 C CNN
+	1    2000 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L OpenAmiga2000CoproAdapter-rescue:+5V-power #PWR?
+U 1 1 6071839D
+P 2000 3400
+AR Path="/6071839D" Ref="#PWR?"  Part="1" 
+AR Path="/6068F728/6071839D" Ref="#PWR?"  Part="1" 
+AR Path="/606B7AE6/6071839D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2000 3250 50  0001 C CNN
+F 1 "+5V" H 2015 3573 50  0000 C CNN
+F 2 "" H 2000 3400 50  0001 C CNN
+F 3 "" H 2000 3400 50  0001 C CNN
+	1    2000 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L OpenAmiga2000CoproAdapter-rescue:+5V-power #PWR?
+U 1 1 60718B8E
+P 4000 3100
+AR Path="/60718B8E" Ref="#PWR?"  Part="1" 
+AR Path="/6068F728/60718B8E" Ref="#PWR?"  Part="1" 
+AR Path="/606B7AE6/60718B8E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4000 2950 50  0001 C CNN
+F 1 "+5V" H 4015 3273 50  0000 C CNN
+F 2 "" H 4000 3100 50  0001 C CNN
+F 3 "" H 4000 3100 50  0001 C CNN
+	1    4000 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 3100 4250 3100
+Connection ~ 2000 3700
+Wire Wire Line
+	2000 3700 2700 3700
+$Comp
+L 74:74LS112 U?
+U 1 1 6072BB96
+P 1700 1500
+F 0 "U?" H 1700 1981 50  0000 C CNN
+F 1 "74LS112" H 1700 1890 50  0000 C CNN
+F 2 "" H 1700 1500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS112" H 1700 1500 50  0001 C CNN
+	1    1700 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74:74LS112 U?
+U 2 1 6072E19A
+P 3100 1500
+F 0 "U?" H 3100 1981 50  0000 C CNN
+F 1 "74LS112" H 3100 1890 50  0000 C CNN
+F 2 "" H 3100 1500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS112" H 3100 1500 50  0001 C CNN
+	2    3100 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74:74LS112 U?
+U 3 1 6072EBDB
+P 4300 6750
+F 0 "U?" H 4530 6796 50  0000 L CNN
+F 1 "74LS112" H 4530 6705 50  0000 L CNN
+F 2 "" H 4300 6750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS112" H 4300 6750 50  0001 C CNN
+	3    4300 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L OpenAmiga2000CoproAdapter-rescue:GND-power #PWR?
+U 1 1 6073EB18
+P 2800 1600
+AR Path="/6073EB18" Ref="#PWR?"  Part="1" 
+AR Path="/6068F728/6073EB18" Ref="#PWR?"  Part="1" 
+AR Path="/606B7AE6/6073EB18" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2800 1350 50  0001 C CNN
+F 1 "GND" H 2805 1427 50  0000 C CNN
+F 2 "" H 2800 1600 50  0001 C CNN
+F 3 "" H 2800 1600 50  0001 C CNN
+	1    2800 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 3100 2200 2250
+Wire Wire Line
+	2200 2250 3100 2250
+Wire Wire Line
+	3100 1800 3100 2250
+Wire Wire Line
+	2200 1000 1000 1000
+Wire Wire Line
+	3400 1600 4600 1600
+Connection ~ 4600 1600
+Wire Wire Line
+	4600 1600 4700 1600
+Wire Wire Line
+	2100 2000 2100 1500
+Wire Wire Line
+	2100 1500 2800 1500
+Wire Wire Line
+	2800 1100 2800 1400
+Wire Wire Line
+	2200 1200 2200 1100
+Wire Wire Line
+	1700 1800 1350 1800
+Wire Wire Line
+	1350 1800 1350 1600
+Wire Wire Line
+	1350 1200 1700 1200
+Wire Wire Line
+	1400 1400 1350 1400
+Connection ~ 1350 1400
+Wire Wire Line
+	1350 1400 1350 1200
+Wire Wire Line
+	1400 1600 1350 1600
+Connection ~ 1350 1600
+Wire Wire Line
+	1350 1600 1350 1400
+$Comp
+L OpenAmiga2000CoproAdapter-rescue:+5V-power #PWR?
+U 1 1 6076B818
+P 1350 1200
+AR Path="/6076B818" Ref="#PWR?"  Part="1" 
+AR Path="/6068F728/6076B818" Ref="#PWR?"  Part="1" 
+AR Path="/606B7AE6/6076B818" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1350 1050 50  0001 C CNN
+F 1 "+5V" H 1365 1373 50  0000 C CNN
+F 2 "" H 1350 1200 50  0001 C CNN
+F 3 "" H 1350 1200 50  0001 C CNN
+	1    1350 1200
+	1    0    0    -1  
+$EndComp
+Connection ~ 1350 1200
+Wire Wire Line
+	1000 2000 1250 2000
+Wire Wire Line
+	1400 1500 1250 1500
+Wire Wire Line
+	1250 1500 1250 2000
+Connection ~ 1250 2000
+Wire Wire Line
+	1250 2000 1500 2000
+Wire Wire Line
+	2000 1400 2200 1400
+Wire Wire Line
+	2200 1400 2200 1200
+Connection ~ 2200 1200
+Wire Wire Line
+	2200 1400 2200 1900
+Wire Wire Line
+	2200 1900 4700 1900
+Connection ~ 2200 1400
+Wire Wire Line
+	4600 1750 4700 1750
+Wire Wire Line
+	4600 1600 4600 1750
+$EndSCHEMATC
