@@ -4,11 +4,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 3
-Title ""
+Title "14Mhz Turbo"
 Date ""
 Rev ""
-Comp ""
-Comment1 ""
+Comp "Jan Hofmeier"
+Comment1 "Based on Amiga System Accelerator by Livio Plos and Jörg Richter"
 Comment2 ""
 Comment3 ""
 Comment4 ""

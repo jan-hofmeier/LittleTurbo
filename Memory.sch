@@ -4,10 +4,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 3
-Title ""
+Title "Ranger RAM"
 Date ""
 Rev ""
-Comp ""
+Comp "Jan Hofmeier"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -1632,7 +1632,7 @@ L 74:74LS27 U12
 U 3 1 61CF43AC
 P 4150 4100
 F 0 "U12" H 4150 4100 50  0000 C CNN
-F 1 "74LS27" H 4150 4300 50  0000 C CNN
+F 1 "74HCT27" H 4150 4300 50  0000 C CNN
 F 2 "" H 4150 4100 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS27" H 4150 4100 50  0001 C CNN
 	3    4150 4100
@@ -1643,7 +1643,7 @@ L 74:74LS27 U12
 U 4 1 61F7261E
 P 4750 7000
 F 0 "U12" H 4650 7050 50  0000 L CNN
-F 1 "74LS27" H 4600 6950 50  0000 L CNN
+F 1 "74HCT27" H 4600 6950 50  0000 L CNN
 F 2 "" H 4750 7000 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS27" H 4750 7000 50  0001 C CNN
 	4    4750 7000

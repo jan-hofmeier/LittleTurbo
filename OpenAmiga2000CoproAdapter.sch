@@ -4,11 +4,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 3
-Title "OpenAmiga2000CoproAdapter"
+Title "LittleTurbo"
 Date "2019-02-14"
 Rev "2git"
-Comp "SukkoPera"
-Comment1 "Based on work by Kipper2K"
+Comp "Jan Hofmeier"
+Comment1 "Based on work by Kipper2K and SukkoPera"
 Comment2 "Licensed under CERN OHL v.1.2"
 Comment3 ""
 Comment4 ""
@@ -31,20 +31,14 @@ F11 "~RST" I R 5850 6100 50
 $EndSheet
 Wire Wire Line
 	970  2400 1100 2400
-Text Label 980  2400 0    50   ~ 0
+Text Label 1100 2400 2    50   ~ 0
 fc2
-Text Label 1340 2400 0    50   ~ 0
+Text Label 1500 2400 2    50   ~ 0
 fc1
 Wire Wire Line
 	970  2320 970  2400
 Wire Wire Line
-	1330 2400 1460 2400
-Wire Wire Line
 	1330 2320 1330 2400
-Text Label 1720 2400 0    50   ~ 0
-fc0
-Wire Wire Line
-	1710 2400 1840 2400
 Wire Wire Line
 	1710 2320 1710 2400
 Wire Wire Line
@@ -559,30 +553,14 @@ Text Label 7260 4200 0    50   ~ 0
 ~rst
 Text Label 7260 4300 0    50   ~ 0
 ~hlt
-Text Label 9530 4500 0    50   ~ 0
-~cbr
-Text Label 9530 4600 0    50   ~ 0
-~bgack
-Text Label 9530 4700 0    50   ~ 0
-~cbg
-Text Label 9530 4800 0    50   ~ 0
-~dtack
-Text Label 9530 4900 0    50   ~ 0
+Text Label 9750 4900 2    50   ~ 0
 r_~w
-Text Label 9530 5000 0    50   ~ 0
+Text Label 9750 5000 2    50   ~ 0
 ~lds
-Text Label 9530 5100 0    50   ~ 0
+Text Label 9750 5100 2    50   ~ 0
 ~uds
-Text Label 9530 5200 0    50   ~ 0
+Text Label 9750 5200 2    50   ~ 0
 ~as
-Text Label 9530 3500 0    50   ~ 0
-~ipl0
-Text Label 9530 3600 0    50   ~ 0
-~ipl1
-Text Label 9530 3700 0    50   ~ 0
-~ipl2
-Text Label 9530 3800 0    50   ~ 0
-~berr
 Text Label 9530 3900 0    50   ~ 0
 ~vpa
 Text Label 9530 4000 0    50   ~ 0
@@ -841,14 +819,7 @@ Wire Wire Line
 Wire Wire Line
 	10650 6200 6500 6200
 Wire Wire Line
-	6500 6200 6500 6800
-Wire Wire Line
-	6500 6800 4900 6800
-Connection ~ 4900 6800
-Wire Wire Line
 	10750 4000 10750 6300
-Wire Wire Line
-	10750 6300 6600 6300
 Wire Wire Line
 	9400 1150 7650 1150
 $Comp
@@ -880,7 +851,7 @@ Wire Wire Line
 Connection ~ 7650 5800
 Connection ~ 7650 1600
 Wire Wire Line
-	7650 1600 7650 2200
+	7650 1600 7650 1700
 Wire Wire Line
 	7650 2200 7750 2200
 Connection ~ 7650 2200
@@ -955,14 +926,6 @@ Wire Wire Line
 Wire Wire Line
 	9250 3400 10430 3400
 Wire Wire Line
-	9250 3500 9740 3500
-Wire Wire Line
-	9250 3600 9740 3600
-Wire Wire Line
-	9250 3700 9740 3700
-Wire Wire Line
-	9250 3800 9740 3800
-Wire Wire Line
 	9250 4100 10430 4100
 Wire Wire Line
 	9250 4200 10430 4200
@@ -971,21 +934,7 @@ Wire Wire Line
 Wire Wire Line
 	9250 4400 10430 4400
 Wire Wire Line
-	9250 4500 9740 4500
-Wire Wire Line
-	9250 4600 9740 4600
-Wire Wire Line
-	9250 4700 9740 4700
-Wire Wire Line
 	9250 4800 10650 4800
-Wire Wire Line
-	9250 4900 9740 4900
-Wire Wire Line
-	9250 5000 9740 5000
-Wire Wire Line
-	9250 5100 9740 5100
-Wire Wire Line
-	9250 5200 9740 5200
 Wire Wire Line
 	9250 5300 10430 5300
 Wire Wire Line
@@ -1026,8 +975,6 @@ Wire Wire Line
 	4250 7300 6700 7300
 Wire Wire Line
 	6700 7300 6700 6400
-Wire Wire Line
-	6700 6400 10950 6400
 Wire Wire Line
 	10950 6400 10950 3900
 Wire Wire Line
@@ -1278,6 +1225,64 @@ F 3 "" H 650 7250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 650  7250
+Wire Wire Line
+	5000 6900 6500 6900
+Connection ~ 5000 6900
+Wire Wire Line
+	6500 6200 6500 6900
+Wire Wire Line
+	10750 6300 6600 6300
+Wire Wire Line
+	6700 6400 10950 6400
+Text Label 1850 2400 2    50   ~ 0
+fc0
+Wire Wire Line
+	1330 2400 1500 2400
+Wire Wire Line
+	1710 2400 1850 2400
+Wire Wire Line
+	7750 1700 7650 1700
+Connection ~ 7650 1700
+Wire Wire Line
+	7650 1700 7650 2200
+Text Label 9650 3800 2    50   ~ 0
+~berr
+Text Label 9650 3700 2    50   ~ 0
+~ipl2
+Text Label 9650 3600 2    50   ~ 0
+~ipl1
+Text Label 9650 3500 2    50   ~ 0
+~ipl0
+Wire Wire Line
+	9250 3800 9650 3800
+Wire Wire Line
+	9250 3700 9650 3700
+Wire Wire Line
+	9250 3600 9650 3600
+Wire Wire Line
+	9250 3500 9650 3500
+Text Label 9750 4800 2    50   ~ 0
+~dtack
+Text Label 9750 4700 2    50   ~ 0
+~cbg
+Text Label 9750 4600 2    50   ~ 0
+~bgack
+Text Label 9750 4500 2    50   ~ 0
+~cbr
+Wire Wire Line
+	9250 4500 9750 4500
+Wire Wire Line
+	9250 4600 9750 4600
+Wire Wire Line
+	9250 4700 9750 4700
+Wire Wire Line
+	9250 4900 9750 4900
+Wire Wire Line
+	9250 5000 9750 5000
+Wire Wire Line
+	9250 5100 9750 5100
+Wire Wire Line
+	9250 5200 9750 5200
 Wire Bus Line
 	6500 5400 6500 6100
 Wire Bus Line
