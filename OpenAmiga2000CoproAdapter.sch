@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title "OpenAmiga2000CoproAdapter"
 Date "2019-02-14"
 Rev "2git"
@@ -14,18 +14,20 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 5350 5200 750  1100
+S 5100 5200 750  1100
 U 6068F728
 F0 "Memory" 50
 F1 "Memory.sch" 50
-F2 "d[0..15]" I R 6100 5600 50 
-F3 "a[1..23]" I R 6100 5300 50 
-F4 "~AS" I L 5350 5300 50 
-F5 "~UDS" I L 5350 5400 50 
-F6 "~LDS" I L 5350 5500 50 
-F7 "R~W" I L 5350 5600 50 
-F8 "~DTACK" O L 5350 6200 50 
-F9 "~OVR" O R 6100 6200 50 
+F2 "d[0..15]" I R 5850 5400 50 
+F3 "a[1..23]" I R 5850 5300 50 
+F4 "~AS" I L 5100 5300 50 
+F5 "~UDS" I L 5100 5400 50 
+F6 "~LDS" I L 5100 5500 50 
+F7 "R~W" I L 5100 5600 50 
+F8 "~DTACK" O L 5100 6200 50 
+F9 "~OVR" O R 5850 6200 50 
+F10 "~DTACK_FAST" O L 5100 6100 50 
+F11 "~RST" I R 5850 6100 50 
 $EndSheet
 Wire Wire Line
 	970  2400 1100 2400
@@ -46,15 +48,9 @@ Wire Wire Line
 Wire Wire Line
 	1710 2320 1710 2400
 Wire Wire Line
-	1170 2600 2490 2600
-Wire Wire Line
 	1170 2600 1170 2320
 Wire Wire Line
-	1530 2500 2490 2500
-Wire Wire Line
 	1530 2500 1530 2320
-Wire Wire Line
-	1910 2400 2490 2400
 Wire Wire Line
 	1910 2400 1910 2320
 $Comp
@@ -96,50 +92,18 @@ Text Label 2180 1600 0    50   ~ 0
 ~ipl1
 Text Label 2180 1500 0    50   ~ 0
 ~ipl0
-Wire Wire Line
-	2490 1700 2180 1700
-Wire Wire Line
-	2490 1600 2180 1600
-Wire Wire Line
-	2490 1500 2180 1500
 Text Label 2180 4000 0    50   ~ 0
 ~berr
-Text Label 2180 3100 0    50   ~ 0
-~vpa
-Text Label 2180 3000 0    50   ~ 0
-e
-Text Label 2180 2900 0    50   ~ 0
-~vma
 Text Label 2180 4600 0    50   ~ 0
 ~hlt
 Text Label 2180 4700 0    50   ~ 0
 ~rst
-Wire Wire Line
-	2490 4700 2180 4700
-Wire Wire Line
-	2490 4600 2180 4600
-Wire Wire Line
-	2490 4000 2180 4000
-Text Label 2180 4200 0    50   ~ 0
-~dtack
 Text Label 2180 2100 0    50   ~ 0
 ~cbr
 Text Label 2180 2000 0    50   ~ 0
 ~cbg
 Text Label 2180 1900 0    50   ~ 0
 ~bgack
-Wire Wire Line
-	2490 3100 2180 3100
-Wire Wire Line
-	2490 3000 2180 3000
-Wire Wire Line
-	2490 2900 2180 2900
-Wire Wire Line
-	2490 2100 2180 2100
-Wire Wire Line
-	2490 2000 2180 2000
-Wire Wire Line
-	2490 1900 2180 1900
 Text Label 4730 5600 0    50   ~ 0
 r_~w
 Text Label 4730 5500 0    50   ~ 0
@@ -214,38 +178,6 @@ Text Label 4730 3700 0    50   ~ 0
 d1
 Text Label 4730 3600 0    50   ~ 0
 d0
-Wire Wire Line
-	4490 5100 4900 5100
-Wire Wire Line
-	4490 5000 4900 5000
-Wire Wire Line
-	4490 4900 4900 4900
-Wire Wire Line
-	4490 4800 4900 4800
-Wire Wire Line
-	4490 4700 4900 4700
-Wire Wire Line
-	4490 4600 4900 4600
-Wire Wire Line
-	4490 4500 4900 4500
-Wire Wire Line
-	4490 4400 4900 4400
-Wire Wire Line
-	4490 4300 4900 4300
-Wire Wire Line
-	4490 4200 4900 4200
-Wire Wire Line
-	4490 4100 4900 4100
-Wire Wire Line
-	4490 4000 4900 4000
-Wire Wire Line
-	4490 3900 4900 3900
-Wire Wire Line
-	4490 3800 4900 3800
-Wire Wire Line
-	4490 3700 4900 3700
-Wire Wire Line
-	4490 3600 4900 3600
 Text Label 5000 1170 0    50   ~ 0
 address_bus
 Entry Wire Line
@@ -341,52 +273,6 @@ a2
 Text Label 4730 1200 0    50   ~ 0
 a1
 Wire Wire Line
-	4490 3400 4900 3400
-Wire Wire Line
-	4490 3300 4900 3300
-Wire Wire Line
-	4490 3200 4900 3200
-Wire Wire Line
-	4490 3100 4900 3100
-Wire Wire Line
-	4490 3000 4900 3000
-Wire Wire Line
-	4490 2900 4900 2900
-Wire Wire Line
-	4490 2800 4900 2800
-Wire Wire Line
-	4490 2700 4900 2700
-Wire Wire Line
-	4490 2600 4900 2600
-Wire Wire Line
-	4490 2500 4900 2500
-Wire Wire Line
-	4490 2400 4900 2400
-Wire Wire Line
-	4490 2300 4900 2300
-Wire Wire Line
-	4490 2200 4900 2200
-Wire Wire Line
-	4490 2100 4900 2100
-Wire Wire Line
-	4490 2000 4900 2000
-Wire Wire Line
-	4490 1900 4900 1900
-Wire Wire Line
-	4490 1800 4900 1800
-Wire Wire Line
-	4490 1700 4900 1700
-Wire Wire Line
-	4490 1600 4900 1600
-Wire Wire Line
-	4490 1500 4900 1500
-Wire Wire Line
-	4490 1400 4900 1400
-Wire Wire Line
-	4490 1300 4900 1300
-Wire Wire Line
-	4490 1200 4900 1200
-Wire Wire Line
 	3540 5920 3590 5920
 Connection ~ 3540 5920
 Wire Wire Line
@@ -431,46 +317,22 @@ Wire Wire Line
 Wire Wire Line
 	3490 1000 3490 880 
 Text Label 2180 1200 0    50   ~ 0
-v7m
-Wire Wire Line
-	2490 1200 2180 1200
+CPU_CLK
 $Comp
 L OpenAmiga2000CoproAdapter-rescue:68000D-CPU_NXP_68000 U1
 U 1 1 5BD587FC
-P 3490 3400
-F 0 "U1" H 4110 5700 50  0000 C CNN
-F 1 "68000D" H 3490 3400 50  0000 C CNN
-F 2 "OpenAmiga2000CoproAdapter:DIP-64_W22.86mm_Socket_LongPads" H 3490 3400 50  0001 C CNN
-F 3 "https://www.nxp.com/docs/en/reference-manual/MC68000UM.pdf" H 3490 3400 50  0001 C CNN
-	1    3490 3400
+P 3500 3400
+F 0 "U1" H 4120 5700 50  0000 C CNN
+F 1 "68000D" H 3500 3400 50  0000 C CNN
+F 2 "OpenAmiga2000CoproAdapter:DIP-64_W22.86mm_Socket_LongPads" H 3500 3400 50  0001 C CNN
+F 3 "https://www.nxp.com/docs/en/reference-manual/MC68000UM.pdf" H 3500 3400 50  0001 C CNN
+	1    3500 3400
 	1    0    0    -1  
 $EndComp
 Text Label 6500 6090 0    50   ~ 0
 d[0..15]
 Text Label 9910 900  0    50   ~ 0
 address_bus
-$Comp
-L OpenAmiga2000CoproAdapter-rescue:GND-power #PWR02
-U 1 1 5BD63C0E
-P 7620 6260
-F 0 "#PWR02" H 7620 6010 50  0001 C CNN
-F 1 "GND" H 7625 6087 50  0000 C CNN
-F 2 "" H 7620 6260 50  0001 C CNN
-F 3 "" H 7620 6260 50  0001 C CNN
-	1    7620 6260
-	1    0    0    -1  
-$EndComp
-$Comp
-L OpenAmiga2000CoproAdapter-rescue:GND-power #PWR03
-U 1 1 5BD6D654
-P 9420 6260
-F 0 "#PWR03" H 9420 6010 50  0001 C CNN
-F 1 "GND" H 9425 6087 50  0000 C CNN
-F 2 "" H 9420 6260 50  0001 C CNN
-F 3 "" H 9420 6260 50  0001 C CNN
-	1    9420 6260
-	1    0    0    -1  
-$EndComp
 Text Label 10090 6100 0    50   ~ 0
 data_bus
 Wire Bus Line
@@ -478,67 +340,25 @@ Wire Bus Line
 $Comp
 L A2000_COPRO_SLOT:A2000_COPRO_SLOT CN1
 U 1 1 5BD58E6F
-P 8520 3700
-F 0 "CN1" H 8520 6165 50  0000 C CNN
-F 1 "A2000_COPRO_SLOT" H 8520 6074 50  0000 C CNN
-F 2 "OpenAmiga2000CoproAdapter:A2000_COPRO_SLOT" H 8520 3700 50  0001 C CNN
-F 3 "DOCUMENTATION" H 8520 3700 50  0001 C CNN
-	1    8520 3700
+P 8500 3700
+F 0 "CN1" H 8500 6165 50  0000 C CNN
+F 1 "A2000_COPRO_SLOT" H 8500 6074 50  0000 C CNN
+F 2 "OpenAmiga2000CoproAdapter:A2000_COPRO_SLOT" H 8500 3700 50  0001 C CNN
+F 3 "DOCUMENTATION" H 8500 3700 50  0001 C CNN
+	1    8500 3700
 	1    0    0    -1  
 $EndComp
 $Comp
 L OpenAmiga2000CoproAdapter-rescue:CONN_2-conn P1
 U 1 1 5BD58FAD
-P 6740 2340
-F 0 "P1" H 6609 2027 40  0000 C CNN
-F 1 "CONN_2" H 6609 2103 40  0000 C CNN
-F 2 "OpenAmiga2000CoproAdapter:PinHeader_1x02_P2.54mm_Vertical" H 6740 2340 50  0001 C CNN
-F 3 "" H 6740 2340 50  0001 C CNN
-	1    6740 2340
+P 6700 2400
+F 0 "P1" H 6569 2087 40  0000 C CNN
+F 1 "CONN_2" H 6569 2163 40  0000 C CNN
+F 2 "OpenAmiga2000CoproAdapter:PinHeader_1x02_P2.54mm_Vertical" H 6700 2400 50  0001 C CNN
+F 3 "" H 6700 2400 50  0001 C CNN
+	1    6700 2400
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	9270 2700 10430 2700
-Wire Wire Line
-	9270 2800 10430 2800
-Wire Wire Line
-	9270 2900 10430 2900
-Wire Wire Line
-	9270 3000 10430 3000
-Wire Wire Line
-	9270 3100 10430 3100
-Wire Wire Line
-	9270 3200 10430 3200
-Wire Wire Line
-	9270 3300 10430 3300
-Wire Wire Line
-	9270 3400 10430 3400
-Wire Wire Line
-	9270 4100 10430 4100
-Wire Wire Line
-	9270 4200 10430 4200
-Wire Wire Line
-	9270 4300 10430 4300
-Wire Wire Line
-	9270 4400 10430 4400
-Wire Wire Line
-	9270 5300 10430 5300
-Wire Wire Line
-	9270 5400 10430 5400
-Wire Wire Line
-	9270 5500 10430 5500
-Wire Wire Line
-	9270 5600 10430 5600
-Wire Wire Line
-	9270 5700 10430 5700
-Wire Wire Line
-	9270 5800 10430 5800
-Wire Wire Line
-	7090 2240 7260 2240
-Wire Wire Line
-	7260 2240 7260 2400
-Wire Wire Line
-	7260 2400 7770 2400
 Entry Wire Line
 	6500 2500 6600 2600
 Entry Wire Line
@@ -581,38 +401,6 @@ Entry Wire Line
 	6500 5500 6600 5600
 Entry Wire Line
 	6500 5600 6600 5700
-Wire Wire Line
-	7770 1600 7620 1600
-Wire Wire Line
-	7620 1600 7620 1700
-Wire Wire Line
-	7770 5800 7620 5800
-Connection ~ 7620 5800
-Connection ~ 7620 5200
-Wire Wire Line
-	7770 4600 7620 4600
-Connection ~ 7620 4600
-Wire Wire Line
-	7620 4600 7620 5200
-Connection ~ 7620 4000
-Wire Wire Line
-	7620 4000 7620 4600
-Connection ~ 7620 3400
-Wire Wire Line
-	7620 3400 7620 4000
-Connection ~ 7620 2800
-Wire Wire Line
-	7620 2800 7620 3400
-Wire Wire Line
-	7770 2200 7620 2200
-Connection ~ 7620 2200
-Wire Wire Line
-	7620 2200 7620 2800
-Wire Wire Line
-	7770 1700 7620 1700
-Connection ~ 7620 1700
-Wire Wire Line
-	7620 1700 7620 2200
 $Comp
 L OpenAmiga2000CoproAdapter-rescue:+12V-power #PWR06
 U 1 1 5BD6C088
@@ -647,21 +435,9 @@ F 3 "" H 9780 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9270 1600 9420 1600
-Wire Wire Line
-	9420 1600 9420 1700
-Wire Wire Line
-	9270 1700 9420 1700
-Wire Wire Line
-	9270 1800 9570 1800
-Wire Wire Line
 	9570 1800 9570 1700
 Wire Wire Line
-	9270 1900 9780 1900
-Wire Wire Line
 	9780 1900 9780 1700
-Wire Wire Line
-	9270 2000 10010 2000
 Wire Wire Line
 	10010 2000 10010 1700
 Entry Wire Line
@@ -746,13 +522,9 @@ $EndComp
 Wire Wire Line
 	7480 1700 7480 1800
 Wire Wire Line
-	7480 1800 7770 1800
+	7480 1800 7750 1800
 Text Label 6600 2600 0    50   ~ 0
 a5
-Wire Wire Line
-	7090 2440 7260 2440
-Wire Wire Line
-	7260 2440 7260 2500
 Text Label 6600 2700 0    50   ~ 0
 a6
 Text Label 6600 2900 0    50   ~ 0
@@ -797,8 +569,6 @@ Text Label 10270 4300 0    50   ~ 0
 a20
 Text Label 10270 4400 0    50   ~ 0
 a21
-Wire Wire Line
-	7770 1900 7260 1900
 Text Label 7260 1900 0    50   ~ 0
 v7m
 Text Label 7260 4100 0    50   ~ 0
@@ -807,24 +577,6 @@ Text Label 7260 4200 0    50   ~ 0
 ~rst
 Text Label 7260 4300 0    50   ~ 0
 ~hlt
-Wire Wire Line
-	7620 5200 7620 5800
-Wire Wire Line
-	9270 4500 9740 4500
-Wire Wire Line
-	9270 4600 9740 4600
-Wire Wire Line
-	9270 4700 9740 4700
-Wire Wire Line
-	9270 4800 9740 4800
-Wire Wire Line
-	9270 4900 9740 4900
-Wire Wire Line
-	9270 5000 9740 5000
-Wire Wire Line
-	9270 5100 9740 5100
-Wire Wire Line
-	9270 5200 9740 5200
 Text Label 9530 4500 0    50   ~ 0
 ~cbr
 Text Label 9530 4600 0    50   ~ 0
@@ -841,18 +593,6 @@ Text Label 9530 5100 0    50   ~ 0
 ~uds
 Text Label 9530 5200 0    50   ~ 0
 ~as
-Wire Wire Line
-	9270 3500 9740 3500
-Wire Wire Line
-	9270 3600 9740 3600
-Wire Wire Line
-	9270 3700 9740 3700
-Wire Wire Line
-	9270 3800 9740 3800
-Wire Wire Line
-	9270 3900 9740 3900
-Wire Wire Line
-	9270 4000 9740 4000
 Text Label 9530 3500 0    50   ~ 0
 ~ipl0
 Text Label 9530 3600 0    50   ~ 0
@@ -871,7 +611,6 @@ Text Label 7260 3200 0    50   ~ 0
 fc1
 Text Label 7260 3300 0    50   ~ 0
 fc2
-Connection ~ 9420 1700
 $Comp
 L OpenAmiga2000CoproAdapter-rescue:CONN_1-conn P8
 U 1 1 5C6A5338
@@ -938,57 +677,39 @@ F 3 "" H 9650 2600 50  0001 C CNN
 	1    9650 2600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9270 2100 9500 2100
-Wire Wire Line
-	9270 2200 9500 2200
-Wire Wire Line
-	9270 2300 9500 2300
-Wire Wire Line
-	9270 2400 9500 2400
-Wire Wire Line
-	9270 2500 9500 2500
-Wire Wire Line
-	9270 2600 9500 2600
 $Comp
 L OpenAmiga2000CoproAdapter-rescue:CONN_1-conn P5
 U 1 1 5C731E0D
-P 7340 2000
-F 0 "P5" H 7260 2030 40  0000 C CNN
-F 1 "CONN_1" H 7290 2040 30  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7340 2000 50  0001 C CNN
-F 3 "" H 7340 2000 50  0001 C CNN
-	1    7340 2000
+P 7350 2000
+F 0 "P5" H 7270 2030 40  0000 C CNN
+F 1 "CONN_1" H 7300 2040 30  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7350 2000 50  0001 C CNN
+F 3 "" H 7350 2000 50  0001 C CNN
+	1    7350 2000
 	-1   0    0    -1  
 $EndComp
 $Comp
 L OpenAmiga2000CoproAdapter-rescue:CONN_1-conn P6
 U 1 1 5C73200C
-P 7340 2100
-F 0 "P6" H 7260 2130 40  0000 C CNN
-F 1 "CONN_1" H 7290 2140 30  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7340 2100 50  0001 C CNN
-F 3 "" H 7340 2100 50  0001 C CNN
-	1    7340 2100
+P 7350 2100
+F 0 "P6" H 7270 2130 40  0000 C CNN
+F 1 "CONN_1" H 7300 2140 30  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7350 2100 50  0001 C CNN
+F 3 "" H 7350 2100 50  0001 C CNN
+	1    7350 2100
 	-1   0    0    -1  
 $EndComp
 $Comp
 L OpenAmiga2000CoproAdapter-rescue:CONN_1-conn P7
 U 1 1 5C7320AF
-P 7340 2300
-F 0 "P7" H 7260 2330 40  0000 C CNN
-F 1 "CONN_1" H 7290 2340 30  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7340 2300 50  0001 C CNN
-F 3 "" H 7340 2300 50  0001 C CNN
-	1    7340 2300
+P 7350 2300
+F 0 "P7" H 7270 2330 40  0000 C CNN
+F 1 "CONN_1" H 7300 2340 30  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7350 2300 50  0001 C CNN
+F 3 "" H 7350 2300 50  0001 C CNN
+	1    7350 2300
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	7490 2000 7770 2000
-Wire Wire Line
-	7490 2100 7770 2100
-Wire Wire Line
-	7490 2300 7770 2300
 $Comp
 L OpenAmiga2000CoproAdapter-rescue:CONN_1-conn P15
 U 1 1 5C76E7B4
@@ -1017,81 +738,60 @@ Connection ~ 9780 1900
 Wire Wire Line
 	10010 2000 10130 2000
 Connection ~ 10010 2000
-Wire Wire Line
-	7620 5800 7620 6260
-Wire Wire Line
-	9420 1700 9420 6260
 Text Label 6500 900  0    50   ~ 0
 a[1..23]
 Wire Wire Line
-	6600 4500 7770 4500
+	6600 4500 7750 4500
 Wire Wire Line
-	6600 4700 7770 4700
+	6600 4700 7750 4700
 Wire Wire Line
-	6600 4800 7770 4800
+	6600 4800 7750 4800
 Wire Wire Line
-	6600 4900 7770 4900
+	6600 4900 7750 4900
 Wire Wire Line
-	6600 5000 7770 5000
+	6600 5000 7750 5000
 Wire Wire Line
-	6600 5100 7770 5100
+	6600 5100 7750 5100
 Wire Wire Line
-	7620 5200 7770 5200
+	6600 5300 7750 5300
 Wire Wire Line
-	6600 5300 7770 5300
+	6600 5400 7750 5400
 Wire Wire Line
-	6600 5400 7770 5400
+	6600 5500 7750 5500
 Wire Wire Line
-	6600 5500 7770 5500
+	6600 5600 7750 5600
 Wire Wire Line
-	6600 5600 7770 5600
+	6600 5700 7750 5700
 Wire Wire Line
-	6600 5700 7770 5700
+	6600 2600 7750 2600
 Wire Wire Line
-	6600 2600 7770 2600
+	6600 2700 7750 2700
 Wire Wire Line
-	6600 2700 7770 2700
+	6600 2900 7750 2900
 Wire Wire Line
-	7620 2800 7770 2800
+	6600 3000 7750 3000
 Wire Wire Line
-	6600 2900 7770 2900
+	7260 3100 7750 3100
 Wire Wire Line
-	6600 3000 7770 3000
+	7260 3200 7750 3200
 Wire Wire Line
-	7260 3100 7770 3100
+	7260 3300 7750 3300
 Wire Wire Line
-	7260 3200 7770 3200
+	6600 3500 7750 3500
 Wire Wire Line
-	7260 3300 7770 3300
+	6600 3600 7750 3600
 Wire Wire Line
-	7620 3400 7770 3400
+	6600 3700 7750 3700
 Wire Wire Line
-	6600 3500 7770 3500
+	6600 3800 7750 3800
 Wire Wire Line
-	6600 3600 7770 3600
+	6600 3900 7750 3900
 Wire Wire Line
-	6600 3700 7770 3700
+	7260 4300 7750 4300
 Wire Wire Line
-	6600 3800 7770 3800
-Wire Wire Line
-	6600 3900 7770 3900
-Wire Wire Line
-	7620 4000 7770 4000
-Wire Wire Line
-	7260 4100 7770 4100
-Wire Wire Line
-	7260 4200 7770 4200
-Wire Wire Line
-	7260 4300 7770 4300
-Wire Wire Line
-	6600 4400 7770 4400
-Wire Bus Line
-	6500 4400 6300 4400
+	6600 4400 7750 4400
 Wire Bus Line
 	6500 900  10530 900 
-Connection ~ 6500 5200
-Wire Bus Line
-	6500 5200 6510 5200
 Wire Bus Line
 	5000 900  6500 900 
 Connection ~ 6500 900 
@@ -1101,44 +801,422 @@ Wire Bus Line
 	6500 4600 5000 4600
 Connection ~ 6500 4600
 Connection ~ 5000 4600
+$Sheet
+S 2950 6400 1300 1000
+U 606B7AE6
+F0 "Turbo" 50
+F1 "Turbo.sch" 50
+F2 "7M" I R 4250 6500 50 
+F3 "CDAC" I R 4250 6600 50 
+F4 "~DTACK_BUS" I R 4250 6900 50 
+F5 "~VPA_BUS" I R 4250 7300 50 
+F6 "~AS" I L 2950 6800 50 
+F7 "~VMA_BUS" O R 4250 7100 50 
+F8 "~VPA_CPU" O L 2950 7300 50 
+F9 "~DTACK_CPU" O L 2950 6900 50 
+F10 "~DTACK_FAST" I R 4250 6800 50 
+F11 "E_BUS" O R 4250 7200 50 
+F12 "E_CPU" I L 2950 7200 50 
+F13 "CLK_CPU" O L 2950 6500 50 
+F14 "~VMA_CPU" I L 2950 7100 50 
+$EndSheet
 Wire Wire Line
-	4490 5300 5350 5300
+	5100 6200 5000 6200
 Wire Wire Line
-	4490 5400 5350 5400
+	5000 6200 5000 6900
 Wire Wire Line
-	4490 5500 5350 5500
+	5000 6900 4250 6900
 Wire Wire Line
-	4490 5600 5350 5600
+	5100 6100 4900 6100
+Wire Wire Line
+	4900 6100 4900 6800
+Wire Wire Line
+	4900 6800 4250 6800
 Wire Bus Line
-	6100 5600 6500 5600
+	5850 5400 6500 5400
+Connection ~ 6500 5400
+Wire Wire Line
+	5850 6200 6300 6200
+Wire Wire Line
+	6200 4200 6200 6100
+Wire Wire Line
+	7050 2500 7750 2500
+Wire Wire Line
+	7050 2400 7050 2300
+Wire Wire Line
+	7050 2400 7750 2400
+Wire Wire Line
+	7050 2300 7050 2150
+Connection ~ 7050 2300
+Wire Wire Line
+	7150 2300 7150 2050
+Wire Wire Line
+	6000 1900 6000 6500
+Wire Wire Line
+	4250 6600 6100 6600
+Wire Wire Line
+	10650 4800 10650 6200
+Wire Wire Line
+	10650 6200 6500 6200
+Wire Wire Line
+	6500 6200 6500 6800
+Wire Wire Line
+	6500 6800 4900 6800
+Connection ~ 4900 6800
+Wire Wire Line
+	10750 4000 10750 6300
+Wire Wire Line
+	10750 6300 6600 6300
+Wire Wire Line
+	9400 1150 7650 1150
+$Comp
+L OpenAmiga2000CoproAdapter-rescue:GND-power #PWR02
+U 1 1 5BD63C0E
+P 7650 5800
+F 0 "#PWR02" H 7650 5550 50  0001 C CNN
+F 1 "GND" H 7655 5627 50  0000 C CNN
+F 2 "" H 7650 5800 50  0001 C CNN
+F 3 "" H 7650 5800 50  0001 C CNN
+	1    7650 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 1600 7650 1600
+Wire Wire Line
+	7150 2300 7500 2300
+Connection ~ 7500 2300
+Wire Wire Line
+	7500 2300 7750 2300
+Wire Wire Line
+	7500 2100 7750 2100
+Wire Wire Line
+	7500 2000 7750 2000
+Wire Wire Line
+	7750 5800 7650 5800
+Wire Wire Line
+	7650 1150 7650 1600
+Connection ~ 7650 5800
+Connection ~ 7650 1600
+Wire Wire Line
+	7650 1600 7650 2200
+Wire Wire Line
+	7650 2200 7750 2200
+Connection ~ 7650 2200
+Wire Wire Line
+	7650 2200 7650 2800
+Wire Wire Line
+	7750 2800 7650 2800
+Connection ~ 7650 2800
+Wire Wire Line
+	7650 2800 7650 3400
+Wire Wire Line
+	7750 3400 7650 3400
+Connection ~ 7650 3400
+Wire Wire Line
+	7650 3400 7650 4000
+Wire Wire Line
+	7750 4000 7650 4000
+Connection ~ 7650 4000
+Wire Wire Line
+	7650 4000 7650 4600
+Wire Wire Line
+	7750 4600 7650 4600
+Connection ~ 7650 4600
+Wire Wire Line
+	7650 4600 7650 5200
+Wire Wire Line
+	7750 5200 7650 5200
+Connection ~ 7650 5200
+Wire Wire Line
+	7650 5200 7650 5800
+Wire Wire Line
+	9400 1150 9400 1600
+Wire Wire Line
+	9400 1700 9250 1700
+Wire Wire Line
+	9250 1600 9400 1600
+Connection ~ 9400 1600
+Wire Wire Line
+	9400 1600 9400 1700
+Wire Wire Line
+	9250 1800 9570 1800
+Wire Wire Line
+	9250 1900 9780 1900
+Wire Wire Line
+	9250 2100 9500 2100
+Wire Wire Line
+	9250 2000 10010 2000
+Wire Wire Line
+	9250 2200 9500 2200
+Wire Wire Line
+	9250 2300 9500 2300
+Wire Wire Line
+	9250 2400 9500 2400
+Wire Wire Line
+	9250 2500 9500 2500
+Wire Wire Line
+	9250 2600 9500 2600
+Wire Wire Line
+	9250 2700 10430 2700
+Wire Wire Line
+	9250 2800 10430 2800
+Wire Wire Line
+	9250 2900 10430 2900
+Wire Wire Line
+	9250 3000 10430 3000
+Wire Wire Line
+	9250 3100 10430 3100
+Wire Wire Line
+	9250 3200 10430 3200
+Wire Wire Line
+	9250 3300 10430 3300
+Wire Wire Line
+	9250 3400 10430 3400
+Wire Wire Line
+	9250 3500 9740 3500
+Wire Wire Line
+	9250 3600 9740 3600
+Wire Wire Line
+	9250 3700 9740 3700
+Wire Wire Line
+	9250 3800 9740 3800
+Wire Wire Line
+	9250 4100 10430 4100
+Wire Wire Line
+	9250 4200 10430 4200
+Wire Wire Line
+	9250 4300 10430 4300
+Wire Wire Line
+	9250 4400 10430 4400
+Wire Wire Line
+	9250 4500 9740 4500
+Wire Wire Line
+	9250 4600 9740 4600
+Wire Wire Line
+	9250 4700 9740 4700
+Wire Wire Line
+	9250 4800 10650 4800
+Wire Wire Line
+	9250 4900 9740 4900
+Wire Wire Line
+	9250 5000 9740 5000
+Wire Wire Line
+	9250 5100 9740 5100
+Wire Wire Line
+	9250 5200 9740 5200
+Wire Wire Line
+	9250 5300 10430 5300
+Wire Wire Line
+	9250 5400 10430 5400
+Wire Wire Line
+	9250 5500 10430 5500
+Wire Wire Line
+	9250 5600 10430 5600
+Wire Wire Line
+	9250 5700 10430 5700
+Wire Wire Line
+	9250 5800 10430 5800
 Wire Bus Line
-	6500 5600 6500 6100
-Connection ~ 6500 5600
+	5900 5300 5900 4400
 Wire Bus Line
-	6100 5300 6300 5300
+	5900 5300 5850 5300
 Wire Bus Line
-	6300 5300 6300 4400
+	5900 4400 6500 4400
 Wire Wire Line
-	5350 6200 1650 6200
+	6000 6500 4250 6500
 Wire Wire Line
-	1650 6200 1650 4200
+	6200 6100 5850 6100
 Wire Wire Line
-	1650 4200 2490 4200
+	6200 4200 7750 4200
 Wire Wire Line
-	6400 2500 6400 6200
+	6300 2150 6300 6200
 Wire Wire Line
-	6400 6200 6100 6200
-Connection ~ 7260 2500
+	6100 2050 6100 6600
 Wire Wire Line
-	7260 2500 7770 2500
+	6000 1900 7750 1900
 Wire Wire Line
-	6400 2500 7260 2500
+	6100 2050 7150 2050
+Wire Wire Line
+	6300 2150 7050 2150
+Wire Wire Line
+	6400 4100 7750 4100
+Wire Wire Line
+	4250 7300 6700 7300
+Wire Wire Line
+	6700 7300 6700 6400
+Wire Wire Line
+	6700 6400 10950 6400
+Wire Wire Line
+	10950 6400 10950 3900
+Wire Wire Line
+	9250 3900 10950 3900
+Wire Wire Line
+	9250 4000 10750 4000
+Wire Wire Line
+	5100 5600 4500 5600
+Wire Wire Line
+	4500 5500 5100 5500
+Wire Wire Line
+	4500 5400 5100 5400
+Wire Wire Line
+	4500 5300 4600 5300
+Wire Wire Line
+	4900 1200 4500 1200
+Wire Wire Line
+	4900 1300 4500 1300
+Wire Wire Line
+	4900 1400 4500 1400
+Wire Wire Line
+	4900 1500 4500 1500
+Wire Wire Line
+	4900 1600 4500 1600
+Wire Wire Line
+	4900 1700 4500 1700
+Wire Wire Line
+	4900 1800 4500 1800
+Wire Wire Line
+	4900 1900 4500 1900
+Wire Wire Line
+	4900 2000 4500 2000
+Wire Wire Line
+	4900 2100 4500 2100
+Wire Wire Line
+	4900 2200 4500 2200
+Wire Wire Line
+	4900 2300 4500 2300
+Wire Wire Line
+	4900 2400 4500 2400
+Wire Wire Line
+	4900 2500 4500 2500
+Wire Wire Line
+	4900 2600 4500 2600
+Wire Wire Line
+	4900 2700 4500 2700
+Wire Wire Line
+	4900 2800 4500 2800
+Wire Wire Line
+	4900 2900 4500 2900
+Wire Wire Line
+	4900 3000 4500 3000
+Wire Wire Line
+	4900 3100 4500 3100
+Wire Wire Line
+	4900 3200 4500 3200
+Wire Wire Line
+	4900 3300 4500 3300
+Wire Wire Line
+	4900 3400 4500 3400
+Wire Wire Line
+	4500 3600 4900 3600
+Wire Wire Line
+	4500 3700 4900 3700
+Wire Wire Line
+	4500 3800 4900 3800
+Wire Wire Line
+	4500 3900 4900 3900
+Wire Wire Line
+	4500 4000 4900 4000
+Wire Wire Line
+	4500 4100 4900 4100
+Wire Wire Line
+	4500 4200 4900 4200
+Wire Wire Line
+	4500 4300 4900 4300
+Wire Wire Line
+	4500 4400 4900 4400
+Wire Wire Line
+	4500 4500 4900 4500
+Wire Wire Line
+	4500 4600 4900 4600
+Wire Wire Line
+	4500 4700 4900 4700
+Wire Wire Line
+	4500 4800 4900 4800
+Wire Wire Line
+	4500 4900 4900 4900
+Wire Wire Line
+	4500 5000 4900 5000
+Wire Wire Line
+	4500 5100 4900 5100
+Wire Wire Line
+	2180 1500 2500 1500
+Wire Wire Line
+	2180 1700 2500 1700
+Wire Wire Line
+	2180 1600 2500 1600
+Wire Wire Line
+	2180 1900 2500 1900
+Wire Wire Line
+	2180 2100 2500 2100
+Wire Wire Line
+	2180 2000 2500 2000
+Wire Wire Line
+	1910 2400 2500 2400
+Wire Wire Line
+	1170 2600 2500 2600
+Wire Wire Line
+	1530 2500 2500 2500
+Wire Wire Line
+	2950 6800 2850 6800
+Wire Wire Line
+	2850 6800 2850 6250
+Wire Wire Line
+	2850 6250 4600 6250
+Wire Wire Line
+	4600 6250 4600 5300
+Connection ~ 4600 5300
+Wire Wire Line
+	4600 5300 5100 5300
+Wire Wire Line
+	2950 6900 2050 6900
+Wire Wire Line
+	2050 6900 2050 4200
+Wire Wire Line
+	2180 4000 2500 4000
+Wire Wire Line
+	2050 4200 2500 4200
+Wire Wire Line
+	2180 4600 2500 4600
+Wire Wire Line
+	2180 4700 2500 4700
+Wire Wire Line
+	1950 3100 2500 3100
+Wire Wire Line
+	6400 4100 6400 7100
+Wire Wire Line
+	6600 6300 6600 7200
+Wire Wire Line
+	6400 7100 4250 7100
+Wire Wire Line
+	4250 7200 6600 7200
+Wire Wire Line
+	2950 7300 1950 7300
+Wire Wire Line
+	1950 3100 1950 7300
+Wire Wire Line
+	2950 7200 1850 7200
+Wire Wire Line
+	1850 7200 1850 3000
+Wire Wire Line
+	1850 3000 2500 3000
+Wire Wire Line
+	1750 2900 1750 7100
+Wire Wire Line
+	1750 7100 2950 7100
+Wire Wire Line
+	1750 2900 2500 2900
+Wire Wire Line
+	750  1200 750  6500
+Wire Wire Line
+	750  1200 2500 1200
+Wire Wire Line
+	750  6500 2950 6500
 Wire Bus Line
-	6500 4600 6500 5200
-Wire Bus Line
-	6500 5200 6500 5600
+	6500 5400 6500 6100
 Wire Bus Line
 	5000 4600 5000 5200
+Wire Bus Line
+	6500 4600 6500 5400
 Wire Bus Line
 	10530 5390 10530 6100
 Wire Bus Line
