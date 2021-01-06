@@ -1159,10 +1159,10 @@ Wire Wire Line
 	3550 6000 3550 5920
 Connection ~ 3550 5920
 $Comp
-L device:CP C1
+L device:CP C30
 U 1 1 60C785AA
 P 650 7400
-F 0 "C1" H 768 7446 50  0000 L CNN
+F 0 "C30" H 768 7446 50  0000 L CNN
 F 1 "47uF" H 700 7300 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 688 7250 50  0001 C CNN
 F 3 "~" H 650 7400 50  0001 C CNN
@@ -1283,6 +1283,22 @@ Wire Wire Line
 	9250 5100 9750 5100
 Wire Wire Line
 	9250 5200 9750 5200
+$Comp
+L device:C C1
+U 1 1 601C897C
+P 1700 7400
+F 0 "C1" H 1815 7446 50  0000 L CNN
+F 1 "100nF" H 1815 7355 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm" H 1738 7250 50  0001 C CNN
+F 3 "~" H 1700 7400 50  0001 C CNN
+	1    1700 7400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 7250 1350 7250
+Connection ~ 1350 7250
+Wire Wire Line
+	1350 7550 1700 7550
 Wire Bus Line
 	6500 5400 6500 6100
 Wire Bus Line
@@ -1299,4 +1315,5 @@ Wire Bus Line
 	5000 3700 5000 4600
 Wire Bus Line
 	5000 900  5000 3510
+Connection ~ 1350 7550
 $EndSCHEMATC
