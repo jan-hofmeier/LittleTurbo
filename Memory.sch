@@ -775,17 +775,6 @@ F 3 "https://www.alliancememory.com/wp-content/uploads/pdf/AS6C4008.pdf" H 9800 
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74:74HCT00 U6
-U 2 1 6060E41B
-P 1750 4350
-F 0 "U6" H 1750 4350 50  0000 C CNN
-F 1 "74HCT00" H 2050 4250 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 1750 4350 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 1750 4350 50  0001 C CNN
-	2    1750 4350
-	1    0    0    -1  
-$EndComp
-$Comp
 L OpenAmiga2000CoproAdapter-rescue:+5V-power #PWR?
 U 1 1 6067C8FD
 P 1650 1800
@@ -865,71 +854,49 @@ Text Label 5800 3700 0    50   ~ 0
 $Comp
 L 74:74LS32 U8
 U 1 1 60B2651E
-P 3100 1200
-F 0 "U8" H 3100 1200 50  0000 C CNN
-F 1 "74HCT32" H 3400 1050 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 3100 1200 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3100 1200 50  0001 C CNN
-	1    3100 1200
+P 3100 2400
+F 0 "U8" H 3100 2400 50  0000 C CNN
+F 1 "74HCT32" H 3400 2250 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 3100 2400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3100 2400 50  0001 C CNN
+	1    3100 2400
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74:74LS32 U8
 U 2 1 60B29F36
+P 3100 1200
+F 0 "U8" H 3100 1200 50  0000 C CNN
+F 1 "74HCT32" H 3400 1050 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 3100 1200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3100 1200 50  0001 C CNN
+	2    3100 1200
+	1    0    0    1   
+$EndComp
+$Comp
+L 74:74LS32 U8
+U 3 1 60B2EDFB
 P 3100 1600
 F 0 "U8" H 3100 1600 50  0000 C CNN
 F 1 "74HCT32" H 3400 1450 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm" H 3100 1600 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3100 1600 50  0001 C CNN
-	2    3100 1600
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74:74LS32 U8
-U 3 1 60B2EDFB
-P 3100 2000
-F 0 "U8" H 3100 2000 50  0000 C CNN
-F 1 "74HCT32" H 3400 1850 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 3100 2000 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3100 2000 50  0001 C CNN
-	3    3100 2000
+	3    3100 1600
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74:74LS32 U8
 U 4 1 60B31ECD
-P 3100 2400
-F 0 "U8" H 3100 2400 50  0000 C CNN
-F 1 "74HCT32" H 3400 2300 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 3100 2400 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3100 2400 50  0001 C CNN
-	4    3100 2400
+P 3100 2000
+F 0 "U8" H 3100 2000 50  0000 C CNN
+F 1 "74HCT32" H 3400 1900 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 3100 2000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3100 2000 50  0001 C CNN
+	4    3100 2000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	6600 4550 6900 4550
-$Comp
-L 74:74HCT00 U6
-U 1 1 6045B2B3
-P 2250 3000
-F 0 "U6" H 2250 3000 50  0000 C CNN
-F 1 "74HCT00" H 2250 3234 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 2250 3000 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 2250 3000 50  0001 C CNN
-	1    2250 3000
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74:74LS32 U7
-U 1 1 6046BC9D
-P 3150 3100
-F 0 "U7" H 3150 3100 50  0000 C CNN
-F 1 "74HCT32" H 3150 3334 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 3150 3100 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3150 3100 50  0001 C CNN
-	1    3150 3100
-	1    0    0    -1  
-$EndComp
 $Comp
 L 74:74LS32 U7
 U 2 1 604700BB
@@ -966,10 +933,6 @@ Wire Wire Line
 	2700 1100 2700 1500
 Wire Wire Line
 	2350 1700 2500 1700
-Wire Wire Line
-	2600 1300 2600 2100
-Wire Wire Line
-	2600 2100 2800 2100
 Connection ~ 2600 1300
 Wire Wire Line
 	2600 1300 2800 1300
@@ -980,13 +943,6 @@ Wire Wire Line
 Connection ~ 2500 1700
 Wire Wire Line
 	2500 1700 2800 1700
-Wire Wire Line
-	2800 1900 2700 1900
-Wire Wire Line
-	2700 1900 2700 2300
-Wire Wire Line
-	2700 2300 2800 2300
-Connection ~ 2700 2300
 Text Label 2350 1300 0    50   ~ 0
 WE
 Text Label 2350 1700 0    50   ~ 0
@@ -1104,17 +1060,15 @@ Text Label 1150 3300 0    50   ~ 0
 a20
 Text Label 3450 3200 0    50   ~ 0
 ~CRAM
-Wire Wire Line
-	3450 3100 3550 3100
 $Comp
 L 74:74HCT00 U6
 U 4 1 61935EB2
-P 4400 1450
-F 0 "U6" H 4400 1775 50  0000 C CNN
-F 1 "74HCT00" H 4400 1684 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 4400 1450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 4400 1450 50  0001 C CNN
-	4    4400 1450
+P 1750 4350
+F 0 "U6" H 1750 4675 50  0000 C CNN
+F 1 "74HCT00" H 1750 4584 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 1750 4350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 1750 4350 50  0001 C CNN
+	4    1750 4350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1593,12 +1547,12 @@ $EndComp
 $Comp
 L 74:74HCT00 U6
 U 3 1 61932778
-P 2050 1700
-F 0 "U6" H 2050 1700 50  0000 C CNN
-F 1 "74HCT00" H 2050 1384 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 2050 1700 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 2050 1700 50  0001 C CNN
-	3    2050 1700
+P 2250 3000
+F 0 "U6" H 2250 3000 50  0000 C CNN
+F 1 "74HCT00" H 2250 2684 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 2250 3000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 2250 3000 50  0001 C CNN
+	3    2250 3000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1612,17 +1566,6 @@ F 1 "+5V" H 4050 3450 50  0000 C CNN
 F 2 "" H 4150 3400 50  0001 C CNN
 F 3 "" H 4150 3400 50  0001 C CNN
 	1    4150 3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74:74LS32 U7
-U 3 1 61F2F925
-P 3850 3600
-F 0 "U7" H 3850 3600 50  0000 C CNN
-F 1 "74HCT32" H 4100 3450 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 3850 3600 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3850 3600 50  0001 C CNN
-	3    3850 3600
 	1    0    0    -1  
 $EndComp
 Text Label 4750 3900 2    50   ~ 0
@@ -1782,8 +1725,6 @@ $EndComp
 Wire Wire Line
 	700  1100 2700 1100
 Wire Wire Line
-	700  2300 2700 2300
-Wire Wire Line
 	650  1300 850  1300
 Wire Wire Line
 	5150 3050 5150 3200
@@ -1811,13 +1752,6 @@ F 3 "~" H 2950 3450 50  0001 C CNN
 	1    2950 3450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1050 3300 3200 3300
-Wire Wire Line
-	3200 3450 3200 3300
-Connection ~ 3200 3300
-Wire Wire Line
-	3200 3300 3550 3300
 Wire Wire Line
 	2700 3450 2700 4200
 Connection ~ 2700 4200
@@ -1921,12 +1855,12 @@ Wire Wire Line
 $Comp
 L 74:74LS32 U7
 U 4 1 6050398D
-P 3250 4100
-F 0 "U7" H 3250 4100 50  0000 C CNN
-F 1 "74HCT32" H 3250 3900 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 3250 4100 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3250 4100 50  0001 C CNN
-	4    3250 4100
+P 3150 3100
+F 0 "U7" H 3150 3100 50  0000 C CNN
+F 1 "74HCT32" H 3150 3300 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 3150 3100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3150 3100 50  0001 C CNN
+	4    3150 3100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2367,6 +2301,61 @@ Wire Wire Line
 Connection ~ 5500 6500
 Wire Wire Line
 	5500 6500 5850 6500
+Wire Wire Line
+	3450 3100 3550 3100
+$Comp
+L 74:74LS32 U7
+U 3 1 61F2F925
+P 3250 4100
+F 0 "U7" H 3250 4100 50  0000 C CNN
+F 1 "74HCT32" H 3500 3950 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 3250 4100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3250 4100 50  0001 C CNN
+	3    3250 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74:74HCT00 U6
+U 2 1 6060E41B
+P 4400 1450
+F 0 "U6" H 4400 1450 50  0000 C CNN
+F 1 "74HCT00" H 4700 1350 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 4400 1450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 4400 1450 50  0001 C CNN
+	2    4400 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74:74HCT00 U6
+U 1 1 6045B2B3
+P 2050 1700
+F 0 "U6" H 2050 1700 50  0000 C CNN
+F 1 "74HCT00" H 2050 1934 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 2050 1700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 2050 1700 50  0001 C CNN
+	1    2050 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 1900 2800 1900
+Wire Wire Line
+	2600 1300 2600 1900
+Wire Wire Line
+	3200 3300 3550 3300
+Wire Wire Line
+	1050 3300 3200 3300
+Connection ~ 3200 3300
+Wire Wire Line
+	3200 3450 3200 3300
+Wire Wire Line
+	2800 2100 2600 2100
+Wire Wire Line
+	2600 2100 2600 2300
+Wire Wire Line
+	700  2300 2600 2300
+Wire Wire Line
+	2600 2300 2800 2300
+Connection ~ 2600 2300
 Wire Bus Line
 	950  2700 950  4350
 Wire Bus Line
@@ -2379,4 +2368,15 @@ Wire Bus Line
 	6500 600  6500 2700
 Wire Bus Line
 	8900 600  8900 5950
+$Comp
+L 74:74LS32 U7
+U 1 1 6046BC9D
+P 3850 3600
+F 0 "U7" H 3850 3600 50  0000 C CNN
+F 1 "74HCT32" H 3850 3834 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 3850 3600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3850 3600 50  0001 C CNN
+	1    3850 3600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
