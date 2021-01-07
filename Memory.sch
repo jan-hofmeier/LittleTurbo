@@ -2093,7 +2093,7 @@ F 1 "100nF" H 8600 800 50  0000 C CNN
 F 2 "Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm" H 8488 750 50  0001 C CNN
 F 3 "~" H 8450 900 50  0001 C CNN
 	1    8450 900 
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	8450 750  7400 750 
