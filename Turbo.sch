@@ -27,7 +27,7 @@ Text HLabel 7800 1200 2    50   Output ~ 0
 ~VMA_BUS
 Text HLabel 7800 1500 2    50   Output ~ 0
 ~VPA_CPU
-Text HLabel 7800 3400 2    50   Output ~ 0
+Text HLabel 7800 4000 2    50   Output ~ 0
 ~DTACK_CPU
 Text HLabel 1150 3700 0    50   Input ~ 0
 ~DTACK_FAST
@@ -35,17 +35,6 @@ Text HLabel 7800 1800 2    50   Output ~ 0
 E_BUS
 Text HLabel 1000 2000 0    50   Input ~ 0
 E_CPU
-$Comp
-L 74:74HC86 U14
-U 3 1 606BF6DE
-P 1650 4700
-F 0 "U14" H 1650 4700 50  0000 C CNN
-F 1 "74F86" H 1650 4934 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 1650 4700 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74HC86" H 1650 4700 50  0001 C CNN
-	3    1650 4700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1050 4600 1250 4600
 Wire Wire Line
@@ -140,13 +129,13 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 5550 730
 $EndComp
 $Comp
 L 74:74HCT04 U16
-U 6 1 606DFD1C
+U 2 1 606DFD1C
 P 1650 4150
 F 0 "U16" H 1600 4150 50  0000 C CNN
 F 1 "74HCT04" H 1650 4376 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm" H 1650 4150 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 1650 4150 50  0001 C CNN
-	6    1650 4150
+	2    1650 4150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -524,18 +513,12 @@ Wire Wire Line
 Wire Wire Line
 	2200 1900 6800 1900
 Wire Wire Line
-	4550 3500 6800 3500
+	4550 3500 6600 3500
 Wire Wire Line
 	4550 3800 6800 3800
 Wire Wire Line
 	4550 3800 4550 4700
-Wire Wire Line
-	6800 4000 6800 4100
 Connection ~ 6800 4700
-Connection ~ 6800 4100
-Wire Wire Line
-	6800 4100 6800 4300
-Connection ~ 6800 4300
 Wire Wire Line
 	6800 4300 6800 4400
 Connection ~ 6800 4400
@@ -610,7 +593,7 @@ Wire Wire Line
 	1250 4150 1250 4600
 Text HLabel 6800 3700 0    50   Input ~ 0
 7M
-Text HLabel 6800 3400 0    50   Input ~ 0
+Text HLabel 6800 4100 0    50   Input ~ 0
 ~DTACK_BUS
 Text HLabel 6800 1500 0    50   Input ~ 0
 ~VPA_BUS
@@ -761,12 +744,12 @@ $EndComp
 $Comp
 L device:C_Small C19
 U 1 1 5FFA80E0
-P 6050 4050
-F 0 "C19" H 6142 4096 50  0000 L CNN
-F 1 "100nF" H 6142 4005 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm" H 6050 4050 50  0001 C CNN
-F 3 "~" H 6050 4050 50  0001 C CNN
-	1    6050 4050
+P 6050 3200
+F 0 "C19" H 6142 3246 50  0000 L CNN
+F 1 "100nF" H 6142 3155 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm" H 6050 3200 50  0001 C CNN
+F 3 "~" H 6050 3200 50  0001 C CNN
+	1    6050 3200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -781,15 +764,11 @@ Wire Wire Line
 Wire Wire Line
 	5000 2400 6800 2400
 Wire Wire Line
-	6050 4150 6050 5000
-Wire Wire Line
 	6050 5000 6800 5000
 Connection ~ 6800 5000
 Wire Wire Line
 	7300 3100 6050 3100
 Connection ~ 7300 3100
-Wire Wire Line
-	6050 3100 6050 3950
 Wire Wire Line
 	6350 1600 6350 1300
 Connection ~ 6350 1600
@@ -809,4 +788,31 @@ Wire Wire Line
 Wire Wire Line
 	6050 2800 6800 2800
 Connection ~ 6800 2800
+$Comp
+L 74:74HC86 U?
+U 2 1 6045D239
+P 1650 4700
+AR Path="/6068F728/6045D239" Ref="U?"  Part="2" 
+AR Path="/606B7AE6/6045D239" Ref="U14"  Part="2" 
+F 0 "U14" H 1650 4700 50  0000 C CNN
+F 1 "74F86" H 1650 4934 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 1650 4700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC86" H 1650 4700 50  0001 C CNN
+	2    1650 4700
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6800 4000 6600 4000
+Wire Wire Line
+	6600 4000 6600 3500
+Wire Wire Line
+	6050 3300 6050 3400
+Wire Wire Line
+	6050 3400 6800 3400
+Connection ~ 6050 3400
+Wire Wire Line
+	6050 3400 6050 5000
+Wire Wire Line
+	6800 3500 6800 3400
+Connection ~ 6800 3400
 $EndSCHEMATC
