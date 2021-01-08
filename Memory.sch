@@ -1414,17 +1414,6 @@ Wire Wire Line
 	2400 5250 2400 4750
 Text HLabel 700  5250 0    50   Input ~ 0
 ~RST
-$Comp
-L jumper:Jumper_2_Open JP4
-U 1 1 61B4D40B
-P 1850 5950
-F 0 "JP4" H 1850 6185 50  0000 C CNN
-F 1 "ROMEMUW~R" H 1850 6094 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1850 5950 50  0001 C CNN
-F 3 "~" H 1850 5950 50  0001 C CNN
-	1    1850 5950
-	1    0    0    -1  
-$EndComp
 Text Label 1650 5400 3    50   ~ 0
 ROM~R~W
 $Comp
@@ -1534,17 +1523,6 @@ Text Label 4750 3900 2    50   ~ 0
 CSROM
 $Comp
 L 74:74LS27 U12
-U 3 1 61CF43AC
-P 4150 4100
-F 0 "U12" H 4150 4100 50  0000 C CNN
-F 1 "74HCT27" H 4150 4300 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 4150 4100 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS27" H 4150 4100 50  0001 C CNN
-	3    4150 4100
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74:74LS27 U12
 U 4 1 61F7261E
 P 4750 7000
 F 0 "U12" H 4650 7050 50  0000 L CNN
@@ -1645,17 +1623,6 @@ Wire Wire Line
 	5750 3500 5750 3700
 Wire Wire Line
 	1050 4450 1450 4450
-$Comp
-L jumper:Jumper_2_Open JP7
-U 1 1 601E25A4
-P 5550 3700
-F 0 "JP7" H 5550 3800 50  0000 C CNN
-F 1 "ROMEMU" H 5550 3600 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5550 3700 50  0001 C CNN
-F 3 "~" H 5550 3700 50  0001 C CNN
-	1    5550 3700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5350 3700 5350 3900
 $Comp
@@ -2342,6 +2309,28 @@ F 3 "http://www.ti.com/lit/gpn/sn74HC86" H 3800 5850 50  0001 C CNN
 	3    3800 5850
 	1    0    0    -1  
 $EndComp
+$Comp
+L 74:74LS27 U12
+U 1 1 61CF43AC
+P 4150 4100
+F 0 "U12" H 4150 4100 50  0000 C CNN
+F 1 "74HCT27" H 4150 4300 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 4150 4100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS27" H 4150 4100 50  0001 C CNN
+	1    4150 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L jumper:Jumper_2_Open JP7
+U 1 1 601E25A4
+P 5550 3700
+F 0 "JP7" H 5550 3800 50  0000 C CNN
+F 1 "ROMEMU" H 5550 3600 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5550 3700 50  0001 C CNN
+F 3 "~" H 5550 3700 50  0001 C CNN
+	1    5550 3700
+	1    0    0    -1  
+$EndComp
 Wire Bus Line
 	950  2700 950  4350
 Wire Bus Line
@@ -2349,9 +2338,20 @@ Wire Bus Line
 Wire Bus Line
 	8300 1050 8300 6450
 Wire Bus Line
-	6500 2700 6500 5950
-Wire Bus Line
 	6500 600  6500 2700
 Wire Bus Line
 	8900 600  8900 5950
+Wire Bus Line
+	6500 2700 6500 5950
+$Comp
+L jumper:Jumper_2_Open JP4
+U 1 1 61B4D40B
+P 1850 5950
+F 0 "JP4" H 1850 6185 50  0000 C CNN
+F 1 "ROMEMUW~R" H 1850 6094 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1850 5950 50  0001 C CNN
+F 3 "~" H 1850 5950 50  0001 C CNN
+	1    1850 5950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

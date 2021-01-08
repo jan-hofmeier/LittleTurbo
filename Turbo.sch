@@ -23,11 +23,11 @@ Text HLabel 1000 1000 0    50   Input ~ 0
 ~VPA_BUS
 Text HLabel 1050 2750 0    50   Input ~ 0
 ~AS
-Text HLabel 7800 1200 2    50   Output ~ 0
+Text HLabel 7800 3400 2    50   Output ~ 0
 ~VMA_BUS
-Text HLabel 7800 1500 2    50   Output ~ 0
+Text HLabel 7800 4300 2    50   Output ~ 0
 ~VPA_CPU
-Text HLabel 7800 4000 2    50   Output ~ 0
+Text HLabel 7800 3700 2    50   Output ~ 0
 ~DTACK_CPU
 Text HLabel 1150 3700 0    50   Input ~ 0
 ~DTACK_FAST
@@ -97,23 +97,23 @@ $EndComp
 $Comp
 L 74:74HCT04 U16
 U 3 1 606DDE8E
-P 1650 3100
-F 0 "U16" H 1600 3100 50  0000 C CNN
-F 1 "74HCT04" H 1650 3326 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 1650 3100 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 1650 3100 50  0001 C CNN
-	3    1650 3100
+P 1650 4150
+F 0 "U16" H 1600 4150 50  0000 C CNN
+F 1 "74HCT04" H 1650 4376 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 1650 4150 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 1650 4150 50  0001 C CNN
+	3    1650 4150
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74:74HCT04 U16
 U 4 1 606DE635
-P 5550 6800
-F 0 "U16" H 5550 7117 50  0000 C CNN
-F 1 "74HCT04" H 5550 7026 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 5550 6800 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 5550 6800 50  0001 C CNN
-	4    5550 6800
+P 1650 3100
+F 0 "U16" H 1650 3417 50  0000 C CNN
+F 1 "74HCT04" H 1650 3326 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 1650 3100 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 1650 3100 50  0001 C CNN
+	4    1650 3100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -130,23 +130,23 @@ $EndComp
 $Comp
 L 74:74HCT04 U16
 U 2 1 606DFD1C
-P 1650 4150
-F 0 "U16" H 1600 4150 50  0000 C CNN
-F 1 "74HCT04" H 1650 4376 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 1650 4150 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 1650 4150 50  0001 C CNN
-	2    1650 4150
+P 5550 6800
+F 0 "U16" H 5500 6800 50  0000 C CNN
+F 1 "74HCT04" H 5550 7026 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 5550 6800 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 5550 6800 50  0001 C CNN
+	2    5550 6800
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74:74LS27 U12
-U 1 1 606E87B7
+U 3 1 606E87B7
 P 3450 3200
 F 0 "U12" H 3450 3200 50  0000 C CNN
 F 1 "74HCT27" H 3500 3400 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm" H 3450 3200 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS27" H 3450 3200 50  0001 C CNN
-	1    3450 3200
+	3    3450 3200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -487,7 +487,7 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS157" H 7300 4000 50  0001 C CNN
 $EndComp
 Text Label 2100 4700 0    50   ~ 0
 14M
-Text HLabel 7800 3700 2    50   Output ~ 0
+Text HLabel 7800 4000 2    50   Output ~ 0
 CLK_CPU
 Wire Wire Line
 	1950 4700 4550 4700
@@ -513,21 +513,11 @@ Wire Wire Line
 Wire Wire Line
 	2200 1900 6800 1900
 Wire Wire Line
-	4550 3500 6600 3500
-Wire Wire Line
-	4550 3800 6800 3800
-Wire Wire Line
-	4550 3800 4550 4700
-Connection ~ 6800 4700
-Wire Wire Line
-	6800 4300 6800 4400
-Connection ~ 6800 4400
+	4550 3500 5450 3500
 Wire Wire Line
 	6800 2100 6800 2200
 Connection ~ 6800 2500
 Connection ~ 6800 2200
-Wire Wire Line
-	6800 4400 6800 4700
 Wire Wire Line
 	6800 2200 6800 2500
 $Comp
@@ -591,13 +581,11 @@ Text HLabel 6800 1800 0    50   Input ~ 0
 E_CPU
 Wire Wire Line
 	1250 4150 1250 4600
-Text HLabel 6800 3700 0    50   Input ~ 0
+Text HLabel 6800 4000 0    50   Input ~ 0
 7M
-Text HLabel 6800 4100 0    50   Input ~ 0
+Text HLabel 6800 3700 0    50   Input ~ 0
 ~DTACK_BUS
-Text HLabel 6800 1500 0    50   Input ~ 0
-~VPA_BUS
-Text HLabel 6800 1200 0    50   Input ~ 0
+Text HLabel 6800 3400 0    50   Input ~ 0
 ~VMA_CPU
 $Comp
 L OpenAmiga2000CoproAdapter-rescue:+5V-power #PWR?
@@ -770,13 +758,6 @@ Wire Wire Line
 	7300 3100 6050 3100
 Connection ~ 7300 3100
 Wire Wire Line
-	6350 1600 6350 1300
-Connection ~ 6350 1600
-Wire Wire Line
-	6350 1600 6800 1600
-Wire Wire Line
-	6350 1300 6800 1300
-Wire Wire Line
 	3400 1600 6350 1600
 Wire Wire Line
 	6050 1250 6050 900 
@@ -784,7 +765,7 @@ Wire Wire Line
 	6050 900  7300 900 
 Connection ~ 7300 900 
 Wire Wire Line
-	6050 1450 6050 2800
+	6050 1450 6050 1500
 Wire Wire Line
 	6050 2800 6800 2800
 Connection ~ 6800 2800
@@ -802,17 +783,49 @@ F 3 "http://www.ti.com/lit/gpn/sn74HC86" H 1650 4700 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 Wire Wire Line
-	6800 4000 6600 4000
+	6800 4100 4550 4100
 Wire Wire Line
-	6600 4000 6600 3500
+	4550 4100 4550 4700
 Wire Wire Line
-	6050 3300 6050 3400
+	5450 3800 5450 3500
 Wire Wire Line
-	6050 3400 6800 3400
-Connection ~ 6050 3400
+	5450 3800 6800 3800
+Text HLabel 6800 4300 0    50   Input ~ 0
+~VPA_BUS
 Wire Wire Line
-	6050 3400 6050 5000
+	6050 3300 6050 5000
 Wire Wire Line
-	6800 3500 6800 3400
-Connection ~ 6800 3400
+	6050 1500 6350 1500
+Wire Wire Line
+	6350 1500 6350 1300
+Wire Wire Line
+	6350 1300 6700 1300
+Connection ~ 6050 1500
+Wire Wire Line
+	6050 1500 6050 2800
+Wire Wire Line
+	6800 1200 6700 1200
+Wire Wire Line
+	6700 1200 6700 1300
+Connection ~ 6700 1300
+Wire Wire Line
+	6700 1300 6800 1300
+Wire Wire Line
+	6350 3500 6800 3500
+Wire Wire Line
+	6350 1600 6350 3500
+Wire Wire Line
+	6350 3500 6350 4400
+Wire Wire Line
+	6350 4400 6800 4400
+Connection ~ 6350 3500
+Wire Wire Line
+	6700 1300 6700 1500
+Wire Wire Line
+	6700 1500 6800 1500
+Wire Wire Line
+	6700 1500 6700 1600
+Wire Wire Line
+	6700 1600 6800 1600
+Connection ~ 6700 1500
 $EndSCHEMATC
