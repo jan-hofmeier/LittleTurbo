@@ -1330,22 +1330,6 @@ Wire Wire Line
 	1100 5150 1450 5150
 Wire Wire Line
 	1450 5150 1450 5500
-Wire Bus Line
-	6500 5400 6500 6100
-Wire Bus Line
-	5000 4600 5000 5200
-Wire Bus Line
-	6500 4600 6500 5400
-Wire Bus Line
-	10530 5390 10530 6100
-Wire Bus Line
-	10530 900  10530 4500
-Wire Bus Line
-	6500 900  6500 4400
-Wire Bus Line
-	5000 3700 5000 4600
-Wire Bus Line
-	5000 900  5000 3510
 $Comp
 L OpenAmiga2000CoproAdapter-rescue:+5V-power #PWR0116
 U 1 1 6065E404
@@ -1370,4 +1354,20 @@ F 3 "" H 1100 6150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 1100 6150
+Wire Bus Line
+	6500 5400 6500 6100
+Wire Bus Line
+	5000 4600 5000 5200
+Wire Bus Line
+	6500 4600 6500 5400
+Wire Bus Line
+	10530 5390 10530 6100
+Wire Bus Line
+	10530 900  10530 4500
+Wire Bus Line
+	6500 900  6500 4400
+Wire Bus Line
+	5000 3700 5000 4600
+Wire Bus Line
+	5000 900  5000 3510
 $EndSCHEMATC

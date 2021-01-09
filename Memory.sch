@@ -1824,7 +1824,7 @@ F 1 "Turbo_ROM" H 5900 500 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5900 600 50  0001 C CNN
 F 3 "~" H 5900 600 50  0001 C CNN
 	1    5900 600 
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L jumper:Jumper_2_Open JP10
@@ -1835,7 +1835,7 @@ F 1 "Turbo_SRAM" H 5900 850 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5900 1000 50  0001 C CNN
 F 3 "~" H 5900 1000 50  0001 C CNN
 	1    5900 1000
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Text Notes 1050 5600 0    50   ~ 0
 74F is only \nrequired \nfor Turbo
@@ -2331,18 +2331,6 @@ F 3 "~" H 5550 3700 50  0001 C CNN
 	1    5550 3700
 	1    0    0    -1  
 $EndComp
-Wire Bus Line
-	950  2700 950  4350
-Wire Bus Line
-	10700 1050 10700 6450
-Wire Bus Line
-	8300 1050 8300 6450
-Wire Bus Line
-	6500 600  6500 2700
-Wire Bus Line
-	8900 600  8900 5950
-Wire Bus Line
-	6500 2700 6500 5950
 $Comp
 L jumper:Jumper_2_Open JP4
 U 1 1 61B4D40B
@@ -2352,6 +2340,18 @@ F 1 "ROMEMUW~R" H 1850 6094 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1850 5950 50  0001 C CNN
 F 3 "~" H 1850 5950 50  0001 C CNN
 	1    1850 5950
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
+Wire Bus Line
+	950  2700 950  4350
+Wire Bus Line
+	10700 1050 10700 6450
+Wire Bus Line
+	8300 1050 8300 6450
+Wire Bus Line
+	6500 2700 6500 5950
+Wire Bus Line
+	6500 600  6500 2700
+Wire Bus Line
+	8900 600  8900 5950
 $EndSCHEMATC
