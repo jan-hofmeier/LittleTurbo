@@ -118,17 +118,6 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 1650 310
 $EndComp
 $Comp
 L 74:74HCT04 U16
-U 5 1 606DF27D
-P 5550 7300
-F 0 "U16" H 5550 7617 50  0000 C CNN
-F 1 "74HCT04" H 5550 7526 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 5550 7300 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 5550 7300 50  0001 C CNN
-	5    5550 7300
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74:74HCT04 U16
 U 2 1 606DFD1C
 P 5550 6800
 F 0 "U16" H 5500 6800 50  0000 C CNN
@@ -713,11 +702,6 @@ F 3 "" H 5250 7500 50  0001 C CNN
 	1    5250 7500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5250 7500 5250 7300
-Connection ~ 5250 7300
-Wire Wire Line
-	5250 7300 5250 6800
 $Comp
 L device:C_Small C18
 U 1 1 5FFA6B9B
@@ -828,4 +812,6 @@ Wire Wire Line
 Wire Wire Line
 	6700 1600 6800 1600
 Connection ~ 6700 1500
+Wire Wire Line
+	5250 6800 5250 7500
 $EndSCHEMATC
