@@ -1159,7 +1159,7 @@ Wire Wire Line
 	3550 6000 3550 5920
 Connection ~ 3550 5920
 $Comp
-L device:CP C103
+L OpenAmiga2000CoproAdapter-rescue:CP-device C103
 U 1 1 60C785AA
 P 650 7400
 F 0 "C103" H 768 7446 50  0000 L CNN
@@ -1170,7 +1170,7 @@ F 3 "~" H 650 7400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:CP C102
+L OpenAmiga2000CoproAdapter-rescue:CP-device C102
 U 1 1 60C796C0
 P 1350 7400
 F 0 "C102" H 1468 7446 50  0000 L CNN
@@ -1181,7 +1181,7 @@ F 3 "~" H 1350 7400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:CP C101
+L OpenAmiga2000CoproAdapter-rescue:CP-device C101
 U 1 1 60C79EDB
 P 1000 7400
 F 0 "C101" H 1118 7446 50  0000 L CNN
