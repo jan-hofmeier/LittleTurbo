@@ -117,17 +117,6 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 1650 310
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74:74HCT04 U16
-U 2 1 606DFD1C
-P 5550 6800
-F 0 "U16" H 5500 6800 50  0000 C CNN
-F 1 "74HCT04" H 5550 7026 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 5550 6800 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 5550 6800 50  0001 C CNN
-	2    5550 6800
-	1    0    0    -1  
-$EndComp
-$Comp
 L 74:74LS27 U12
 U 3 1 606E87B7
 P 3450 3200
@@ -689,20 +678,6 @@ Wire Wire Line
 	3750 6500 3450 6500
 Connection ~ 3450 6500
 $Comp
-L OpenAmiga2000CoproAdapter-rescue:GND-power #PWR?
-U 1 1 5FFA19F1
-P 5250 7500
-AR Path="/5FFA19F1" Ref="#PWR?"  Part="1" 
-AR Path="/6068F728/5FFA19F1" Ref="#PWR?"  Part="1" 
-AR Path="/606B7AE6/5FFA19F1" Ref="#PWR0141"  Part="1" 
-F 0 "#PWR0141" H 5250 7250 50  0001 C CNN
-F 1 "GND" H 5255 7327 50  0000 C CNN
-F 2 "" H 5250 7500 50  0001 C CNN
-F 3 "" H 5250 7500 50  0001 C CNN
-	1    5250 7500
-	1    0    0    -1  
-$EndComp
-$Comp
 L device:C_Small C18
 U 1 1 5FFA6B9B
 P 6050 1350
@@ -812,6 +787,4 @@ Wire Wire Line
 Wire Wire Line
 	6700 1600 6800 1600
 Connection ~ 6700 1500
-Wire Wire Line
-	5250 6800 5250 7500
 $EndSCHEMATC
