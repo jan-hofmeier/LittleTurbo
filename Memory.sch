@@ -888,24 +888,20 @@ Wire Wire Line
 $Comp
 L 74:74LS32 U7
 U 2 1 604700BB
-P 3950 3100
-F 0 "U7" H 3950 3100 50  0000 C CNN
-F 1 "74HCT32" H 3950 3334 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 3950 3100 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3950 3100 50  0001 C CNN
-	2    3950 3100
+P 3850 3100
+F 0 "U7" H 3850 3100 50  0000 C CNN
+F 1 "74HCT32" H 3850 3334 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 3850 3100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3850 3100 50  0001 C CNN
+	2    3850 3100
 	1    0    0    -1  
 $EndComp
-Text Label 1150 2800 0    50   ~ 0
+Text Label 1550 2800 0    50   ~ 0
 a23
-Text Label 1150 3000 0    50   ~ 0
+Text Label 1550 3000 0    50   ~ 0
 a22
-Text Label 1150 3100 0    50   ~ 0
+Text Label 1550 3100 0    50   ~ 0
 a21
-Entry Wire Line
-	950  2700 1050 2800
-Entry Wire Line
-	950  2900 1050 3000
 Wire Wire Line
 	8500 3500 8500 5350
 Wire Wire Line
@@ -963,37 +959,26 @@ $EndComp
 $Comp
 L 74:74LS05 U9
 U 4 1 61113E16
-P 5050 3900
-F 0 "U9" H 5000 3900 50  0000 C CNN
-F 1 "74LS05" H 5150 4050 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 5050 3900 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS05" H 5050 3900 50  0001 C CNN
-	4    5050 3900
+P 4000 5400
+F 0 "U9" H 3950 5400 50  0000 C CNN
+F 1 "74LS05" H 4100 5550 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 4000 5400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS05" H 4000 5400 50  0001 C CNN
+	4    4000 5400
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74:74LS05 U9
 U 5 1 61115258
-P 5050 3500
-F 0 "U9" H 5000 3500 50  0000 C CNN
-F 1 "74LS05" H 5050 3700 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 5050 3500 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS05" H 5050 3500 50  0001 C CNN
-	5    5050 3500
+P 5050 3700
+F 0 "U9" H 5000 3700 50  0000 C CNN
+F 1 "74LS05" H 5050 3900 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 5050 3700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS05" H 5050 3700 50  0001 C CNN
+	5    5050 3700
 	1    0    0    -1  
 $EndComp
 Connection ~ 4700 1450
-$Comp
-L 74:74HCT00 U11
-U 3 1 61157704
-P 3250 3600
-F 0 "U11" H 3250 3600 50  0000 C CNN
-F 1 "74HCT00" H 3550 3500 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 3250 3600 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 3250 3600 50  0001 C CNN
-	3    3250 3600
-	1    0    0    -1  
-$EndComp
 $Comp
 L 74:74LS05 U9
 U 2 1 61111157
@@ -1018,17 +1003,9 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS05" H 5000 1450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3400 2000 3600 2000
-Entry Wire Line
-	950  3000 1050 3100
-Entry Wire Line
-	950  3100 1050 3200
-Text Label 1150 3200 0    50   ~ 0
+Text Label 1550 3200 0    50   ~ 0
 a20
-Text Label 3550 3000 3    50   ~ 0
-~CRAM
 Connection ~ 5750 3700
-Text Label 4750 3500 1    50   ~ 0
-CSRAM2
 $Comp
 L device:R_US R1
 U 1 1 5FF3AC83
@@ -1041,7 +1018,7 @@ F 3 "~" H 5750 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 4250 3100 0    50   ~ 0
-ROM  | JP1 | JP2\n------------\n256K |   1  |  1\n512K |   2  |  1\n1M   |   2  |  2
+ROM  | JP1 | JP2\n------------\n256K |   1  |  1\n512K |   2  |  1\n1M   |   x  |  2
 $Comp
 L OpenAmiga2000CoproAdapter-rescue:+5V-power #PWR?
 U 1 1 6069C057
@@ -1147,8 +1124,6 @@ F 3 "" H 10100 750 50  0001 C CNN
 	1    10100 750 
 	1    0    0    -1  
 $EndComp
-Text Label 5550 4250 1    50   ~ 0
-VSRAM
 Text Label 9100 4050 0    50   ~ 0
 VSRAM
 Text Label 9150 750  0    50   ~ 0
@@ -1161,12 +1136,12 @@ Wire Wire Line
 $Comp
 L 74:74HCT00 U11
 U 1 1 618C1E62
-P 4450 3500
-F 0 "U11" H 4450 3500 50  0000 C CNN
-F 1 "74HCT00" H 4450 3734 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 4450 3500 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 4450 3500 50  0001 C CNN
-	1    4450 3500
+P 3850 3800
+F 0 "U11" H 3850 3800 50  0000 C CNN
+F 1 "74HCT00" H 3550 3800 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 3850 3800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 3850 3800 50  0001 C CNN
+	1    3850 3800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1218,21 +1193,6 @@ Wire Wire Line
 Wire Wire Line
 	4700 1450 4700 1850
 $Comp
-L OpenAmiga2000CoproAdapter-rescue:+5V-power #PWR?
-U 1 1 61EC0417
-P 4150 3400
-AR Path="/61EC0417" Ref="#PWR?"  Part="1" 
-AR Path="/6068F728/61EC0417" Ref="#PWR0121"  Part="1" 
-F 0 "#PWR0121" H 4150 3250 50  0001 C CNN
-F 1 "+5V" H 4050 3450 50  0000 C CNN
-F 2 "" H 4150 3400 50  0001 C CNN
-F 3 "" H 4150 3400 50  0001 C CNN
-	1    4150 3400
-	1    0    0    -1  
-$EndComp
-Text Label 4750 3900 2    50   ~ 0
-CSROM
-$Comp
 L 74:74LS27 U12
 U 4 1 61F7261E
 P 4700 7150
@@ -1257,22 +1217,6 @@ F 3 "https://www.alliancememory.com/wp-content/uploads/pdf/AS6C4008.pdf" H 7400 
 	1    0    0    -1  
 $EndComp
 $Comp
-L jumper:Jumper_2_Open JP6
-U 1 1 601397C6
-P 5550 3500
-F 0 "JP6" H 5550 3735 50  0000 C CNN
-F 1 "Bank2" H 5550 3644 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5550 3500 50  0001 C CNN
-F 3 "~" H 5550 3500 50  0001 C CNN
-	1    5550 3500
-	1    0    0    -1  
-$EndComp
-Connection ~ 5750 3500
-Wire Wire Line
-	5750 3500 5750 3700
-Wire Wire Line
-	5350 3700 5350 3900
-$Comp
 L jumper:Jumper_3_Open JP5
 U 1 1 602480DF
 P 5400 3100
@@ -1283,29 +1227,12 @@ F 3 "~" H 5400 3100 50  0001 C CNN
 	1    5400 3100
 	1    0    0    -1  
 $EndComp
-$Comp
-L OpenAmiga2000CoproAdapter-rescue:+5V-power #PWR?
-U 1 1 6026A4ED
-P 5650 3100
-AR Path="/6026A4ED" Ref="#PWR?"  Part="1" 
-AR Path="/6068F728/6026A4ED" Ref="#PWR0123"  Part="1" 
-F 0 "#PWR0123" H 5650 2950 50  0001 C CNN
-F 1 "+5V" H 5665 3273 50  0000 C CNN
-F 2 "" H 5650 3100 50  0001 C CNN
-F 3 "" H 5650 3100 50  0001 C CNN
-	1    5650 3100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	700  1100 2700 1100
 Wire Wire Line
 	650  1300 850  1300
 Wire Wire Line
-	4450 3900 4750 3900
-Wire Wire Line
 	5400 3250 5850 3250
-Wire Wire Line
-	5750 2600 5750 3500
 Wire Wire Line
 	8600 5450 8600 3400
 Wire Wire Line
@@ -1368,8 +1295,6 @@ Wire Wire Line
 Connection ~ 10800 3700
 Wire Wire Line
 	10800 3700 10800 5250
-Wire Bus Line
-	950  2700 6500 2700
 Connection ~ 850  1300
 Wire Wire Line
 	850  1300 1750 1300
@@ -1384,23 +1309,12 @@ Connection ~ 5750 4000
 $Comp
 L 74:74LS32 U7
 U 4 1 6050398D
-P 3250 3000
-F 0 "U7" H 3250 3000 50  0000 C CNN
-F 1 "74HCT32" H 3250 3200 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 3250 3000 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3250 3000 50  0001 C CNN
-	4    3250 3000
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74:74HCT04 U16
-U 6 1 607F5CA0
-P 4150 4600
-F 0 "U16" H 4100 4600 50  0000 C CNN
-F 1 "74HCT04" H 4250 4750 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 4150 4600 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 4150 4600 50  0001 C CNN
-	6    4150 4600
+P 2800 3000
+F 0 "U7" H 2800 3000 50  0000 C CNN
+F 1 "74HCT32" H 2800 3200 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 2800 3000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 2800 3000 50  0001 C CNN
+	4    2800 3000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1449,8 +1363,6 @@ F 3 "" H 10100 4050 50  0001 C CNN
 	1    10100 4050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5550 4000 5750 4000
 Connection ~ 9800 4050
 Connection ~ 9800 750 
 Wire Wire Line
@@ -1585,8 +1497,6 @@ F 3 "" H 8150 4050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8050 4050 8150 4050
-Wire Wire Line
-	3750 4600 3850 4600
 Connection ~ 1700 6650
 Connection ~ 1700 7650
 Connection ~ 2450 6650
@@ -1836,28 +1746,6 @@ Wire Wire Line
 Wire Wire Line
 	2600 2300 2800 2300
 Connection ~ 2600 2300
-$Comp
-L 74:74LS32 U7
-U 1 1 6046BC9D
-P 3850 3500
-F 0 "U7" H 3850 3500 50  0000 C CNN
-F 1 "74HCT32" H 3800 3700 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 3850 3500 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3850 3500 50  0001 C CNN
-	1    3850 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L jumper:Jumper_2_Open JP7
-U 1 1 601E25A4
-P 5550 3700
-F 0 "JP7" H 5550 3800 50  0000 C CNN
-F 1 "ROMEMU" H 5550 3600 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5550 3700 50  0001 C CNN
-F 3 "~" H 5550 3700 50  0001 C CNN
-	1    5550 3700
-	1    0    0    -1  
-$EndComp
 Entry Wire Line
 	6500 5850 6600 5950
 Text Notes 6600 2950 0    50   ~ 0
@@ -1870,28 +1758,10 @@ Entry Wire Line
 	8900 5850 9000 5950
 Wire Wire Line
 	9000 5950 9300 5950
-Text Label 1050 4650 0    50   ~ 0
-a18
-Entry Wire Line
-	950  4550 1050 4650
 Wire Wire Line
-	4450 4100 4450 3900
-Wire Wire Line
-	3750 4100 3750 4600
-Wire Wire Line
-	3850 4200 3450 4200
-Wire Wire Line
-	3450 4200 3450 5350
-Wire Wire Line
-	3450 5350 3100 5350
-Wire Wire Line
-	850  4800 2450 4800
+	3450 4900 3150 4900
 Wire Wire Line
 	850  4800 850  1300
-Wire Wire Line
-	2450 5250 2500 5250
-Wire Wire Line
-	2450 4800 2450 5250
 $Comp
 L 74:74HC74 U13
 U 1 1 617D79E5
@@ -1903,8 +1773,6 @@ F 3 "74xx/74hc_hct74.pdf" H 2000 5350 50  0001 C CNN
 	1    2000 5350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2300 5450 2500 5450
 Text Notes 1050 5800 0    50   ~ 0
 74F is only \nrequired \nfor Turbo
 Wire Wire Line
@@ -1927,12 +1795,12 @@ $EndComp
 $Comp
 L 74:74HC86 U14
 U 1 1 6135DA68
-P 2800 5350
-F 0 "U14" H 2800 5350 50  0000 C CNN
-F 1 "74F86" H 2800 5550 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 2800 5350 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74HC86" H 2800 5350 50  0001 C CNN
-	1    2800 5350
+P 2850 4900
+F 0 "U14" H 2850 4900 50  0000 C CNN
+F 1 "74F86" H 2850 5100 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 2850 4900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC86" H 2850 4900 50  0001 C CNN
+	1    2850 4900
 	1    0    0    -1  
 $EndComp
 Text Label 1650 5600 3    50   ~ 0
@@ -2013,241 +1881,41 @@ F 3 "" H 2100 6150 50  0001 C CNN
 	1    2100 6150
 	1    0    0    -1  
 $EndComp
-Text Label 3500 4550 0    50   ~ 0
-a18m
-Wire Wire Line
-	3150 4550 3600 4550
-Wire Wire Line
-	3600 4550 3600 5950
-Wire Wire Line
-	1050 4650 2550 4650
 $Comp
 L 74:74HC86 U?
 U 3 1 603FD514
-P 2850 4550
+P 2000 3900
 AR Path="/606B7AE6/603FD514" Ref="U?"  Part="3" 
 AR Path="/6068F728/603FD514" Ref="U14"  Part="3" 
-F 0 "U14" H 2850 4550 50  0000 C CNN
-F 1 "74F86" H 2800 4750 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 2850 4550 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74HC86" H 2850 4550 50  0001 C CNN
-	3    2850 4550
+F 0 "U14" H 2000 3900 50  0000 C CNN
+F 1 "74F86" H 2150 4050 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 2000 3900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC86" H 2000 3900 50  0001 C CNN
+	3    2000 3900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1950 4350 1800 4350
-$Comp
-L 74:74HCT00 U11
-U 4 1 6142508F
-P 2250 4450
-F 0 "U11" H 2250 4450 50  0000 C CNN
-F 1 "74HCT00" H 2250 4650 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 2250 4450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 2250 4450 50  0001 C CNN
-	4    2250 4450
-	1    0    0    -1  
-$EndComp
-Connection ~ 1950 4350
-Wire Wire Line
-	1950 4350 1950 4200
-Wire Wire Line
-	1850 4550 1950 4550
-Wire Wire Line
-	1850 4100 1850 4550
-Wire Wire Line
-	1450 4100 1850 4100
-Wire Wire Line
-	1050 4450 1200 4450
-Wire Wire Line
-	1050 4250 1200 4250
-Text Label 1050 4450 0    50   ~ 0
-a20
-Text Label 1050 4250 0    50   ~ 0
-a21
-Entry Wire Line
-	950  4350 1050 4450
-Entry Wire Line
-	950  4150 1050 4250
-$Comp
-L 74:74HCT00 U6
-U 4 1 61935EB2
-P 1500 4350
-F 0 "U6" H 1500 4350 50  0000 C CNN
-F 1 "74HCT00" H 1600 4550 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 1500 4350 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 1500 4350 50  0001 C CNN
-	4    1500 4350
-	1    0    0    -1  
-$EndComp
-$Comp
-L OpenAmiga2000CoproAdapter-rescue:+5V-power #PWR?
-U 1 1 621BDE0A
-P 1700 3950
-AR Path="/621BDE0A" Ref="#PWR?"  Part="1" 
-AR Path="/6068F728/621BDE0A" Ref="#PWR0122"  Part="1" 
-F 0 "#PWR0122" H 1700 3800 50  0001 C CNN
-F 1 "+5V" H 1715 4123 50  0000 C CNN
-F 2 "" H 1700 3950 50  0001 C CNN
-F 3 "" H 1700 3950 50  0001 C CNN
-	1    1700 3950
-	1    0    0    -1  
-$EndComp
-$Comp
-L jumper:Jumper_3_Open JP1
-U 1 1 5FF407EB
-P 1450 3950
-F 0 "JP1" H 1350 3850 50  0000 C CNN
-F 1 "256K_512K" H 1450 4083 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1450 3950 50  0001 C CNN
-F 3 "~" H 1450 3950 50  0001 C CNN
-	1    1450 3950
-	1    0    0    -1  
-$EndComp
-Text Label 1050 3950 0    50   ~ 0
-a18
-Entry Wire Line
-	950  3850 1050 3950
-Wire Wire Line
-	1200 3950 1050 3950
-Text Label 3550 4100 0    50   ~ 0
-~ROMEN
-Connection ~ 3750 4100
-Wire Wire Line
-	3750 4100 3850 4100
-Wire Wire Line
-	6350 600  6350 4300
-Wire Wire Line
-	5550 4000 5550 4700
-$Comp
-L OpenAmiga2000CoproAdapter-rescue:GND-power #PWR?
-U 1 1 6026D96B
-P 5850 5000
-AR Path="/6026D96B" Ref="#PWR?"  Part="1" 
-AR Path="/6068F728/6026D96B" Ref="#PWR0108"  Part="1" 
-F 0 "#PWR0108" H 5850 4750 50  0001 C CNN
-F 1 "GND" H 5855 4827 50  0000 C CNN
-F 2 "" H 5850 5000 50  0001 C CNN
-F 3 "" H 5850 5000 50  0001 C CNN
-	1    5850 5000
-	1    0    0    -1  
-$EndComp
-$Comp
-L device:Battery_Cell BT1
-U 1 1 602086D6
-P 5850 4900
-F 0 "BT1" H 5968 4996 50  0000 L CNN
-F 1 "Battery_Cell" H 5600 4850 50  0000 L CNN
-F 2 "Battery:BatteryHolder_Keystone_103_1x20mm" V 5850 4960 50  0001 C CNN
-F 3 "~" V 5850 4960 50  0001 C CNN
-	1    5850 4900
-	1    0    0    -1  
-$EndComp
-$Comp
-L device:D D1
-U 1 1 601DF12E
-P 5700 4700
-F 0 "D1" H 5750 4800 50  0000 C CNN
-F 1 "1N4001" H 5650 4600 50  0000 C CNN
-F 2 "Diode_THT:D_A-405_P7.62mm_Horizontal" H 5700 4700 50  0001 C CNN
-F 3 "~" H 5700 4700 50  0001 C CNN
-	1    5700 4700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4450 4600 4450 4300
-Wire Wire Line
-	4450 4300 4750 4300
-Wire Wire Line
-	5350 4300 6350 4300
 $Comp
 L 74:74LS05 U9
 U 6 1 61116A23
-P 5050 4300
-F 0 "U9" H 5000 4300 50  0000 C CNN
-F 1 "74LS05" H 5150 4450 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 5050 4300 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS05" H 5050 4300 50  0001 C CNN
-	6    5050 4300
+P 4450 3450
+F 0 "U9" H 4400 3450 50  0000 C CNN
+F 1 "74LS05" H 4550 3600 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 4450 3450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS05" H 4450 3450 50  0001 C CNN
+	6    4450 3450
 	1    0    0    -1  
 $EndComp
-$Comp
-L 74:74LS27 U12
-U 1 1 61CF43AC
-P 4150 4100
-F 0 "U12" H 4150 4100 50  0000 C CNN
-F 1 "74HCT27" H 4150 4300 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 4150 4100 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS27" H 4150 4100 50  0001 C CNN
-	1    4150 4100
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74:74HCT04 U?
-U 5 1 60A86102
-P 2250 4000
-AR Path="/606B7AE6/60A86102" Ref="U?"  Part="5" 
-AR Path="/6068F728/60A86102" Ref="U16"  Part="5" 
-F 0 "U16" H 2200 4000 50  0000 C CNN
-F 1 "74HCT04" H 2400 4100 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 2250 4000 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 2250 4000 50  0001 C CNN
-	5    2250 4000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3550 4100 3750 4100
 $Comp
 L 74:74LS32 U7
 U 3 1 61F2F925
-P 3250 4100
-F 0 "U7" H 3250 4100 50  0000 C CNN
-F 1 "74HCT32" H 3500 3950 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 3250 4100 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3250 4100 50  0001 C CNN
-	3    3250 4100
+P 6050 5800
+F 0 "U7" H 6050 5800 50  0000 C CNN
+F 1 "74HCT32" H 6150 6000 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 6050 5800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 6050 5800 50  0001 C CNN
+	3    6050 5800
 	1    0    0    -1  
 $EndComp
-$Comp
-L 74:74HCT00 U6
-U 3 1 61932778
-P 2600 2900
-F 0 "U6" H 2600 2900 50  0000 C CNN
-F 1 "74HCT00" H 2600 3100 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 2600 2900 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 2600 2900 50  0001 C CNN
-	3    2600 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74:74HCT00 U11
-U 2 1 6192E8A1
-P 2650 3700
-F 0 "U11" H 2650 3700 50  0000 C CNN
-F 1 "74HCT00" H 2900 3600 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 2650 3700 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 2650 3700 50  0001 C CNN
-	2    2650 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L OpenAmiga2000CoproAdapter-rescue:+5V-power #PWR?
-U 1 1 6111A1CA
-P 1700 3550
-AR Path="/6111A1CA" Ref="#PWR?"  Part="1" 
-AR Path="/6068F728/6111A1CA" Ref="#PWR0112"  Part="1" 
-F 0 "#PWR0112" H 1700 3400 50  0001 C CNN
-F 1 "+5V" H 1715 3723 50  0000 C CNN
-F 2 "" H 1700 3550 50  0001 C CNN
-F 3 "" H 1700 3550 50  0001 C CNN
-	1    1700 3550
-	1    0    0    -1  
-$EndComp
-Text Label 1050 3550 0    50   ~ 0
-a19
-Entry Wire Line
-	950  3450 1050 3550
-Wire Wire Line
-	1200 3550 1050 3550
 $Comp
 L 74:74HCT04 U?
 U 2 1 6006623C
@@ -2262,144 +1930,489 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 1400 535
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1950 4200 2950 4200
-$Comp
-L 74:74HC86 U14
-U 4 1 6136C907
-P 2250 3400
-F 0 "U14" H 2250 3400 50  0000 C CNN
-F 1 "74F86" H 2550 3500 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 2250 3400 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74HC86" H 2250 3400 50  0001 C CNN
-	4    2250 3400
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	4250 3100 5150 3100
-Connection ~ 3550 3000
-Wire Wire Line
-	3550 3000 3650 3000
-Wire Wire Line
-	2950 2900 2900 2900
-Wire Wire Line
-	1050 3100 2950 3100
-Connection ~ 2900 2900
-Wire Wire Line
-	2900 4000 2950 4000
-Wire Wire Line
-	1050 3200 1950 3200
-Wire Wire Line
-	1950 3200 1950 3300
-Connection ~ 1950 3200
-Wire Wire Line
-	1950 3200 3650 3200
+	4150 3100 5150 3100
 Connection ~ 5850 3250
 Wire Wire Line
 	5850 3250 5850 3600
 Wire Wire Line
 	5850 2500 5850 3250
-Wire Wire Line
-	4150 3500 4150 3600
-Wire Wire Line
-	3550 3000 3550 3400
-Wire Wire Line
-	2550 3400 2950 3400
-Wire Wire Line
-	2900 2900 2900 4000
-Wire Wire Line
-	2950 3400 2950 3500
-Wire Wire Line
-	1850 4100 1850 3800
-Wire Wire Line
-	1850 3800 2350 3800
-Connection ~ 1850 4100
-Wire Wire Line
-	1950 3600 1950 4000
-Connection ~ 1950 3600
-Wire Wire Line
-	1950 3600 2350 3600
-Wire Wire Line
-	2550 4000 2750 4000
-Wire Wire Line
-	2750 4000 2750 3900
-Wire Wire Line
-	2750 3900 3850 3900
-Wire Wire Line
-	3850 3900 3850 4000
 $Comp
-L jumper:Jumper_3_Open JP2
-U 1 1 5FF3D9D8
-P 1450 3550
-F 0 "JP2" H 1300 3450 50  0000 C CNN
-F 1 "512K_1MB" H 1450 3683 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1450 3550 50  0001 C CNN
-F 3 "~" H 1450 3550 50  0001 C CNN
-	1    1450 3550
+L 74:74HCT00 U6
+U 3 1 61932778
+P 2000 2900
+F 0 "U6" H 2000 2900 50  0000 C CNN
+F 1 "74HCT00" H 2250 3050 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 2000 2900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 2000 2900 50  0001 C CNN
+	3    2000 2900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1850 3600 1950 3600
-Wire Wire Line
-	1850 3700 1450 3700
-Wire Wire Line
-	1850 3700 1850 3600
 $Comp
-L jumper:Jumper_3_Open JP8
-U 1 1 6010F0A9
-P 1850 2500
-F 0 "JP8" H 1750 2400 50  0000 C CNN
-F 1 "Bank2_C0_D0" H 1850 2600 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1850 2500 50  0001 C CNN
-F 3 "~" H 1850 2500 50  0001 C CNN
-	1    1850 2500
+L 74:74HC86 U14
+U 4 1 6136C907
+P 4000 6200
+F 0 "U14" H 4000 6200 50  0000 C CNN
+F 1 "74F86" H 4200 6350 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 4000 6200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC86" H 4000 6200 50  0001 C CNN
+	4    4000 6200
+	1    0    0    1   
+$EndComp
+$Comp
+L 74:74HCT04 U?
+U 5 1 60A86102
+P 4000 5800
+AR Path="/606B7AE6/60A86102" Ref="U?"  Part="5" 
+AR Path="/6068F728/60A86102" Ref="U16"  Part="5" 
+F 0 "U16" H 3950 5800 50  0000 C CNN
+F 1 "74HCT04" H 4150 5900 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 4000 5800 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 4000 5800 50  0001 C CNN
+	5    4000 5800
 	1    0    0    -1  
 $EndComp
 $Comp
 L OpenAmiga2000CoproAdapter-rescue:+5V-power #PWR?
-U 1 1 609EC38A
-P 1600 2500
-AR Path="/609EC38A" Ref="#PWR?"  Part="1" 
-AR Path="/6068F728/609EC38A" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 1600 2350 50  0001 C CNN
-F 1 "+5V" H 1615 2673 50  0000 C CNN
-F 2 "" H 1600 2500 50  0001 C CNN
-F 3 "" H 1600 2500 50  0001 C CNN
-	1    1600 2500
+U 1 1 6026A4ED
+P 5650 3100
+AR Path="/6026A4ED" Ref="#PWR?"  Part="1" 
+AR Path="/6068F728/6026A4ED" Ref="#PWR0123"  Part="1" 
+F 0 "#PWR0123" H 5650 2950 50  0001 C CNN
+F 1 "+5V" H 5665 3273 50  0000 C CNN
+F 2 "" H 5650 3100 50  0001 C CNN
+F 3 "" H 5650 3100 50  0001 C CNN
+	1    5650 3100
+	1    0    0    -1  
+$EndComp
+Text Label 2350 2900 0    50   ~ 0
+~HIGH
+Wire Wire Line
+	6600 5950 6900 5950
+Wire Wire Line
+	1700 3450 1550 3450
+Text Label 1550 3450 0    50   ~ 0
+a21
+Wire Wire Line
+	1700 3700 1550 3700
+Wire Wire Line
+	1700 4000 1550 4000
+Text Label 1550 3700 0    50   ~ 0
+a20
+Text Label 1550 4000 0    50   ~ 0
+a19
+Text Label 6200 6300 0    50   ~ 0
+a18m
+Wire Wire Line
+	5750 5900 5600 5900
+Text Label 5600 5900 0    50   ~ 0
+a18
+Text Label 5600 5700 0    50   ~ 0
+~a21
+Text Label 2350 3450 0    50   ~ 0
+~a21
+$Comp
+L 74:74HCT00 U11
+U 3 1 61157704
+P 4450 3900
+F 0 "U11" H 4450 3900 50  0000 C CNN
+F 1 "74HCT00" H 4550 3700 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 4450 3900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 4450 3900 50  0001 C CNN
+	3    4450 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 5700 5750 5700
+$Comp
+L jumper:Jumper_3_Open JP?
+U 1 1 6140B597
+P 6100 6150
+F 0 "JP?" H 6100 6374 50  0000 C CNN
+F 1 "MIrror_OFF_ON" H 6050 6250 50  0000 C CNN
+F 2 "" H 6100 6150 50  0001 C CNN
+F 3 "~" H 6100 6150 50  0001 C CNN
+	1    6100 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 5800 6350 6150
+Wire Wire Line
+	5850 6150 5750 6150
+Wire Wire Line
+	5750 6150 5750 5900
+Connection ~ 5750 5900
+Text Label 4150 3800 1    50   ~ 0
+~SROM
+Text Label 6100 600  0    50   ~ 0
+~ROMEN
+$Comp
+L 74:74LS32 U7
+U 1 1 6046BC9D
+P 3850 4200
+F 0 "U7" H 3850 4200 50  0000 C CNN
+F 1 "74HCT32" H 3850 4000 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 3850 4200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3850 4200 50  0001 C CNN
+	1    3850 4200
+	1    0    0    -1  
+$EndComp
+Text Label 4150 4200 0    50   ~ 0
+~RAM2
+Text Label 3100 3000 0    50   ~ 0
+~CRAM
+$Comp
+L 74:74HCT00 U6
+U 4 1 61935EB2
+P 2800 3800
+F 0 "U6" H 2800 3800 50  0000 C CNN
+F 1 "74HCT00" H 3050 3950 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 2800 3800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 2800 3800 50  0001 C CNN
+	4    2800 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74:74HCT00 U11
+U 4 1 6142508F
+P 2000 4450
+F 0 "U11" H 2000 4450 50  0000 C CNN
+F 1 "74HCT00" H 2300 4350 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 2000 4450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 2000 4450 50  0001 C CNN
+	4    2000 4450
+	1    0    0    -1  
+$EndComp
+Text Label 3100 3450 0    50   ~ 0
+ROMEN
+$Comp
+L 74:74LS27 U12
+U 1 1 61CF43AC
+P 2800 3450
+F 0 "U12" H 2800 3450 50  0000 C CNN
+F 1 "74HCT27" H 2800 3650 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 2800 3450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS27" H 2800 3450 50  0001 C CNN
+	1    2800 3450
+	1    0    0    -1  
+$EndComp
+Text Label 3150 4900 0    50   ~ 0
+SROMON
+$Comp
+L 74:74HCT04 U16
+U 6 1 607F5CA0
+P 2000 3450
+F 0 "U16" H 1950 3450 50  0000 C CNN
+F 1 "74HCT04" H 1900 3650 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 2000 3450 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 2000 3450 50  0001 C CNN
+	6    2000 3450
+	1    0    0    -1  
+$EndComp
+Text Label 4750 3450 0    50   ~ 0
+~ROMEN
+Wire Wire Line
+	2300 3550 2500 3550
+Wire Wire Line
+	1700 3700 1700 3800
+Wire Wire Line
+	3100 3800 3100 4050
+Wire Wire Line
+	2500 3700 2400 3700
+$Comp
+L 74:74HCT00 U11
+U 2 1 6192E8A1
+P 2900 4450
+F 0 "U11" H 2900 4450 50  0000 C CNN
+F 1 "74HCT00" H 3150 4600 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 2900 4450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 2900 4450 50  0001 C CNN
+	2    2900 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 4100 3350 3000
+Wire Wire Line
+	3350 4100 3550 4100
+Wire Wire Line
+	3100 3450 3550 3450
+Wire Wire Line
+	3550 3900 3450 3900
+Wire Wire Line
+	2600 4550 2400 4550
+Wire Wire Line
+	2400 4550 2400 4450
+Wire Wire Line
+	2400 4050 2400 3700
+Wire Wire Line
+	2400 4050 2600 4050
+$Comp
+L OpenAmiga2000CoproAdapter-rescue:+5V-power #PWR?
+U 1 1 63373395
+P 2500 3900
+AR Path="/63373395" Ref="#PWR?"  Part="1" 
+AR Path="/6068F728/63373395" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2500 3750 50  0001 C CNN
+F 1 "+5V" H 2550 4050 50  0000 C CNN
+F 2 "" H 2500 3900 50  0001 C CNN
+F 3 "" H 2500 3900 50  0001 C CNN
+	1    2500 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L jumper:Jumper_3_Open JP8
+U 1 1 61C49747
+P 2850 4050
+F 0 "JP8" H 3000 3950 50  0000 C CNN
+F 1 "Bank2 D0_C0" H 2750 4100 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2850 4050 50  0001 C CNN
+F 3 "~" H 2850 4050 50  0001 C CNN
+	1    2850 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L jumper:Jumper_3_Open JP2
+U 1 1 5FF3D9D8
+P 2600 4200
+F 0 "JP2" H 2700 4100 50  0000 C CNN
+F 1 "1MB_512K" H 2850 4300 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2600 4200 50  0001 C CNN
+F 3 "~" H 2600 4200 50  0001 C CNN
+	1    2600 4200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L OpenAmiga2000CoproAdapter-rescue:+5V-power #PWR?
+U 1 1 613588E1
+P 1600 4400
+AR Path="/613588E1" Ref="#PWR?"  Part="1" 
+AR Path="/6068F728/613588E1" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1600 4250 50  0001 C CNN
+F 1 "+5V" H 1500 4450 50  0000 C CNN
+F 2 "" H 1600 4400 50  0001 C CNN
+F 3 "" H 1600 4400 50  0001 C CNN
+	1    1600 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L jumper:Jumper_3_Open JP1
+U 1 1 5FF407EB
+P 1350 4400
+F 0 "JP1" H 1250 4300 50  0000 C CNN
+F 1 "256K_512K" H 1350 4533 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1350 4400 50  0001 C CNN
+F 3 "~" H 1350 4400 50  0001 C CNN
+	1    1350 4400
 	1    0    0    -1  
 $EndComp
 $Comp
 L OpenAmiga2000CoproAdapter-rescue:GND-power #PWR?
-U 1 1 609F151D
-P 2100 2500
-AR Path="/609F151D" Ref="#PWR?"  Part="1" 
-AR Path="/6068F728/609F151D" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2100 2250 50  0001 C CNN
-F 1 "GND" H 2200 2350 50  0000 C CNN
-F 2 "" H 2100 2500 50  0001 C CNN
-F 3 "" H 2100 2500 50  0001 C CNN
-	1    2100 2500
+U 1 1 619E3991
+P 1100 4400
+AR Path="/619E3991" Ref="#PWR?"  Part="1" 
+AR Path="/6068F728/619E3991" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1100 4150 50  0001 C CNN
+F 1 "GND" H 1105 4227 50  0000 C CNN
+F 2 "" H 1100 4400 50  0001 C CNN
+F 3 "" H 1100 4400 50  0001 C CNN
+	1    1100 4400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1050 2800 2300 2800
+	3200 4450 3350 4450
 Wire Wire Line
-	1050 3000 2300 3000
+	3350 4450 3350 4300
 Wire Wire Line
-	1850 2650 1850 3500
+	3350 4300 3550 4300
 Wire Wire Line
-	1850 3500 1950 3500
+	1700 4000 1700 4350
+Connection ~ 1700 4000
+$Comp
+L OpenAmiga2000CoproAdapter-rescue:GND-power #PWR?
+U 1 1 6368012B
+P 2350 4200
+AR Path="/6368012B" Ref="#PWR?"  Part="1" 
+AR Path="/6068F728/6368012B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2350 3950 50  0001 C CNN
+F 1 "GND" H 2355 4027 50  0000 C CNN
+F 2 "" H 2350 4200 50  0001 C CNN
+F 3 "" H 2350 4200 50  0001 C CNN
+	1    2350 4200
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	3600 5950 6900 5950
+	5750 2600 5750 3700
+$Comp
+L OpenAmiga2000CoproAdapter-rescue:GND-power #PWR?
+U 1 1 6026D96B
+P 5750 4600
+AR Path="/6026D96B" Ref="#PWR?"  Part="1" 
+AR Path="/6068F728/6026D96B" Ref="#PWR0108"  Part="1" 
+F 0 "#PWR0108" H 5750 4350 50  0001 C CNN
+F 1 "GND" H 5755 4427 50  0000 C CNN
+F 2 "" H 5750 4600 50  0001 C CNN
+F 3 "" H 5750 4600 50  0001 C CNN
+	1    5750 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:Battery_Cell BT1
+U 1 1 602086D6
+P 5750 4500
+F 0 "BT1" H 5868 4596 50  0000 L CNN
+F 1 "Battery_Cell" H 5500 4450 50  0000 L CNN
+F 2 "Battery:BatteryHolder_Keystone_103_1x20mm" V 5750 4560 50  0001 C CNN
+F 3 "~" V 5750 4560 50  0001 C CNN
+	1    5750 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:D D1
+U 1 1 601DF12E
+P 5750 4150
+F 0 "D1" H 5800 4250 50  0000 C CNN
+F 1 "1N4001" H 5700 4050 50  0000 C CNN
+F 2 "Diode_THT:D_A-405_P7.62mm_Horizontal" H 5750 4150 50  0001 C CNN
+F 3 "~" H 5750 4150 50  0001 C CNN
+	1    5750 4150
+	0    1    1    0   
+$EndComp
+Text Label 6000 4000 2    50   ~ 0
+VSRAM
+$Comp
+L jumper:Jumper_2_Open JP?
+U 1 1 638EB010
+P 5550 3700
+F 0 "JP?" H 5550 3935 50  0000 C CNN
+F 1 "Bank2" H 5550 3844 50  0000 C CNN
+F 2 "" H 5550 3700 50  0001 C CNN
+F 3 "~" H 5550 3700 50  0001 C CNN
+	1    5550 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 3350 2300 3350
+Wire Wire Line
+	2300 3350 2300 2900
+Connection ~ 2300 2900
+Wire Wire Line
+	2300 2900 2500 2900
+Wire Wire Line
+	4150 4000 4150 4200
+Connection ~ 3350 3000
+Wire Wire Line
+	3350 3000 3550 3000
+Wire Wire Line
+	3100 3000 3350 3000
+Wire Wire Line
+	4750 3700 4750 3900
+Wire Wire Line
+	4750 3450 5000 3450
+Wire Wire Line
+	5000 3450 5000 2000
+Wire Wire Line
+	5000 2000 6350 2000
+Wire Wire Line
+	6350 2000 6350 600 
+Wire Wire Line
+	2300 3550 2300 3900
+Wire Wire Line
+	2400 3700 1700 3700
+Connection ~ 2400 3700
+Connection ~ 1700 3700
+Wire Wire Line
+	2300 3450 2500 3450
+Wire Wire Line
+	3450 3900 3450 4900
+Entry Wire Line
+	1450 3900 1550 4000
+Entry Wire Line
+	1450 3600 1550 3700
+Entry Wire Line
+	1450 3350 1550 3450
+Entry Wire Line
+	1450 3100 1550 3200
+Entry Wire Line
+	1450 3000 1550 3100
+Entry Wire Line
+	1450 2700 1550 2800
+Wire Wire Line
+	3550 3200 1550 3200
+Wire Wire Line
+	1550 3100 2500 3100
+Wire Wire Line
+	1700 3000 1550 3000
+Entry Wire Line
+	1450 2900 1550 3000
 Wire Bus Line
-	950  2700 950  4550
+	1450 2700 6500 2700
+Wire Wire Line
+	1700 4550 1350 4550
+Wire Wire Line
+	2300 4450 2400 4450
+Wire Wire Line
+	6400 6300 6100 6300
+Entry Wire Line
+	6400 6300 6500 6400
+Entry Wire Line
+	5500 5600 5600 5700
+Entry Wire Line
+	5500 5800 5600 5900
+Wire Bus Line
+	5500 5450 6500 5450
+Connection ~ 6500 5450
+Wire Wire Line
+	850  4800 2550 4800
+Wire Wire Line
+	2550 5000 2550 5450
+Wire Wire Line
+	2550 5450 2300 5450
+Wire Wire Line
+	1550 2800 1700 2800
+$Comp
+L OpenAmiga2000CoproAdapter-rescue:GND-power #PWR?
+U 1 1 64176E5A
+P 3700 6400
+AR Path="/64176E5A" Ref="#PWR?"  Part="1" 
+AR Path="/6068F728/64176E5A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3700 6150 50  0001 C CNN
+F 1 "GND" H 3705 6227 50  0000 C CNN
+F 2 "" H 3700 6400 50  0001 C CNN
+F 3 "" H 3700 6400 50  0001 C CNN
+	1    3700 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 5400 3700 5800
+Connection ~ 3700 5800
+Wire Wire Line
+	3700 5800 3700 6100
+Connection ~ 3700 6100
+Wire Wire Line
+	3700 6100 3700 6300
+Connection ~ 3700 6300
+Wire Wire Line
+	3700 6300 3700 6400
+Text Label 850  4800 0    50   ~ 0
+R~W
+Wire Wire Line
+	3550 3700 3550 3450
+Wire Bus Line
+	5500 5450 5500 5800
+Wire Bus Line
+	6500 5450 6500 6400
+Wire Bus Line
+	1450 2700 1450 3900
+Wire Bus Line
+	6500 2700 6500 5450
 Wire Bus Line
 	10700 1050 10700 6350
 Wire Bus Line
 	8300 1050 8300 6350
 Wire Bus Line
-	6500 2700 6500 5950
-Wire Bus Line
 	6500 600  6500 2700
 Wire Bus Line
 	8900 600  8900 5950
+Connection ~ 3550 3450
+Wire Wire Line
+	3550 3450 4150 3450
 $EndSCHEMATC
