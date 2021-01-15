@@ -371,19 +371,6 @@ Wire Wire Line
 Wire Wire Line
 	1250 4600 1250 5700
 $Comp
-L device:R_US R?
-U 1 1 60781007
-P 3100 5450
-AR Path="/6068F728/60781007" Ref="R?"  Part="1" 
-AR Path="/606B7AE6/60781007" Ref="R4"  Part="1" 
-F 0 "R4" H 2950 5500 50  0000 L CNN
-F 1 "500" H 2900 5400 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal" V 3140 5440 50  0001 C CNN
-F 3 "~" H 3100 5450 50  0001 C CNN
-	1    3100 5450
-	1    0    0    -1  
-$EndComp
-$Comp
 L OpenAmiga2000CoproAdapter-rescue:+5V-power #PWR?
 U 1 1 6078100D
 P 3100 5300
@@ -407,35 +394,17 @@ Wire Wire Line
 Wire Wire Line
 	3000 6000 3400 6000
 $Comp
-L jumper:Jumper_2_Open JP11
-U 1 1 60794674
-P 2500 5400
-F 0 "JP11" H 2500 5635 50  0000 C CNN
-F 1 "Turbo" H 2500 5544 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2500 5400 50  0001 C CNN
-F 3 "~" H 2500 5400 50  0001 C CNN
-	1    2500 5400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2700 5400 2850 5400
-Wire Wire Line
-	2850 5400 2850 5600
-Wire Wire Line
-	2850 5600 3100 5600
-Connection ~ 3100 5600
-$Comp
 L OpenAmiga2000CoproAdapter-rescue:GND-power #PWR?
 U 1 1 6079922C
-P 2300 5400
+P 2500 5300
 AR Path="/6079922C" Ref="#PWR?"  Part="1" 
 AR Path="/6068F728/6079922C" Ref="#PWR?"  Part="1" 
 AR Path="/606B7AE6/6079922C" Ref="#PWR0129"  Part="1" 
-F 0 "#PWR0129" H 2300 5150 50  0001 C CNN
-F 1 "GND" H 2305 5227 50  0000 C CNN
-F 2 "" H 2300 5400 50  0001 C CNN
-F 3 "" H 2300 5400 50  0001 C CNN
-	1    2300 5400
+F 0 "#PWR0129" H 2500 5050 50  0001 C CNN
+F 1 "GND" H 2505 5127 50  0000 C CNN
+F 2 "" H 2500 5300 50  0001 C CNN
+F 3 "" H 2500 5300 50  0001 C CNN
+	1    2500 5300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -700,14 +669,10 @@ F 3 "~" H 6050 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5000 5800 3700 5800
-Wire Wire Line
 	5000 2400 5000 4600
 Wire Wire Line
 	5000 4600 6800 4600
 Connection ~ 5000 4600
-Wire Wire Line
-	5000 4600 5000 5800
 Wire Wire Line
 	5000 2400 6800 2400
 Wire Wire Line
@@ -787,4 +752,24 @@ Wire Wire Line
 Wire Wire Line
 	6700 1600 6800 1600
 Connection ~ 6700 1500
+$Comp
+L jumper:Jumper_3_Open JP7
+U 1 1 64EEF7EF
+P 2750 5300
+F 0 "JP7" H 2750 5524 50  0000 C CNN
+F 1 "Jumper_3_Open" H 2750 5433 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2750 5300 50  0001 C CNN
+F 3 "~" H 2750 5300 50  0001 C CNN
+	1    2750 5300
+	1    0    0    -1  
+$EndComp
+Connection ~ 3000 5300
+Wire Wire Line
+	2750 5600 2750 5450
+Wire Wire Line
+	2750 5600 3100 5600
+Wire Wire Line
+	3700 5600 5000 5600
+Wire Wire Line
+	5000 4600 5000 5600
 $EndSCHEMATC
