@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 125)
+    (drawings 126)
     (tracks 2295)
     (zones 0)
     (modules 74)
@@ -11,12 +11,14 @@
 
   (page A4)
   (title_block
-    (title OpenAmiga2000CoproAdapter)
+    (title "Little Turbo")
     (date 2019-03-21)
-    (rev 3)
+    (rev 1.0)
     (company "Jan Hofmeier")
     (comment 1 "Based on work by Kipper2K, SukkoPera, Livio Plos and Jörg Richter")
     (comment 2 "Licensed under CERN OHL v.1.2")
+    (comment 3 "Amiga 2000 14MHz Accelerator")
+    (comment 4 "2MB Fast RAM / ROM Emulation")
   )
 
   (layers
@@ -554,7 +556,7 @@
     (descr "14-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils)")
     (tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil")
     (path /6068F728/619397D6)
-    (fp_text reference U11 (at 3.81 -2.33) (layer F.SilkS)
+    (fp_text reference U11 (at 3.81 17.78) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value 74HCT00 (at 3.81 7.62 90) (layer F.SilkS)
@@ -4706,6 +4708,9 @@
       (net 111 +12V))
   )
 
+  (gr_text "Rev. 1.0" (at 112.3315 45.72) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
   (gr_text "Amiga 2000 14MHz Accelerator\n2MB Fast RAM / ROM Emulation" (at 112.9665 42.545) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
