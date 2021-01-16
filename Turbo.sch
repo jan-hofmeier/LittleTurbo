@@ -360,38 +360,33 @@ Wire Wire Line
 $Comp
 L OpenAmiga2000CoproAdapter-rescue:+5V-power #PWR?
 U 1 1 6078100D
-P 3100 5300
+P 3400 5300
 AR Path="/6078100D" Ref="#PWR?"  Part="1" 
 AR Path="/6068F728/6078100D" Ref="#PWR?"  Part="1" 
 AR Path="/606B7AE6/6078100D" Ref="#PWR0128"  Part="1" 
-F 0 "#PWR0128" H 3100 5150 50  0001 C CNN
-F 1 "+5V" H 3115 5473 50  0000 C CNN
-F 2 "" H 3100 5300 50  0001 C CNN
-F 3 "" H 3100 5300 50  0001 C CNN
-	1    3100 5300
+F 0 "#PWR0128" H 3400 5150 50  0001 C CNN
+F 1 "+5V" H 3415 5473 50  0000 C CNN
+F 2 "" H 3400 5300 50  0001 C CNN
+F 3 "" H 3400 5300 50  0001 C CNN
+	1    3400 5300
 	1    0    0    -1  
 $EndComp
-Connection ~ 3100 5300
 Wire Wire Line
 	1250 5700 3100 5700
-Wire Wire Line
-	3100 5300 3000 5300
-Wire Wire Line
-	3000 5300 3000 6000
 Wire Wire Line
 	3000 6000 3400 6000
 $Comp
 L OpenAmiga2000CoproAdapter-rescue:GND-power #PWR?
 U 1 1 6079922C
-P 2500 5300
+P 2350 5300
 AR Path="/6079922C" Ref="#PWR?"  Part="1" 
 AR Path="/6068F728/6079922C" Ref="#PWR?"  Part="1" 
 AR Path="/606B7AE6/6079922C" Ref="#PWR0129"  Part="1" 
-F 0 "#PWR0129" H 2500 5050 50  0001 C CNN
-F 1 "GND" H 2505 5127 50  0000 C CNN
-F 2 "" H 2500 5300 50  0001 C CNN
-F 3 "" H 2500 5300 50  0001 C CNN
-	1    2500 5300
+F 0 "#PWR0129" H 2350 5050 50  0001 C CNN
+F 1 "GND" H 2355 5127 50  0000 C CNN
+F 2 "" H 2350 5300 50  0001 C CNN
+F 3 "" H 2350 5300 50  0001 C CNN
+	1    2350 5300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -537,8 +532,6 @@ F 3 "" H 3100 1200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3400 5400 3400 5300
-Wire Wire Line
-	3100 5300 3400 5300
 $Comp
 L device:C_Small C17
 U 1 1 5FF5B694
@@ -742,19 +735,18 @@ Connection ~ 6700 1500
 $Comp
 L jumper:Jumper_3_Open JP7
 U 1 1 64EEF7EF
-P 2750 5300
-F 0 "JP7" H 2750 5524 50  0000 C CNN
-F 1 "Jumper_3_Open" H 2750 5433 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2750 5300 50  0001 C CNN
-F 3 "~" H 2750 5300 50  0001 C CNN
-	1    2750 5300
+P 2600 5300
+F 0 "JP7" H 2600 5524 50  0000 C CNN
+F 1 "Turbo SW" H 2600 5433 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2600 5300 50  0001 C CNN
+F 3 "~" H 2600 5300 50  0001 C CNN
+	1    2600 5300
 	1    0    0    -1  
 $EndComp
-Connection ~ 3000 5300
 Wire Wire Line
-	2750 5600 2750 5450
+	2600 5600 2600 5450
 Wire Wire Line
-	2750 5600 3100 5600
+	2600 5600 3100 5600
 Wire Wire Line
 	3700 5600 5000 5600
 Wire Wire Line
@@ -769,4 +761,13 @@ Wire Wire Line
 	1000 1000 2200 1000
 Wire Wire Line
 	2200 1000 2200 1200
+Wire Wire Line
+	3000 6000 3000 5300
+Connection ~ 3400 5300
+Wire Wire Line
+	3000 5300 3400 5300
+Wire Wire Line
+	2850 5300 2850 5100
+Text GLabel 2850 5100 0    50   Input ~ 0
+5VR
 $EndSCHEMATC

@@ -1210,7 +1210,7 @@ L jumper:Jumper_3_Open JP5
 U 1 1 602480DF
 P 5400 3100
 F 0 "JP5" H 5400 3324 50  0000 C CNN
-F 1 "Bank1_ON_OFF" H 5300 3200 50  0000 C CNN
+F 1 "Bank 1" H 5400 3200 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5400 3100 50  0001 C CNN
 F 3 "~" H 5400 3100 50  0001 C CNN
 	1    5400 3100
@@ -1311,7 +1311,7 @@ L jumper:Jumper_2_Open JP9
 U 1 1 60957285
 P 5900 600
 F 0 "JP9" H 6100 650 50  0000 C CNN
-F 1 "Turbo_ROM" H 5900 500 50  0000 C CNN
+F 1 "Turbo ROM" H 5900 500 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5900 600 50  0001 C CNN
 F 3 "~" H 5900 600 50  0001 C CNN
 	1    5900 600 
@@ -1322,7 +1322,7 @@ L jumper:Jumper_2_Open JP10
 U 1 1 60960690
 P 5900 1000
 F 0 "JP10" H 5900 1150 50  0000 C CNN
-F 1 "Turbo_SRAM" H 5900 850 50  0000 C CNN
+F 1 "Turbo SRAM" H 5900 850 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5900 1000 50  0001 C CNN
 F 3 "~" H 5900 1000 50  0001 C CNN
 	1    5900 1000
@@ -1792,14 +1792,14 @@ Wire Wire Line
 $Comp
 L OpenAmiga2000CoproAdapter-rescue:+5V-power #PWR?
 U 1 1 61BAFABA
-P 1150 5000
+P 650 4700
 AR Path="/61BAFABA" Ref="#PWR?"  Part="1" 
 AR Path="/6068F728/61BAFABA" Ref="#PWR0118"  Part="1" 
-F 0 "#PWR0118" H 1150 4850 50  0001 C CNN
-F 1 "+5V" H 1050 5150 50  0000 C CNN
-F 2 "" H 1150 5000 50  0001 C CNN
-F 3 "" H 1150 5000 50  0001 C CNN
-	1    1150 5000
+F 0 "#PWR0118" H 650 4550 50  0001 C CNN
+F 1 "+5V" H 550 4850 50  0000 C CNN
+F 2 "" H 650 4700 50  0001 C CNN
+F 3 "" H 650 4700 50  0001 C CNN
+	1    650  4700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1940,7 +1940,7 @@ L jumper:Jumper_3_Open JP6
 U 1 1 6140B597
 P 6100 6150
 F 0 "JP6" H 6100 6374 50  0000 C CNN
-F 1 "Mirror_OFF_ON" H 6050 6250 50  0000 C CNN
+F 1 "Mirror 256K" H 6050 6250 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6100 6150 50  0001 C CNN
 F 3 "~" H 6100 6150 50  0001 C CNN
 	1    6100 6150
@@ -2084,7 +2084,7 @@ L jumper:Jumper_3_Open JP2
 U 1 1 5FF3D9D8
 P 2650 4200
 F 0 "JP2" H 2750 4100 50  0000 C CNN
-F 1 "1MB_512K" H 2450 4300 50  0000 C CNN
+F 1 "1MB xxxK" H 2450 4300 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2650 4200 50  0001 C CNN
 F 3 "~" H 2650 4200 50  0001 C CNN
 	1    2650 4200
@@ -2108,7 +2108,7 @@ L jumper:Jumper_3_Open JP1
 U 1 1 5FF407EB
 P 1450 4400
 F 0 "JP1" H 1350 4300 50  0000 C CNN
-F 1 "512K_256K" H 1450 4533 50  0000 C CNN
+F 1 "512K 256K" H 1450 4533 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1450 4400 50  0001 C CNN
 F 3 "~" H 1450 4400 50  0001 C CNN
 	1    1450 4400
@@ -2178,7 +2178,7 @@ L jumper:Jumper_2_Open JP3
 U 1 1 638EB010
 P 5550 3700
 F 0 "JP3" H 5550 3935 50  0000 C CNN
-F 1 "Bank2" H 5550 3844 50  0000 C CNN
+F 1 "Bank 2" H 5550 3844 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5550 3700 50  0001 C CNN
 F 3 "~" H 5550 3700 50  0001 C CNN
 	1    5550 3700
@@ -2293,7 +2293,7 @@ L jumper:Jumper_3_Open JP4
 U 1 1 6428BE59
 P 1400 5000
 F 0 "JP4" H 1300 4900 50  0000 C CNN
-F 1 "ROM_R_W" H 1400 5133 50  0000 C CNN
+F 1 "ROM SW" H 1400 5133 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1400 5000 50  0001 C CNN
 F 3 "~" H 1400 5000 50  0001 C CNN
 	1    1400 5000
@@ -2378,6 +2378,19 @@ Wire Wire Line
 	1800 4000 1800 4350
 Wire Wire Line
 	2400 3550 2550 3550
+$Comp
+L device:R_US R2
+U 1 1 601A87ED
+P 650 4850
+F 0 "R2" H 718 4896 50  0000 L CNN
+F 1 "500" H 718 4805 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal" V 690 4840 50  0001 C CNN
+F 3 "~" H 650 4850 50  0001 C CNN
+	1    650  4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	650  5000 1150 5000
 Wire Bus Line
 	5500 5450 5500 5800
 Wire Bus Line
@@ -2394,4 +2407,8 @@ Wire Bus Line
 	6500 600  6500 2700
 Wire Bus Line
 	8900 600  8900 5950
+Text GLabel 900  5000 2    50   Input ~ 0
+5VR
+Text Notes 450  5050 1    50   ~ 0
+The resitor is just protection if your\n unisolated switch touches something
 $EndSCHEMATC
