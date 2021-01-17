@@ -1970,7 +1970,7 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3850 4200 50  0001 C CNN
 $EndComp
 Text Label 4150 4200 0    50   ~ 0
 ~RAM2
-Text Label 3100 3000 0    50   ~ 0
+Text Label 3150 3000 0    50   ~ 0
 ~CRAM
 $Comp
 L 74:74HCT00 U6
