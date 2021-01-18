@@ -11,3 +11,7 @@ It is still work in Progress, the schematics are mostly done, next up is creatin
 
 ### Installation
 **Please be very careful when plugging this board** in the co-processor slot: there is an arrow on the board, **it must point to the back of the Amiga**. Plugging this adapter backwards will damage your CPU/accelerator card, as some pins of the CPU slot carry +12V!
+
+
+### Parts
+https://www.digikey.de/short/47m29h
