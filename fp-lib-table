@@ -5,5 +5,6 @@
   (lib (name Diode_THT)(type KiCad)(uri ${KIPRJMOD}/kicad-footprints-5.1.7/Diode_THT.pretty)(options "")(descr ""))
   (lib (name Capacitor_THT)(type KiCad)(uri ${KIPRJMOD}/kicad-footprints-5.1.7/Capacitor_THT.pretty)(options "")(descr ""))
   (lib (name Connector_PinHeader_2.54mm)(type KiCad)(uri ${KIPRJMOD}/kicad-footprints-5.1.7/Connector_PinHeader_2.54mm.pretty)(options "")(descr ""))
-  (lib (name Battery)(type KiCad)(uri /home/jan/OpenAmiga2000CoproAdapter/kicad-footprints-5.1.7/Battery.pretty)(options "")(descr ""))
+  (lib (name Battery)(type KiCad)(uri ${KIPRJMOD}/kicad-footprints-5.1.7/Battery.pretty)(options "")(descr ""))
+  (lib (name digikey-footprints)(type KiCad)(uri ${KIPRJMOD}/digikey-kicad-library/digikey-footprints.pretty)(options "")(descr ""))
 )

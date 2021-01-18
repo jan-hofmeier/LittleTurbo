@@ -1,3 +1,6 @@
 [submodule "kicad-symbols"]
 	path = kicad-symbols
 	url = https://github.com/KiCad/kicad-symbols
+[submodule "digikey-kicad-library"]
+	path = digikey-kicad-library
+	url = https://github.com/Digi-Key/digikey-kicad-library.git

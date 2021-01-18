@@ -681,7 +681,7 @@ AR Path="/6068F728/6045D239" Ref="U?"  Part="2"
 AR Path="/606B7AE6/6045D239" Ref="U14"  Part="2" 
 F 0 "U14" H 1650 4700 50  0000 C CNN
 F 1 "74F86" H 1650 4934 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 1650 4700 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 1650 4700 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74HC86" H 1650 4700 50  0001 C CNN
 	2    1650 4700
 	1    0    0    1   

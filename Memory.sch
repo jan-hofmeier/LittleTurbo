@@ -502,19 +502,6 @@ Wire Wire Line
 	8200 1050 7900 1050
 Wire Wire Line
 	8200 950  7900 950 
-$Comp
-L RAM:AS6C4008-55PCN U?
-U 1 1 6072B09C
-P 7400 1850
-AR Path="/6072B09C" Ref="U?"  Part="1" 
-AR Path="/6068F728/6072B09C" Ref="U2"  Part="1" 
-F 0 "U2" H 7400 2500 50  0000 C CNN
-F 1 "AS6C4008-55PCN" V 7400 1900 50  0000 C CNN
-F 2 "Package_DIP:DIP-32_W15.24mm_Socket" H 7400 1950 50  0001 C CNN
-F 3 "https://www.alliancememory.com/wp-content/uploads/pdf/AS6C4008.pdf" H 7400 1950 50  0001 C CNN
-	1    7400 1850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7900 4250 8200 4250
 Wire Wire Line
@@ -1139,7 +1126,7 @@ U 5 1 6136FE34
 P 6200 7150
 F 0 "U14" H 6100 7200 50  0000 L CNN
 F 1 "74F86" H 6100 7100 50  0000 L CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 6200 7150 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 6200 7150 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74HC86" H 6200 7150 50  0001 C CNN
 	5    6200 7150
 	1    0    0    -1  
@@ -1763,7 +1750,7 @@ U 1 1 6135DA68
 P 2850 4900
 F 0 "U14" H 2850 4900 50  0000 C CNN
 F 1 "74F86" H 2850 5100 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 2850 4900 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 2850 4900 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74HC86" H 2850 4900 50  0001 C CNN
 	1    2850 4900
 	1    0    0    -1  
@@ -1823,7 +1810,7 @@ AR Path="/606B7AE6/603FD514" Ref="U?"  Part="3"
 AR Path="/6068F728/603FD514" Ref="U14"  Part="3" 
 F 0 "U14" H 4000 6200 50  0000 C CNN
 F 1 "74F86" H 4150 6350 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 4000 6200 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 4000 6200 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74HC86" H 4000 6200 50  0001 C CNN
 	3    4000 6200
 	1    0    0    -1  
@@ -2139,25 +2126,14 @@ Wire Wire Line
 $Comp
 L OpenAmiga2000CoproAdapter-rescue:GND-power #PWR?
 U 1 1 6026D96B
-P 5750 4600
+P 5750 4800
 AR Path="/6026D96B" Ref="#PWR?"  Part="1" 
 AR Path="/6068F728/6026D96B" Ref="#PWR0108"  Part="1" 
-F 0 "#PWR0108" H 5750 4350 50  0001 C CNN
-F 1 "GND" H 5755 4427 50  0000 C CNN
-F 2 "" H 5750 4600 50  0001 C CNN
-F 3 "" H 5750 4600 50  0001 C CNN
-	1    5750 4600
-	1    0    0    -1  
-$EndComp
-$Comp
-L device:Battery_Cell BT1
-U 1 1 602086D6
-P 5750 4500
-F 0 "BT1" H 5868 4596 50  0000 L CNN
-F 1 "CR2032" H 5500 4450 50  0000 L CNN
-F 2 "Battery:BatteryHolder_Keystone_103_1x20mm" V 5750 4560 50  0001 C CNN
-F 3 "~" V 5750 4560 50  0001 C CNN
-	1    5750 4500
+F 0 "#PWR0108" H 5750 4550 50  0001 C CNN
+F 1 "GND" H 5755 4627 50  0000 C CNN
+F 2 "" H 5750 4800 50  0001 C CNN
+F 3 "" H 5750 4800 50  0001 C CNN
+	1    5750 4800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2317,7 +2293,7 @@ U 4 1 6136C907
 P 2100 3900
 F 0 "U14" H 2100 3900 50  0000 C CNN
 F 1 "74F86" H 2250 3750 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 2100 3900 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 2100 3900 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74HC86" H 2100 3900 50  0001 C CNN
 	4    2100 3900
 	1    0    0    1   
@@ -2391,6 +2367,47 @@ F 3 "~" H 650 4850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	650  5000 1150 5000
+Text GLabel 900  5000 2    50   Input ~ 0
+5VR
+Text Notes 450  5050 1    50   ~ 0
+The resitor is just protection if your\n unisolated switch touches something
+$Comp
+L RAM:AS6C4008-55PCN U?
+U 1 1 6072B09C
+P 7400 1850
+AR Path="/6072B09C" Ref="U?"  Part="1" 
+AR Path="/6068F728/6072B09C" Ref="U2"  Part="1" 
+F 0 "U2" H 7400 2500 50  0000 C CNN
+F 1 "AS6C4008-55PCN" V 7400 1900 50  0000 C CNN
+F 2 "Package_DIP:DIP-32_W15.24mm_Socket" H 7400 1950 50  0001 C CNN
+F 3 "https://www.alliancememory.com/wp-content/uploads/pdf/AS6C4008.pdf" H 7400 1950 50  0001 C CNN
+	1    7400 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery:BS-7 BAT1
+U 1 1 600F5BF2
+P 5750 4550
+F 0 "BAT1" H 5878 4603 60  0000 L CNN
+F 1 "BS-7" H 5878 4497 60  0000 L CNN
+F 2 "digikey-footprints:Battery_Holder_Coin_2032_BS-7" H 5950 4750 60  0001 L CNN
+F 3 "http://www.memoryprotectiondevices.com/datasheets/BS-7-datasheet.pdf" V 5950 4850 60  0001 L CNN
+F 4 "BS-7-ND" H 5950 4950 60  0001 L CNN "Digi-Key_PN"
+F 5 "BS-7" H 5950 5050 60  0001 L CNN "MPN"
+F 6 "Battery Products" H 5950 5150 60  0001 L CNN "Category"
+F 7 "Battery Holders, Clips, Contacts" H 5950 5250 60  0001 L CNN "Family"
+F 8 "http://www.memoryprotectiondevices.com/datasheets/BS-7-datasheet.pdf" H 5950 5350 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/mpd-memory-protection-devices/BS-7/BS-7-ND/389447" H 5950 5450 60  0001 L CNN "DK_Detail_Page"
+F 10 "BATTERY HOLDER COIN 20MM PC PIN" H 5950 5550 60  0001 L CNN "Description"
+F 11 "MPD (Memory Protection Devices)" H 5950 5650 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5950 5750 60  0001 L CNN "Status"
+	1    5750 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 4300 5750 4350
+Wire Wire Line
+	5750 4750 5750 4800
 Wire Bus Line
 	5500 5450 5500 5800
 Wire Bus Line
@@ -2407,8 +2424,4 @@ Wire Bus Line
 	6500 600  6500 2700
 Wire Bus Line
 	8900 600  8900 5950
-Text GLabel 900  5000 2    50   Input ~ 0
-5VR
-Text Notes 450  5050 1    50   ~ 0
-The resitor is just protection if your\n unisolated switch touches something
 $EndSCHEMATC

@@ -5,4 +5,5 @@
   (lib (name RAM)(type Legacy)(uri ${KIPRJMOD}/kicad-symbols/Memory_RAM.lib)(options "")(descr ""))
   (lib (name jumper)(type Legacy)(uri ${KIPRJMOD}/kicad-symbols/Jumper.lib)(options "")(descr ""))
   (lib (name device)(type Legacy)(uri ${KIPRJMOD}/kicad-symbols/Device.lib)(options "")(descr ""))
+  (lib (name Battery)(type Legacy)(uri ${KIPRJMOD}/digikey-kicad-library/digikey-symbols/dk_Battery-Holders-Clips-Contacts.lib)(options "")(descr ""))
 )
