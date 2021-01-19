@@ -14,4 +14,4 @@ It is still work in Progress, the schematics are mostly done, next up is creatin
 
 
 ### Parts
-https://www.digikey.de/short/47m29h
+https://www.digikey.de/short/4795fv
