@@ -7,6 +7,8 @@ The unused Part of the 2MB of SRAM can be used to emulate a Kickstart ROM up to 
 
 The Layout of the Slot Connector was taken from SukkoPera OpenAmiga2000CoproAdapter
 
+![Board](https://github.com/jan-hofmeier/LittleTurbo/raw/master/doc/render.png)
+
 ### State of the Project
 
 The PCB is done, next up is verifying that it works as intended.
