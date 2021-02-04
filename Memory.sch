@@ -722,9 +722,9 @@ F 3 "" H 7400 4050 50  0001 C CNN
 	1    7400 4050
 	1    0    0    -1  
 $EndComp
-Text HLabel 700  1100 0    50   Input ~ 0
-~UDS
 Text HLabel 700  2300 0    50   Input ~ 0
+~UDS
+Text HLabel 700  1100 0    50   Input ~ 0
 ~LDS
 Text HLabel 850  700  0    50   Output ~ 0
 ~DTACK
@@ -798,78 +798,28 @@ Wire Wire Line
 	10800 5250 10300 5250
 Wire Wire Line
 	7900 2050 8050 2050
-Text Label 6150 3300 0    50   ~ 0
+Text Label 5950 3500 0    50   ~ 0
 ~UOE
-Wire Wire Line
-	8050 2050 8050 3300
 Wire Wire Line
 	7900 2150 7950 2150
 Wire Wire Line
-	10350 2150 10350 3200
-Wire Wire Line
 	10350 2150 10300 2150
 Wire Wire Line
-	10450 3300 10450 2050
-Wire Wire Line
 	10300 2050 10450 2050
-Text Label 6250 3200 0    50   ~ 0
+Text Label 6050 3400 0    50   ~ 0
 ~UWE
 Wire Wire Line
 	7900 5350 8500 5350
 Wire Wire Line
 	10900 5350 10300 5350
-Text Label 5950 3500 0    50   ~ 0
+Text Label 6150 3300 0    50   ~ 0
 ~LOE
 Wire Wire Line
 	11000 5450 10300 5450
-Text Label 6050 3400 0    50   ~ 0
+Text Label 6250 3200 0    50   ~ 0
 ~LWE
 Text Label 5800 3700 0    50   ~ 0
 ~CS2
-$Comp
-L 74:74LS32 U8
-U 1 1 60B2651E
-P 3100 2400
-F 0 "U8" H 3100 2400 50  0000 C CNN
-F 1 "74HCT32" H 3400 2250 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 3100 2400 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3100 2400 50  0001 C CNN
-	1    3100 2400
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74:74LS32 U8
-U 2 1 60B29F36
-P 3100 1200
-F 0 "U8" H 3100 1200 50  0000 C CNN
-F 1 "74HCT32" H 3400 1050 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 3100 1200 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3100 1200 50  0001 C CNN
-	2    3100 1200
-	1    0    0    1   
-$EndComp
-$Comp
-L 74:74LS32 U8
-U 3 1 60B2EDFB
-P 3100 1600
-F 0 "U8" H 3100 1600 50  0000 C CNN
-F 1 "74HCT32" H 3400 1450 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 3100 1600 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3100 1600 50  0001 C CNN
-	3    3100 1600
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74:74LS32 U8
-U 4 1 60B31ECD
-P 3100 2000
-F 0 "U8" H 3100 2000 50  0000 C CNN
-F 1 "74HCT32" H 3400 1900 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 3100 2000 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3100 2000 50  0001 C CNN
-	4    3100 2000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6600 4550 6900 4550
 $Comp
@@ -889,12 +839,6 @@ Text Label 1550 3000 0    50   ~ 0
 a22
 Text Label 1550 3100 0    50   ~ 0
 a21
-Wire Wire Line
-	8500 3500 8500 5350
-Wire Wire Line
-	11000 3400 11000 5450
-Wire Wire Line
-	10900 3500 10900 5350
 Wire Wire Line
 	2700 1500 2800 1500
 Wire Wire Line
@@ -922,13 +866,13 @@ Wire Wire Line
 	3400 1200 3800 1200
 Text Label 5850 3600 0    50   ~ 0
 ~CS1
-Text Label 3400 1200 0    50   ~ 0
-~UWE
-Text Label 3400 1600 0    50   ~ 0
-~UOE
 Text Label 3400 2000 0    50   ~ 0
-~LWE
+~UWE
 Text Label 3400 2400 0    50   ~ 0
+~UOE
+Text Label 3400 1200 0    50   ~ 0
+~LWE
+Text Label 3400 1600 0    50   ~ 0
 ~LOE
 Text HLabel 750  800  0    50   Output ~ 0
 ~OVR
@@ -1210,19 +1154,9 @@ Wire Wire Line
 Wire Wire Line
 	5400 3250 5850 3250
 Wire Wire Line
-	8600 5450 8600 3400
-Wire Wire Line
 	7900 5450 8600 5450
 Wire Bus Line
 	8900 600  10850 600 
-Wire Wire Line
-	7950 3200 10350 3200
-Wire Wire Line
-	8050 3300 10450 3300
-Wire Wire Line
-	8500 3500 10900 3500
-Wire Wire Line
-	8600 3400 11000 3400
 Connection ~ 6500 2700
 Wire Bus Line
 	8300 6350 10700 6350
@@ -1244,21 +1178,7 @@ Wire Wire Line
 Wire Wire Line
 	3800 2100 6250 2100
 Wire Wire Line
-	6250 3200 7950 3200
-Connection ~ 7950 3200
-Wire Wire Line
-	8050 3300 6150 3300
-Connection ~ 8050 3300
-Wire Wire Line
-	8600 3400 6050 3400
-Wire Wire Line
 	6050 2300 6050 3400
-Wire Wire Line
-	7950 2150 7950 3200
-Connection ~ 8600 3400
-Wire Wire Line
-	8500 3500 5950 3500
-Connection ~ 8500 3500
 Wire Wire Line
 	5850 3600 8400 3600
 Wire Wire Line
@@ -1398,8 +1318,6 @@ Wire Wire Line
 	5500 1450 5300 1450
 Wire Wire Line
 	5500 1450 5500 700 
-Wire Wire Line
-	750  800  5400 800 
 Wire Wire Line
 	1050 600  5600 600 
 Wire Wire Line
@@ -2408,14 +2326,85 @@ Wire Wire Line
 	5750 4300 5750 4350
 Wire Wire Line
 	5750 4750 5750 4800
+$Comp
+L 74:74LS32 U8
+U 1 1 60B2651E
+P 3100 2400
+F 0 "U8" H 3100 2400 50  0000 C CNN
+F 1 "74HCT32" H 3400 2250 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 3100 2400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3100 2400 50  0001 C CNN
+	1    3100 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74:74LS32 U8
+U 3 1 60B2EDFB
+P 3100 1600
+F 0 "U8" H 3100 1600 50  0000 C CNN
+F 1 "74HCT32" H 3400 1450 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 3100 1600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3100 1600 50  0001 C CNN
+	3    3100 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74:74LS32 U8
+U 4 1 60B31ECD
+P 3100 2000
+F 0 "U8" H 3100 2000 50  0000 C CNN
+F 1 "74HCT32" H 3400 1900 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 3100 2000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3100 2000 50  0001 C CNN
+	4    3100 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	750  800  5400 800 
+$Comp
+L 74:74LS32 U8
+U 2 1 60B29F36
+P 3100 1200
+F 0 "U8" H 3100 1200 50  0000 C CNN
+F 1 "74HCT32" H 3400 1050 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 3100 1200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3100 1200 50  0001 C CNN
+	2    3100 1200
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	10900 3500 10900 5350
+Wire Wire Line
+	11000 3400 11000 5450
+Wire Wire Line
+	10350 2150 10350 3200
+Wire Wire Line
+	10450 3300 10450 2050
+Wire Wire Line
+	8600 3400 11000 3400
+Connection ~ 8600 3400
+Wire Wire Line
+	8600 5450 8600 3400
+Wire Wire Line
+	8500 3500 10900 3500
+Connection ~ 8500 3500
+Wire Wire Line
+	8500 3500 8500 5350
+Wire Wire Line
+	8600 3400 6050 3400
+Wire Wire Line
+	6250 3200 7950 3200
+Wire Wire Line
+	7950 3200 10350 3200
+Connection ~ 7950 3200
+Wire Wire Line
+	7950 2150 7950 3200
+Wire Wire Line
+	8500 3500 5950 3500
 Wire Bus Line
 	5500 5450 5500 5800
 Wire Bus Line
-	6500 5450 6500 6400
-Wire Bus Line
 	1450 2700 1450 4100
-Wire Bus Line
-	6500 2700 6500 5450
 Wire Bus Line
 	10700 1050 10700 6350
 Wire Bus Line
@@ -2424,4 +2413,15 @@ Wire Bus Line
 	6500 600  6500 2700
 Wire Bus Line
 	8900 600  8900 5950
+Wire Bus Line
+	6500 5450 6500 6400
+Wire Bus Line
+	6500 2700 6500 5450
+Wire Wire Line
+	8050 3300 6150 3300
+Wire Wire Line
+	8050 3300 10450 3300
+Connection ~ 8050 3300
+Wire Wire Line
+	8050 2050 8050 3300
 $EndSCHEMATC
