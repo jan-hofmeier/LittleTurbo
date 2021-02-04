@@ -1993,7 +1993,7 @@ F 1 "1MB xxxK" H 2450 4300 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2650 4200 50  0001 C CNN
 F 3 "~" H 2650 4200 50  0001 C CNN
 	1    2650 4200
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L OpenAmiga2000CoproAdapter-rescue:+5V-power #PWR?
@@ -2401,10 +2401,21 @@ Wire Wire Line
 	7950 2150 7950 3200
 Wire Wire Line
 	8500 3500 5950 3500
+Wire Wire Line
+	8050 3300 6150 3300
+Wire Wire Line
+	8050 3300 10450 3300
+Connection ~ 8050 3300
+Wire Wire Line
+	8050 2050 8050 3300
 Wire Bus Line
 	5500 5450 5500 5800
 Wire Bus Line
+	6500 5450 6500 6400
+Wire Bus Line
 	1450 2700 1450 4100
+Wire Bus Line
+	6500 2700 6500 5450
 Wire Bus Line
 	10700 1050 10700 6350
 Wire Bus Line
@@ -2413,15 +2424,4 @@ Wire Bus Line
 	6500 600  6500 2700
 Wire Bus Line
 	8900 600  8900 5950
-Wire Bus Line
-	6500 5450 6500 6400
-Wire Bus Line
-	6500 2700 6500 5450
-Wire Wire Line
-	8050 3300 6150 3300
-Wire Wire Line
-	8050 3300 10450 3300
-Connection ~ 8050 3300
-Wire Wire Line
-	8050 2050 8050 3300
 $EndSCHEMATC
