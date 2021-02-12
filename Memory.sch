@@ -1097,17 +1097,6 @@ Wire Wire Line
 	4000 1350 4000 2600
 Text HLabel 1050 600  0    50   Output ~ 0
 ~DTACK_FAST
-$Comp
-L 74:74HC74 U13
-U 3 1 617FD8AD
-P 5450 7150
-F 0 "U13" H 5350 7200 50  0000 L CNN
-F 1 "74HCT74" H 5300 7100 50  0000 L CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 5450 7150 50  0001 C CNN
-F 3 "74xx/74hc_hct74.pdf" H 5450 7150 50  0001 C CNN
-	3    5450 7150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4700 1050 4700 1450
 Wire Wire Line
@@ -1634,17 +1623,6 @@ Wire Wire Line
 	3450 4900 3150 4900
 Wire Wire Line
 	850  4800 850  1300
-$Comp
-L 74:74HC74 U13
-U 1 1 617D79E5
-P 2000 5350
-F 0 "U13" H 2050 5350 50  0000 C CNN
-F 1 "74HCT74" H 2200 5600 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 2000 5350 50  0001 C CNN
-F 3 "74xx/74hc_hct74.pdf" H 2000 5350 50  0001 C CNN
-	1    2000 5350
-	1    0    0    -1  
-$EndComp
 Text Notes 2500 6000 0    50   ~ 0
 74F is only \nrequired \nfor Turbo
 Wire Wire Line
@@ -1718,19 +1696,6 @@ F 1 "GND" H 1750 4900 50  0000 C CNN
 F 2 "" H 1650 5000 50  0001 C CNN
 F 3 "" H 1650 5000 50  0001 C CNN
 	1    1650 5000
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74:74HC86 U?
-U 3 1 603FD514
-P 4000 6200
-AR Path="/606B7AE6/603FD514" Ref="U?"  Part="3" 
-AR Path="/6068F728/603FD514" Ref="U14"  Part="3" 
-F 0 "U14" H 4000 6200 50  0000 C CNN
-F 1 "74F86" H 4150 6350 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 4000 6200 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74HC86" H 4000 6200 50  0001 C CNN
-	3    4000 6200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1901,17 +1866,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 2100 4450 50  0001 C CNN
 $EndComp
 Text Label 3550 3450 0    50   ~ 0
 ROMEN
-$Comp
-L 74:74LS27 U12
-U 1 1 61CF43AC
-P 2850 3450
-F 0 "U12" H 2850 3450 50  0000 C CNN
-F 1 "74HCT27" H 2850 3650 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 2850 3450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS27" H 2850 3450 50  0001 C CNN
-	1    2850 3450
-	1    0    0    -1  
-$EndComp
 Text Label 3150 4900 0    50   ~ 0
 SROMON
 $Comp
@@ -2167,14 +2121,6 @@ $EndComp
 Wire Wire Line
 	3700 5400 3700 5800
 Connection ~ 3700 5800
-Wire Wire Line
-	3700 5800 3700 6100
-Connection ~ 3700 6100
-Wire Wire Line
-	3700 6100 3700 6300
-Connection ~ 3700 6300
-Wire Wire Line
-	3700 6300 3700 6400
 Text Label 850  4800 0    50   ~ 0
 R~W
 Wire Wire Line
@@ -2408,6 +2354,8 @@ Wire Wire Line
 Connection ~ 8050 3300
 Wire Wire Line
 	8050 2050 8050 3300
+Wire Wire Line
+	3700 5800 3700 6400
 Wire Bus Line
 	5500 5450 5500 5800
 Wire Bus Line
