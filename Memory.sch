@@ -1789,7 +1789,7 @@ Wire Wire Line
 Text Label 5600 5900 0    50   ~ 0
 a18
 Text Label 5600 5700 0    50   ~ 0
-~a21
+a21
 Text Label 2350 3450 0    50   ~ 0
 ~a21
 $Comp

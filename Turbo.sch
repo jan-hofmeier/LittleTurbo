@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 3
+Sheet 1 3
 Title "14Mhz Turbo"
 Date ""
 Rev ""
@@ -13,7 +13,7 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 1050 4700 0    50   Input ~ 0
+Text HLabel 1050 4600 0    50   Input ~ 0
 7M
 Text HLabel 1050 4800 0    50   Input ~ 0
 CDAC
@@ -36,7 +36,7 @@ E_BUS
 Text HLabel 1000 2000 0    50   Input ~ 0
 E_CPU
 Wire Wire Line
-	1050 4700 1200 4700
+	1050 4600 1200 4600
 Wire Wire Line
 	2250 4800 1050 4800
 $Comp
@@ -108,12 +108,12 @@ $EndComp
 $Comp
 L 74:74LS27 U12
 U 3 1 606E87B7
-P 4200 3200
-F 0 "U12" H 4200 3200 50  0000 C CNN
-F 1 "74HCT32" H 4250 3400 50  0000 C CNN
-F 2 "" H 4200 3200 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 4200 3200 50  0001 C CNN
-	3    4200 3200
+P 4250 3200
+F 0 "U12" H 4250 3200 50  0000 C CNN
+F 1 "74HCT32" H 4300 3400 50  0000 C CNN
+F 2 "" H 4250 3200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 4250 3200 50  0001 C CNN
+	3    4250 3200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -127,14 +127,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 2500 1300 50  0001 C CNN
 	2    2500 1300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3900 3200 3750 3200
-Wire Wire Line
-	3750 3200 3750 2750
-Wire Wire Line
-	3900 3100 3850 3100
-Wire Wire Line
-	3850 3100 3850 2650
 Wire Wire Line
 	2300 2750 2300 3300
 Wire Wire Line
@@ -150,11 +142,7 @@ Wire Wire Line
 	1150 3700 1350 3700
 Wire Wire Line
 	1950 3100 2100 3100
-Wire Wire Line
-	2100 3100 2100 3800
 Connection ~ 2100 3100
-Wire Wire Line
-	4850 3800 4850 3600
 $Comp
 L OpenAmiga2000CoproAdapter-rescue:GND-power #PWR?
 U 1 1 60718391
@@ -258,11 +246,7 @@ F 3 "" H 2800 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2100 3100 2100 2250
-Wire Wire Line
-	2100 2250 3100 2250
-Wire Wire Line
-	3100 1800 3100 2250
+	3100 1800 3100 2100
 Wire Wire Line
 	2500 1500 2800 1500
 Wire Wire Line
@@ -392,8 +376,6 @@ Wire Wire Line
 	6800 4700 6800 5000
 Wire Wire Line
 	6800 5000 7300 5000
-Wire Wire Line
-	5150 3400 5450 3400
 $Comp
 L OpenAmiga2000CoproAdapter-rescue:GND-power #PWR?
 U 1 1 60A02467
@@ -618,8 +600,6 @@ $EndComp
 Wire Wire Line
 	6800 4100 5450 4100
 Wire Wire Line
-	5450 3800 5450 3400
-Wire Wire Line
 	5450 3800 6800 3800
 Text HLabel 6800 4300 0    50   Input ~ 0
 ~VPA_BUS
@@ -645,8 +625,6 @@ Wire Wire Line
 Wire Wire Line
 	5800 4600 5800 5600
 Wire Wire Line
-	4500 3200 4550 3200
-Wire Wire Line
 	2500 1500 2500 2000
 Wire Wire Line
 	2500 2000 2100 2000
@@ -670,7 +648,7 @@ P 2600 3400
 AR Path="/6068F728/60372CE7" Ref="U?"  Part="1" 
 AR Path="/606B7AE6/60372CE7" Ref="U?"  Part="1" 
 F 0 "U?" H 2650 3400 50  0000 C CNN
-F 1 "74HCT32" H 2800 3650 50  0000 C CNN
+F 1 "74HCT74" H 2800 3650 50  0000 C CNN
 F 2 "" H 2600 3400 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 2600 3400 50  0001 C CNN
 	1    2600 3400
@@ -679,14 +657,15 @@ $EndComp
 $Comp
 L 74:74HC86 U14
 U 3 1 603A764B
-P 1650 4600
+P 1800 4300
 AR Path="/606B7AE6/603A764B" Ref="U14"  Part="3" 
 AR Path="/6068F728/603A764B" Ref="U?"  Part="3" 
-F 0 "U14" H 1650 4600 50  0000 C CNN
-F 1 "74F86" H 1800 4750 50  0000 C CNN
-F 2 "" H 1650 4600 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 1650 4600 50  0001 C CNN
-	3    1650 4600
+AR Path="/603A764B" Ref="U14"  Part="3" 
+F 0 "U14" H 1800 4300 50  0000 C CNN
+F 1 "74F86" H 1950 4450 50  0000 C CNN
+F 2 "" H 1800 4300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 1800 4300 50  0001 C CNN
+	3    1800 4300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -705,30 +684,29 @@ $EndComp
 $Comp
 L 74:74LS27 U?
 U 1 1 603EAA3E
-P 3950 1350
+P 3950 1300
 AR Path="/6068F728/603EAA3E" Ref="U?"  Part="1" 
 AR Path="/606B7AE6/603EAA3E" Ref="U12"  Part="1" 
-F 0 "U12" H 3950 1350 50  0000 C CNN
-F 1 "74HCT32" H 3950 1550 50  0000 C CNN
-F 2 "" H 3950 1350 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3950 1350 50  0001 C CNN
-	1    3950 1350
+AR Path="/603EAA3E" Ref="U12"  Part="1" 
+F 0 "U12" H 3950 1300 50  0000 C CNN
+F 1 "74HCT32" H 3950 1500 50  0000 C CNN
+F 2 "" H 3950 1300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3950 1300 50  0001 C CNN
+	1    3950 1300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1950 4600 2200 4600
 $Comp
 L OpenAmiga2000CoproAdapter-rescue:+5V-power #PWR?
 U 1 1 6040F6F8
-P 1350 4500
+P 1500 4200
 AR Path="/6040F6F8" Ref="#PWR?"  Part="1" 
 AR Path="/6068F728/6040F6F8" Ref="#PWR?"  Part="1" 
 AR Path="/606B7AE6/6040F6F8" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 1350 4350 50  0001 C CNN
-F 1 "+5V" H 1365 4673 50  0000 C CNN
-F 2 "" H 1350 4500 50  0001 C CNN
-F 3 "" H 1350 4500 50  0001 C CNN
-	1    1350 4500
+F 0 "#PWR?" H 1500 4050 50  0001 C CNN
+F 1 "+5V" H 1515 4373 50  0000 C CNN
+F 2 "" H 1500 4200 50  0001 C CNN
+F 3 "" H 1500 4200 50  0001 C CNN
+	1    1500 4200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -738,8 +716,6 @@ Wire Wire Line
 	2200 4600 2250 4600
 Wire Wire Line
 	2200 5700 3100 5700
-Wire Wire Line
-	2200 4600 2200 4150
 Text Label 2000 4600 0    50   ~ 0
 ~7M
 Wire Wire Line
@@ -747,27 +723,15 @@ Wire Wire Line
 Wire Wire Line
 	1100 2650 3850 2650
 Wire Wire Line
-	2300 2750 3750 2750
-Connection ~ 2300 2750
-Wire Wire Line
-	4550 4150 4550 3300
-Wire Wire Line
-	2200 4150 4550 4150
-Wire Wire Line
-	2100 3800 4850 3800
-Wire Wire Line
 	2100 3100 2600 3100
 Connection ~ 2600 3100
 Wire Wire Line
-	1200 4700 1200 3950
+	1200 4600 1200 3950
 Wire Wire Line
 	1200 3950 2300 3950
-Connection ~ 1200 4700
-Wire Wire Line
-	1200 4700 1350 4700
+Connection ~ 1200 4600
 Wire Wire Line
 	2300 3400 2300 3950
-Connection ~ 2300 3950
 Wire Wire Line
 	2600 3700 1350 3700
 Connection ~ 2600 3700
@@ -816,34 +780,34 @@ Connection ~ 7300 2800
 $Comp
 L 74:74LS32 U?
 U 1 1 604B20FB
-P 5200 700
-F 0 "U?" H 5200 1025 50  0000 C CNN
-F 1 "74HCT32" H 5200 934 50  0000 C CNN
-F 2 "" H 5200 700 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 5200 700 50  0001 C CNN
-	1    5200 700 
+P 5500 700
+F 0 "U?" H 5500 1025 50  0000 C CNN
+F 1 "74HCT32" H 5500 934 50  0000 C CNN
+F 2 "" H 5500 700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 5500 700 50  0001 C CNN
+	1    5500 700 
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74:74LS32 U?
 U 2 1 604B3FB7
-P 5200 1250
-F 0 "U?" H 5200 1575 50  0000 C CNN
-F 1 "74HCT32" H 5200 1484 50  0000 C CNN
-F 2 "" H 5200 1250 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 5200 1250 50  0001 C CNN
-	2    5200 1250
+P 5500 1300
+F 0 "U?" H 5500 1625 50  0000 C CNN
+F 1 "74HCT32" H 5500 1534 50  0000 C CNN
+F 2 "" H 5500 1300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 5500 1300 50  0001 C CNN
+	2    5500 1300
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74:74LS32 U?
 U 3 1 604B5BF6
-P 10200 3650
-F 0 "U?" H 10200 3975 50  0000 C CNN
-F 1 "74HCT32" H 10200 3884 50  0000 C CNN
-F 2 "" H 10200 3650 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 10200 3650 50  0001 C CNN
-	3    10200 3650
+P 4550 1400
+F 0 "U?" H 4550 1725 50  0000 C CNN
+F 1 "74HCT32" H 4550 1634 50  0000 C CNN
+F 2 "" H 4550 1400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 4550 1400 50  0001 C CNN
+	3    4550 1400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -869,13 +833,9 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 10200 5450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2950 3300 2950 2350
+	2950 3300 2950 2200
 Wire Wire Line
-	2950 2350 4100 2350
-Wire Wire Line
-	4100 2350 4100 2200
-Wire Wire Line
-	4100 2200 6800 2200
+	2950 2200 4250 2200
 Connection ~ 2950 3300
 Text HLabel 6800 2100 0    50   Input ~ 0
 ~AS_CPU
@@ -888,19 +848,11 @@ R~W
 Wire Wire Line
 	1000 800  3650 800 
 Wire Wire Line
-	3650 1250 3650 800 
-Wire Wire Line
-	2300 3950 3000 3950
-Wire Wire Line
-	3600 3300 3900 3300
+	3650 1200 3650 800 
 Wire Wire Line
 	2600 3700 3300 3700
 Wire Wire Line
 	2950 3300 3000 3300
-Wire Wire Line
-	3000 3950 3000 3400
-Wire Wire Line
-	2600 3100 3300 3100
 $Comp
 L 74:74HC74 U15
 U 2 1 606CFA45
@@ -915,35 +867,24 @@ $EndComp
 Wire Wire Line
 	3600 3500 3650 3500
 Wire Wire Line
-	3650 3500 3650 1450
+	3650 3500 3650 1400
 Wire Wire Line
-	3650 1350 3650 1450
-Connection ~ 3650 1450
+	3650 1300 3650 1400
+Connection ~ 3650 1400
 Wire Wire Line
-	4250 1350 4700 1350
-Wire Wire Line
-	4900 800  4700 800 
-Wire Wire Line
-	4700 800  4700 1350
-Connection ~ 4700 1350
-Wire Wire Line
-	4700 1350 4900 1350
-Wire Wire Line
-	4900 1150 4250 1150
-Wire Wire Line
-	4250 1150 4250 700 
+	5200 800  5050 800 
 Wire Wire Line
 	4250 700  1000 700 
 Wire Wire Line
-	1000 600  4900 600 
+	1000 600  5200 600 
 Wire Wire Line
-	5500 1250 5900 1250
+	5800 1300 5900 1300
 Wire Wire Line
-	5900 1250 5900 1900
+	5900 1300 5900 1900
 Wire Wire Line
 	5900 1900 6800 1900
 Wire Wire Line
-	5500 700  6100 700 
+	5800 700  6100 700 
 Wire Wire Line
 	6100 700  6100 1300
 Wire Wire Line
@@ -958,4 +899,68 @@ Text HLabel 7800 1800 2    50   Output ~ 0
 UDS_BUS
 Text HLabel 7800 1200 2    50   Output ~ 0
 LDS_BUS
+Wire Wire Line
+	1200 4600 1500 4600
+Wire Wire Line
+	1500 4400 1500 4600
+Connection ~ 1500 4600
+Wire Wire Line
+	1500 4600 2200 4600
+Wire Wire Line
+	2100 4300 3000 4300
+Wire Wire Line
+	4550 3300 4550 4300
+Wire Wire Line
+	3000 3400 3000 4300
+Connection ~ 3000 4300
+Wire Wire Line
+	3000 4300 4550 4300
+Wire Wire Line
+	3850 2650 3850 3100
+Wire Wire Line
+	3600 3300 3950 3300
+Wire Wire Line
+	5150 3400 5450 3400
+Wire Wire Line
+	5450 3400 5450 3800
+Wire Wire Line
+	3950 3100 3850 3100
+Wire Wire Line
+	3950 3200 3750 3200
+Wire Wire Line
+	3750 3200 3750 2750
+Wire Wire Line
+	3750 2750 2300 2750
+Connection ~ 2300 2750
+Wire Wire Line
+	2100 3100 2100 3800
+Wire Wire Line
+	2100 3800 4850 3800
+Wire Wire Line
+	4850 3800 4850 3600
+Wire Wire Line
+	4250 700  4250 1200
+Wire Wire Line
+	5200 1200 4250 1200
+Wire Wire Line
+	4850 1400 5050 1400
+Wire Wire Line
+	5050 800  5050 1400
+Connection ~ 5050 1400
+Wire Wire Line
+	5050 1400 5200 1400
+Wire Wire Line
+	4250 1500 4250 2200
+Connection ~ 4250 2200
+Wire Wire Line
+	4250 2200 6800 2200
+Wire Wire Line
+	2850 2100 2850 3100
+Wire Wire Line
+	2600 3100 2850 3100
+Wire Wire Line
+	2850 2100 3100 2100
+Connection ~ 2850 3100
+Wire Wire Line
+	2850 3100 3300 3100
 $EndSCHEMATC
