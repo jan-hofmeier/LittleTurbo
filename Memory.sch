@@ -1091,10 +1091,6 @@ Wire Wire Line
 	6250 2100 6250 3200
 Wire Wire Line
 	4100 1550 4100 2500
-Wire Wire Line
-	4100 1350 4000 1350
-Wire Wire Line
-	4000 1350 4000 2600
 Text HLabel 1050 600  0    50   Output ~ 0
 ~DTACK_FAST
 $Comp
@@ -1778,14 +1774,14 @@ $EndComp
 $Comp
 L 74:74HCT04 U?
 U 5 1 60A86102
-P 4000 5800
+P 5450 3450
 AR Path="/606B7AE6/60A86102" Ref="U?"  Part="5" 
 AR Path="/6068F728/60A86102" Ref="U16"  Part="5" 
-F 0 "U16" H 3950 5800 50  0000 C CNN
-F 1 "74HCT04" H 4150 5900 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 4000 5800 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 4000 5800 50  0001 C CNN
-	5    4000 5800
+F 0 "U16" H 5400 3450 50  0000 C CNN
+F 1 "74HCT04" H 5600 3550 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 5450 3450 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 5450 3450 50  0001 C CNN
+	5    5450 3450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1805,8 +1801,6 @@ Text Label 2350 2900 0    50   ~ 0
 ~HIGH
 Wire Wire Line
 	6600 5950 6900 5950
-Wire Wire Line
-	1700 3450 1550 3450
 Text Label 1550 3450 0    50   ~ 0
 a21
 Wire Wire Line
@@ -1819,14 +1813,8 @@ Text Label 1550 4000 0    50   ~ 0
 a19
 Text Label 6200 6300 0    50   ~ 0
 a18m
-Wire Wire Line
-	5750 5900 5600 5900
-Text Label 5600 5900 0    50   ~ 0
+Text Label 5000 5900 0    50   ~ 0
 a18
-Text Label 5600 5700 0    50   ~ 0
-~a21
-Text Label 2350 3450 0    50   ~ 0
-~a21
 $Comp
 L 74:74HCT00 U11
 U 3 1 61157704
@@ -1838,8 +1826,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 2950 4450 50  0001 C CNN
 	3    2950 4450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5600 5700 5750 5700
 $Comp
 L jumper:Jumper_3_Open JP6
 U 1 1 6140B597
@@ -1917,12 +1903,12 @@ SROMON
 $Comp
 L 74:74HCT04 U16
 U 6 1 607F5CA0
-P 2000 3450
-F 0 "U16" H 1950 3450 50  0000 C CNN
-F 1 "74HCT04" H 1900 3650 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 2000 3450 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 2000 3450 50  0001 C CNN
-	6    2000 3450
+P 5450 5700
+F 0 "U16" H 5400 5700 50  0000 C CNN
+F 1 "74HCT04" H 5350 5900 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 5450 5700 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 5450 5700 50  0001 C CNN
+	6    5450 5700
 	1    0    0    -1  
 $EndComp
 Text Label 4750 3450 0    50   ~ 0
@@ -2039,8 +2025,6 @@ F 3 "" H 2400 4200 50  0001 C CNN
 	1    2400 4200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5750 2600 5750 3700
 $Comp
 L OpenAmiga2000CoproAdapter-rescue:GND-power #PWR?
 U 1 1 6026D96B
@@ -2093,8 +2077,6 @@ Wire Wire Line
 Wire Wire Line
 	3150 3000 3350 3000
 Wire Wire Line
-	4750 3700 4750 3900
-Wire Wire Line
 	4750 3450 5000 3450
 Wire Wire Line
 	5000 3450 5000 2000
@@ -2108,8 +2090,6 @@ Wire Wire Line
 	2500 3700 1800 3700
 Connection ~ 2500 3700
 Connection ~ 1800 3700
-Wire Wire Line
-	2300 3450 2550 3450
 Wire Wire Line
 	3450 3900 3450 4900
 Entry Wire Line
@@ -2141,11 +2121,9 @@ Wire Wire Line
 Entry Wire Line
 	6400 6300 6500 6400
 Entry Wire Line
-	5500 5600 5600 5700
+	4900 5600 5000 5700
 Entry Wire Line
-	5500 5800 5600 5900
-Wire Bus Line
-	5500 5450 6500 5450
+	4900 5800 5000 5900
 Connection ~ 6500 5450
 Wire Wire Line
 	850  4800 2550 4800
@@ -2164,11 +2142,6 @@ F 3 "" H 3700 6400 50  0001 C CNN
 	1    3700 6400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3700 5400 3700 5800
-Connection ~ 3700 5800
-Wire Wire Line
-	3700 5800 3700 6100
 Connection ~ 3700 6100
 Wire Wire Line
 	3700 6100 3700 6300
@@ -2241,12 +2214,12 @@ $EndComp
 $Comp
 L 74:74LS05 U9
 U 5 1 61115258
-P 5050 3700
-F 0 "U9" H 5000 3700 50  0000 C CNN
-F 1 "74LS05" H 5050 3900 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 5050 3700 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS05" H 5050 3700 50  0001 C CNN
-	5    5050 3700
+P 5050 3900
+F 0 "U9" H 5000 3900 50  0000 C CNN
+F 1 "74LS05" H 5050 4100 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 5050 3900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS05" H 5050 3900 50  0001 C CNN
+	5    5050 3900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2408,8 +2381,35 @@ Wire Wire Line
 Connection ~ 8050 3300
 Wire Wire Line
 	8050 2050 8050 3300
+Wire Wire Line
+	1550 3450 2550 3450
+Wire Wire Line
+	4000 2600 4000 1350
+Wire Wire Line
+	4000 1350 4100 1350
+Wire Wire Line
+	5000 5900 5750 5900
 Wire Bus Line
-	5500 5450 5500 5800
+	4900 5450 6500 5450
+Text Label 5000 5700 0    50   ~ 0
+a21
+Wire Wire Line
+	5000 5700 5150 5700
+Wire Wire Line
+	5350 3700 5350 3900
+Wire Wire Line
+	3700 5400 3700 6100
+Wire Wire Line
+	5750 2600 5750 3450
+Wire Wire Line
+	5150 3600 4750 3600
+Wire Wire Line
+	4750 3600 4750 3900
+Connection ~ 4750 3900
+Wire Wire Line
+	5150 3450 5150 3600
+Wire Bus Line
+	4900 5450 4900 5800
 Wire Bus Line
 	6500 5450 6500 6400
 Wire Bus Line
