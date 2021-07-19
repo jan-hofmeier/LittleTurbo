@@ -13,8 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 1050 4800 0    50   Input ~ 0
-CDAC
 Text HLabel 1100 2650 0    50   Input ~ 0
 ~DTACK_BUS
 Text HLabel 1000 1000 0    50   Input ~ 0
@@ -780,14 +778,14 @@ $EndComp
 $Comp
 L 74:74HC86 U?
 U 3 1 612D5460
-P 7100 6000
+P 6900 6000
 AR Path="/606B7AE6/612D5460" Ref="U?"  Part="3" 
 AR Path="/6068F728/612D5460" Ref="U?"  Part="3" 
-F 0 "U?" H 7100 6000 50  0000 C CNN
-F 1 "74F86" H 7250 6150 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 7100 6000 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74HC86" H 7100 6000 50  0001 C CNN
-	3    7100 6000
+F 0 "U?" H 6900 6000 50  0000 C CNN
+F 1 "74F86" H 7050 6150 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 6900 6000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC86" H 6900 6000 50  0001 C CNN
+	3    6900 6000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -806,18 +804,18 @@ $EndComp
 $Comp
 L OpenAmiga2000CoproAdapter-rescue:+5V-power #PWR?
 U 1 1 612DD220
-P 6800 5900
+P 6600 5900
 AR Path="/612DD220" Ref="#PWR?"  Part="1" 
 AR Path="/6068F728/612DD220" Ref="#PWR?"  Part="1" 
 AR Path="/606B7AE6/612DD220" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 6800 5750 50  0001 C CNN
-F 1 "+5V" H 6815 6073 50  0000 C CNN
-F 2 "" H 6800 5900 50  0001 C CNN
-F 3 "" H 6800 5900 50  0001 C CNN
-	1    6800 5900
+F 0 "#PWR?" H 6600 5750 50  0001 C CNN
+F 1 "+5V" H 6615 6073 50  0000 C CNN
+F 2 "" H 6600 5900 50  0001 C CNN
+F 3 "" H 6600 5900 50  0001 C CNN
+	1    6600 5900
 	1    0    0    -1  
 $EndComp
-Text HLabel 6800 6100 0    50   Input ~ 0
+Text HLabel 6600 6100 0    50   Input ~ 0
 CDAC
 $Comp
 L device:R_US R?
@@ -975,4 +973,10 @@ Text Label 10100 5950 0    50   ~ 0
 7M
 Wire Wire Line
 	9750 5950 10100 5950
+Wire Wire Line
+	7200 6000 7400 6000
+Text Label 7200 6000 0    50   ~ 0
+~CDAC
+Text Label 1050 4800 0    50   ~ 0
+~CDAC
 $EndSCHEMATC
