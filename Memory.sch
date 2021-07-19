@@ -1717,19 +1717,6 @@ F 3 "" H 1650 5000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74:74HC86 U?
-U 3 1 603FD514
-P 4000 6200
-AR Path="/606B7AE6/603FD514" Ref="U?"  Part="3" 
-AR Path="/6068F728/603FD514" Ref="U14"  Part="3" 
-F 0 "U14" H 4000 6200 50  0000 C CNN
-F 1 "74F86" H 4150 6350 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 4000 6200 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74HC86" H 4000 6200 50  0001 C CNN
-	3    4000 6200
-	1    0    0    -1  
-$EndComp
-$Comp
 L 74:74LS32 U7
 U 3 1 61F2F925
 P 3850 3100
@@ -2142,12 +2129,6 @@ F 3 "" H 3700 6400 50  0001 C CNN
 	1    3700 6400
 	1    0    0    -1  
 $EndComp
-Connection ~ 3700 6100
-Wire Wire Line
-	3700 6100 3700 6300
-Connection ~ 3700 6300
-Wire Wire Line
-	3700 6300 3700 6400
 Text Label 850  4800 0    50   ~ 0
 R~W
 Wire Wire Line
@@ -2398,8 +2379,6 @@ Wire Wire Line
 Wire Wire Line
 	5350 3700 5350 3900
 Wire Wire Line
-	3700 5400 3700 6100
-Wire Wire Line
 	5750 2600 5750 3450
 Wire Wire Line
 	5150 3600 4750 3600
@@ -2408,6 +2387,8 @@ Wire Wire Line
 Connection ~ 4750 3900
 Wire Wire Line
 	5150 3450 5150 3600
+Wire Wire Line
+	3700 5400 3700 6400
 Wire Bus Line
 	4900 5450 4900 5800
 Wire Bus Line
