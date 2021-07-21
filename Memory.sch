@@ -2257,7 +2257,7 @@ F 3 "https://www.alliancememory.com/wp-content/uploads/pdf/AS6C4008.pdf" H 7400 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Battery:BS-7 BAT1
+L OpenAmiga2000CoproAdapter-rescue:BS-7-Battery BAT1
 U 1 1 600F5BF2
 P 5750 4550
 F 0 "BAT1" H 5878 4603 60  0000 L CNN
