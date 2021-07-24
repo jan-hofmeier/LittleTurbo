@@ -1092,4 +1092,48 @@ Text HLabel 10900 2050 2    50   Output ~ 0
 ~AS_BUS
 Text Label 9900 2350 2    50   ~ 0
 Turbo_Buffered
+Text HLabel 6450 4750 0    50   Input ~ 0
+~BG_CPU
+Text HLabel 7050 4850 2    50   Output ~ 0
+~BG_CPU
+Text HLabel 6150 4950 0    50   Input ~ 0
+~AS_BUS
+$Comp
+L device:R_US R?
+U 1 1 61036433
+P 6300 4950
+AR Path="/6068F728/61036433" Ref="R?"  Part="1" 
+AR Path="/606B7AE6/61036433" Ref="R?"  Part="1" 
+F 0 "R?" V 6400 5000 50  0000 L CNN
+F 1 "560" V 6400 4800 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal" V 6340 4940 50  0001 C CNN
+F 3 "~" H 6300 4950 50  0001 C CNN
+	1    6300 4950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L device:C_Small C?
+U 1 1 61036439
+P 6450 5050
+F 0 "C?" H 6542 5096 50  0000 L CNN
+F 1 "100nF" H 6542 5005 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm" H 6450 5050 50  0001 C CNN
+F 3 "~" H 6450 5050 50  0001 C CNN
+	1    6450 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L OpenAmiga2000CoproAdapter-rescue:GND-power #PWR?
+U 1 1 6103643F
+P 6450 5150
+AR Path="/6103643F" Ref="#PWR?"  Part="1" 
+AR Path="/6068F728/6103643F" Ref="#PWR?"  Part="1" 
+AR Path="/606B7AE6/6103643F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6450 4900 50  0001 C CNN
+F 1 "GND" H 6455 4977 50  0000 C CNN
+F 2 "" H 6450 5150 50  0001 C CNN
+F 3 "" H 6450 5150 50  0001 C CNN
+	1    6450 5150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
