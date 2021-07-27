@@ -1095,7 +1095,7 @@ Turbo_Buffered
 Text HLabel 6450 4750 0    50   Input ~ 0
 ~BG_CPU
 Text HLabel 7050 4850 2    50   Output ~ 0
-~BG_CPU
+~BG_BUS
 Text HLabel 6150 4950 0    50   Input ~ 0
 ~AS_BUS
 $Comp
